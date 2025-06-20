@@ -243,17 +243,27 @@ pre code {
 }
 
 .content-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-left: 4px solid #3498db;
-    margin-bottom: 1rem;
+    background: #fff;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(52, 152, 219, 0.10), 0 1.5px 6px rgba(44, 62, 80, 0.06);
+    border-top: 5px solid #3498db;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.22s, transform 0.22s;
+    position: relative;
+}
+
+.content-card:hover {
+    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.18), 0 3px 12px rgba(44, 62, 80, 0.10);
+    transform: translateY(-4px) scale(1.025);
 }
 
 .content-card h3 {
     margin-top: 0;
     color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin-bottom: 1rem;
 }
 
 .lab-date, .exercise-date {
