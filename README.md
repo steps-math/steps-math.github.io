@@ -33,7 +33,7 @@ src/
 ├── _layouts/          # Page templates
 ├── _includes/         # Reusable components
 ├── css/              # Stylesheets
-├── topics/           # Daily class notes (markdown)
+├── notes/            # Daily class notes (markdown)
 ├── exercises/        # Lecture practice problems (markdown)
 ├── labs/            # Guided exploration activities (markdown)
 └── index.md         # Homepage
@@ -41,8 +41,8 @@ src/
 
 ## Adding Content
 
-### Topics (Class Notes)
-Create new markdown files in `src/topics/` with this frontmatter:
+### Notes (Class Notes)
+Create new markdown files in `src/notes/` with this frontmatter:
 ```yaml
 ---
 layout: base.njk
