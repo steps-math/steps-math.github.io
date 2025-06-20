@@ -1,0 +1,27 @@
+{
+  "name": "steps-math-course",
+  "version": "1.0.0",
+  "description": "Summer math course website with pre-calculus and differentiation topics",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "start": "eleventy --serve"
+  },
+  "keywords": [
+    "math",
+    "education",
+    "eleventy",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  },
+  "dependencies": {
+    "@traptitech/markdown-it-katex": "^3.6.0",
+    "katex": "^0.16.9",
+    "markdown-it": "^14.0.0"
+  }
+}
