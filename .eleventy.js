@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
 
   // Create collections for different content types
   eleventyConfig.addCollection('topics', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('src/topics/*.md');
+    return collectionApi.getFilteredByGlob('src/notes/*.md');
   });
 
   eleventyConfig.addCollection('exercises', function(collectionApi) {
