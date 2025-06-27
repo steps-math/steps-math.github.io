@@ -13,7 +13,7 @@ Welcome to our high school summer math course covering pre-calculus and differen
 <div class="content-card">
 
 ### <i class="fas fa-calendar-alt icon calendar-icon"></i> Course Schedule
-View the complete daily schedule with links to topics, exercises, and labs for each class day.
+View the complete daily schedule with links to topics, notes, and labs for each class day.
 
 [View Schedule →](/schedule/)
 
@@ -28,14 +28,6 @@ Access organized notes for each class covering fundamental concepts in pre-calcu
 
 </div>
 
-<div class="content-card">
-
-### <i class="fas fa-edit icon exercise-icon"></i> Lecture Exercises
-Practice problems designed to be worked on during class time with instructor guidance.
-
-[View Exercises →](/exercises/)
-
-</div>
 
 <div class="content-card">
 

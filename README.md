@@ -34,7 +34,6 @@ src/
 ├── _includes/         # Reusable components
 ├── css/              # Stylesheets
 ├── notes/            # Daily class notes (markdown)
-├── exercises/        # Lecture practice problems (markdown)
 ├── labs/            # Guided exploration activities (markdown)
 └── index.md         # Homepage
 ```
@@ -53,16 +52,6 @@ date: 2024-06-20
 ---
 ```
 
-### Exercises
-Create new markdown files in `src/exercises/` with this frontmatter:
-```yaml
----
-layout: base.njk
-title: Exercise Set Title
-description: What students will practice
-date: 2024-06-20
----
-```
 
 ### Labs
 Create new markdown files in `src/labs/` with this frontmatter:
