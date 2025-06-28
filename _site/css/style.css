@@ -33,7 +33,14 @@ body {
     position: relative;
 }
 
+.nav-brand-group {
+    display: flex;
+    align-items: center;
+}
+
 .nav-brand {
+    margin: 0;
+    padding: 0;
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
