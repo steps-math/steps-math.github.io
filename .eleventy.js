@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/js');
   eleventyConfig.addPassthroughCopy('src/images');
+  eleventyConfig.addPassthroughCopy('src/syllabus/*.pdf');
 
   // Create collections for different content types
   eleventyConfig.addCollection('topics', function(collectionApi) {

@@ -21,6 +21,15 @@ View the complete daily schedule with links to topics, notes, and labs for each 
 
 <div class="content-card">
 
+### <i class="fas fa-file-alt icon syllabus-icon"></i> Course Syllabus
+View the course syllabus, which contains information about the course structure, topics, and objectives.
+
+[View Syllabus →](/syllabus/)
+
+</div>
+
+<div class="content-card">
+
 ### <i class="fas fa-book icon book-icon"></i> Lecture Notes
 Access organized notes for each class covering fundamental concepts in pre-calculus and early calculus.
 
@@ -98,11 +107,11 @@ Hands-on exploration activities to deepen understanding of mathematical concepts
     color: #007bff;
 }
 
-.book-icon {
+.syllabus-icon {
     color: #28a745;
 }
 
-.exercise-icon {
+.book-icon {
     color: #ffc107;
 }
 
