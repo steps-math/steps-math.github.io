@@ -1,8 +1,8 @@
 ---
 layout: base.njk
 title: Introduction to Probability
-category: Probability and Statistics
-description: Counting rules, probability, events, and sample space.
+category: probability
+description: probability, events, and sample space.
 date: 2025-06-30
 ---
 
