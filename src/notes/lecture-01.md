@@ -14,7 +14,7 @@ date: 2025-06-30
 - Understand the sample space.
 - Tie events and probability with the sample space.
 
-## Ahmed and the Truth Behind "Probably"
+## 1. Ahmed and the Truth Behind "Probably"
 
 Ahmed noticed something interesting about his friend Khaled.
 
@@ -40,6 +40,11 @@ Ahmed did the math:
 
 $21 ÷ 30 = 0.7$
 
+This means that about 70% of the time, when Khaled says "probably," he actually does the thing.  
+So we might say:  
+**P(Khaled does it | says "probably") = 0.7**
+
+
 *What do you think will happen the next time someone asks:*
 > “Are you bringing your laptop tomorrow?”
 
@@ -53,7 +58,7 @@ We use probability in many situations in our lives. Even subconsciously sometime
 - **Traffic** What is the average time it will take you to get to school?
  ---
 
-## Why Study Probability?
+## 2. Why Study Probability?
 Probability is the mathematics of chance. It helps us make better choices, analyze risks, and solve real-world problems. 
 
 ### What is probability?
@@ -63,6 +68,8 @@ Probability is the mathematics of chance. It helps us make better choices, analy
 - **0** means the event is **impossible**.
 - **1** means the event is **certain**.
 - **0.5** means the event is **equally likely** to happen or not.
+These probabilities help us make educated guesses, even when outcomes are uncertain.
+
 
 ### Examples:
 
@@ -80,7 +87,8 @@ Probability is the mathematics of chance. It helps us make better choices, analy
 
 ### Random Experiment
 
-An action or process that leads to one of several possible outcomes, where the result cannot be predicted in advance.
+A **random experiment** is an action or process that results in one outcome from a set of possible outcomes, but the exact result cannot be predicted in advance.
+
 
 ### Event
 
@@ -117,8 +125,25 @@ The set of **all possible outcomes** of an experiment.
 
 A subset of the sample space.
 
+> **Quick Tip**:  
+> - The action you do → **Experiment**  
+> - The result you care about → **Event**  
+> - All possible results → **Sample Space**
+
 ---
 
-## Probability of an Event
+## 5. Probability of an Event
 
 If all outcomes are **equally likely**, then:
+the probability of an event **E** is:
+
+$$P(E) = \frac{\text{Number of outcomes in } E}{\text{Total number of outcomes in } S}$$
+
+### Example:
+
+- Roll a die. What’s the probability of getting an even number?
+
+Even numbers: {2, 4, 6} → 3 outcomes  
+Total outcomes: 6
+
+$$P(\text{even}) = \frac{3}{6} = 0.5$$
