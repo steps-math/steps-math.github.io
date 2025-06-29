@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Probability - STEPs Math Course</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand-group">
+                <img src="/images/kaust-academy.png" alt="KAUST Academy Logo" class="nav-logo" style="height: 60px; margin-right: 1rem;">
+                <a href="/" class="nav-brand">STEPs Math Course</a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/schedule/" class="nav-link">Schedule</a></li>
+                <li><a href="/syllabus/" class="nav-link">Syllabus</a></li>
+                <li><a href="/notes/" class="nav-link">Notes</a></li>
+                <li><a href="/labs/" class="nav-link">Labs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1>What Does &quot;Probably&quot; Mean? An Introduction to Probability</h1>
+<h2>Learning Objectives</h2>
+<ul>
+<li>Understand basic counting methods.</li>
+<li>Interpret events as probability.</li>
+<li>Understand the sample space.</li>
+<li>Tie events and probability with the sample space.</li>
+</ul>
+<h2>Ahmed and the Truth Behind &quot;Probably&quot;</h2>
+<p>Ahmed noticed something interesting about his friend Khaled.</p>
+<p>No matter what people asked him—</p>
+<blockquote>
+<p>“Are you coming?”<br>
+“Did you finish?”<br>
+“Will you help?”</p>
+</blockquote>
+<p>—Khaled almost always answered:</p>
+<blockquote>
+<p><strong>“Probably.”</strong></p>
+</blockquote>
+<p>Ahmed got curious. <em>What does &quot;probably&quot; really mean when Khaled says it?</em></p>
+<p>For three weeks, Ahmed kept track every time Khaled said <strong>&quot;probably&quot;</strong> and whether he actually followed through.</p>
+<p>Here’s what he found:</p>
+<ul>
+<li>Khaled said <strong>&quot;probably&quot;</strong> 30 times.</li>
+<li>He did the thing <strong>21 times</strong>.</li>
+<li>He didn’t do it <strong>9 times</strong>.</li>
+</ul>
+<p>Ahmed did the math:</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn><mo>÷</mo><mn>30</mn><mo>=</mo><mn>0.7</mn></mrow><annotation encoding="application/x-tex">21 ÷ 30 = 0.7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">21</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.7</span></span></span></span></p>
+<p><em>What do you think will happen the next time someone asks:</em></p>
+<blockquote>
+<p>“Are you bringing your laptop tomorrow?”</p>
+</blockquote>
+<p>We use probability in many situations in our lives. Even subconsciously sometimes! Here are some examples of where we use it:</p>
+<ul>
+<li><strong>Weather forecasts:</strong> ``There is a 70% chance of rain tomorrow.''</li>
+<li><strong>Games of chance:</strong> Rolling dice, drawing cards, or spinning a wheel.</li>
+<li><strong>Medical testing:</strong> ``There is a 95% chance the test correctly detects the disease.''</li>
+<li><strong>Sports:</strong> What is the chance your team wins the next game?</li>
+<li><strong>Finance:</strong> What is the risk that a stock price goes down?</li>
+<li><strong>Traffic</strong> What is the average time it will take you to get to school?</li>
+</ul>
+<hr>
+<h2>Why Study Probability?</h2>
+<p>Probability is the mathematics of chance. It helps us make better choices, analyze risks, and solve real-world problems.</p>
+<h3>What is probability?</h3>
+<p><strong>Probability</strong> is a number between <strong>0 and 1</strong> that tells us how likely an event is to occur:</p>
+<ul>
+<li><strong>0</strong> means the event is <strong>impossible</strong>.</li>
+<li><strong>1</strong> means the event is <strong>certain</strong>.</li>
+<li><strong>0.5</strong> means the event is <strong>equally likely</strong> to happen or not.</li>
+</ul>
+<h3>Examples:</h3>
+<ul>
+<li>
+<p>Tossing a fair coin:<br>
+<code>P(heads) = 1/2</code></p>
+</li>
+<li>
+<p>Rolling a fair six-sided die:<br>
+<code>P(rolling a 4 or 2) = 2/6</code></p>
+</li>
+<li>
+<p>Pulling a red card out of a 52-card deck:<br>
+<code>P(pulling a red card) = 26/52</code></p>
+</li>
+</ul>
+<h2>3. Random Experiments and Events</h2>
+<h3>Random Experiment</h3>
+<p>An action or process that leads to one of several possible outcomes, where the result cannot be predicted in advance.</p>
+<h3>Event</h3>
+<p>A specific outcome or group of outcomes from a random experiment.</p>
+<h4>Examples:</h4>
+<ul>
+<li>
+<p><strong>Experiment:</strong> Toss a coin<br>
+<strong>Event:</strong> Getting heads</p>
+</li>
+<li>
+<p><strong>Experiment:</strong> Roll a die<br>
+<strong>Event:</strong> Rolling an even number = {2, 4, 6}</p>
+</li>
+</ul>
+<hr>
+<h2>4. Sample Space and Events</h2>
+<h3>Sample Space (S)</h3>
+<p>The set of <strong>all possible outcomes</strong> of an experiment.</p>
+<h4>Examples:</h4>
+<ul>
+<li>
+<p>Coin toss:<br>
+<code>S = {Heads, Tails}</code></p>
+</li>
+<li>
+<p>Die roll:<br>
+<code>S = {1, 2, 3, 4, 5, 6}</code></p>
+</li>
+<li>
+<p>Drawing a card:<br>
+<code>S = {All 52 cards}</code></p>
+</li>
+</ul>
+<h3>Event (E)</h3>
+<p>A subset of the sample space.</p>
+<hr>
+<h2>Probability of an Event</h2>
+<p>If all outcomes are <strong>equally likely</strong>, then:</p>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 STEPs Math Course.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            const navContainer = document.querySelector('.nav-container');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                navContainer.classList.toggle('menu-open');
+            });
+
+            // Close menu when clicking on a link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    navContainer.classList.remove('menu-open');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!navContainer.contains(event.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    navContainer.classList.remove('menu-open');
+                }
+            });
+
+            // Mobile table enhancement
+            function enhanceTablesForMobile() {
+                const tables = document.querySelectorAll('table');
+                
+                tables.forEach(table => {
+                    const headers = table.querySelectorAll('thead th');
+                    const rows = table.querySelectorAll('tbody tr');
+                    
+                    if (headers.length > 0) {
+                        rows.forEach(row => {
+                            const cells = row.querySelectorAll('td');
+                            cells.forEach((cell, index) => {
+                                if (headers[index]) {
+                                    const headerText = headers[index].textContent.trim();
+                                    cell.setAttribute('data-mobile-label', headerText);
+                                }
+                            });
+                        });
+                    }
+                });
+            }
+
+            // Run table enhancement
+            enhanceTablesForMobile();
+        });
+    </script>
+</body>
+</html>
