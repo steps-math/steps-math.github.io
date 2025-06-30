@@ -166,6 +166,77 @@ li {
     margin-top: 0;
 }
 
+/* Quote blocks */
+blockquote {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-left: 5px solid #3498db;
+    border-radius: 0 12px 12px 0;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+    font-style: italic;
+    color: #2c3e50;
+    line-height: 1.7;
+}
+
+blockquote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 2px;
+}
+
+blockquote::after {
+    display: none;
+}
+
+blockquote p {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+blockquote p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+/* Nested quotes */
+blockquote blockquote {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-left-color: #95a5a6;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 1px 4px rgba(149, 165, 166, 0.1);
+}
+
+blockquote blockquote::before,
+blockquote blockquote::after {
+    font-size: 3rem;
+    opacity: 0.2;
+}
+
+/* Quote attribution */
+blockquote cite {
+    display: block;
+    margin-top: 1rem;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    text-align: right;
+    font-weight: 500;
+}
+
+blockquote cite::before {
+    content: "— ";
+    color: #3498db;
+    font-weight: bold;
+}
+
 /* Math equations */
 .katex-display {
     margin: 2rem 0;
@@ -462,6 +533,30 @@ tbody tr:nth-child(even):hover {
     
     th, td {
         padding: 0.75rem 0.5rem;
+    }
+    
+    /* Mobile quote styles */
+    blockquote {
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        font-size: 0.95rem;
+    }
+    
+    blockquote::before {
+        font-size: 3rem;
+        top: -0.25rem;
+        left: 0.5rem;
+    }
+    
+    blockquote::after {
+        font-size: 3rem;
+        bottom: -1.5rem;
+        right: 0.5rem;
+    }
+    
+    blockquote blockquote {
+        padding: 0.75rem 1rem;
+        margin: 0.75rem 0;
     }
     
     /* Stack table on very small screens */
