@@ -151,3 +151,139 @@ Suppose the time it takes to microwave popcorn is **uniformly distributed** betw
 
 $$ P(2.5 \leq X \leq 3) = \frac{3 - 2.5}{4 - 2} = \frac{0.5}{2} = 0.25 $$
 
+
+
+# Exercises
+
+### 1. Independent or Dependent?
+Identify whether the following pairs of events are independent or dependent:
+
+**a)** Flipping a coin and rolling a die  
+**b)** Drawing two cards from a deck without replacement  
+**c)** Rain today and whether you carry an umbrella
+
+### 2. Conditional Probability Basics
+A bag contains 3 red and 2 blue marbles. A marble is drawn and **not replaced**, then a second marble is drawn.
+
+What is the probability that:
+
+**a)** The first is red and the second is blue?  
+**b)** Both are red?
+
+### 3. Venn Diagram Logic
+Interpret the formulas of independent events and conditional probability by drawing Venn diagrams.
+
+### 4. In a class:
+- 20 students play basketball (B)
+- 15 students play soccer (S)
+- 8 students play both sports
+
+**a)** Draw a Venn diagram  
+**b)** How many play only basketball?  
+**c)** How many play neither sport if the class has 35 students?
+
+### 5. Drawing Cards
+A card is drawn from a deck. Then a second card is drawn **without replacement**.
+
+**a)** What is the probability both are aces?  
+**b)** What is the probability the second card is an ace **given** the first was an ace?
+
+> *Hint:* There are 4 aces in 52 cards.
+
+### 6. Continuous Probability
+The time to complete an online quiz is uniformly distributed between 10 and 30 minutes.
+
+**a)** What is the probability a student finishes in less than 15 minutes?  
+**b)** What is the probability a student takes more than 25 minutes?  
+**c)** What is the probability a student takes between 18 and 22 minutes?
+
+> *Hint:* Use the formula:  
+> $$P(a \leq X \leq b) = \frac{b - a}{\text{range width}}$$
+
+### 7. Real-Life Dependent Event
+A factory has a 5\% chance a part is defective. If a part is found defective, another one is checked.
+
+**a)** What is the chance both parts are defective?  
+**b)** What does this suggest about the assumption of independence?
+
+> *Hint:* Think about whether the second part's probability should be the same as the first.
+
+# Advanced exercises
+
+## Exercise 1: Conditional Probability and Bayes-Like Reasoning
+
+In a school, 40\% of students play chess. Among those who play chess, 70\% also play video games. Among those who don't play chess, only 20\% play video games.
+
+### Questions:
+
+**a)** What is the probability that a randomly chosen student plays both chess and video games?  
+**b)** What is the probability that a student plays video games?  
+**c)** If a student plays video games, what is the probability they play chess?
+
+## Exercise 2: Multiple Dependent Draws
+
+An urn contains 6 red balls and 4 blue balls. Three balls are drawn **without replacement**.
+
+### Questions:
+
+**a)** What is the probability all three balls are red?  
+**b)** What is the probability the second ball is red **given** the first one was red?  
+**c)** What is the probability that **exactly one** red ball is drawn?
+
+## Exercise 3: Independence Testing
+
+In a survey:
+- 55\% of people like tea (event A)
+- 40\% like coffee (event B)
+- 25\% like both
+
+Are the events "liking tea" and "liking coffee" independent?
+
+## Exercise 4: Continuous Probability - Uniform Distribution
+
+A factory machine produces metal rods with lengths **uniformly distributed** between 98 cm and 102 cm.
+
+### Questions:
+
+**a)** What is the probability that a randomly chosen rod is longer than 100 cm?  
+**b)** What is the probability it is between 99.5 cm and 101 cm?  
+**c)** The rods are considered defective if their length is not within ±1 cm of 100 cm. What proportion of rods are defective?
+
+## Exercise 5: Continuous Probability - Time Modeling
+
+A website's page load time (in seconds) follows a continuous distribution. Assume the load time follows a **triangular distribution** with minimum = 0.5s, most likely = 1s, and maximum = 2s.
+
+### Questions:
+
+**a)** Sketch the distribution shape (optional).  
+**b)** Which value is most probable?  
+**c)** Why is the probability of the load time being exactly 1s still zero?  
+**d)** Estimate the probability the load time is between 0.5 and 1.5 seconds (conceptually or with software).
+
+## Exercise 6: Medical Testing Scenario
+
+A disease affects 2\% of a population. A test correctly detects it 95\% of the time if a person has it (true positive rate), and falsely identifies it 5\% of the time if the person does not have it (false positive rate).
+
+### Questions:
+
+**a)** If a person tests positive, what is the probability they actually have the disease?
+
+## Exercise 7: Simulating Dependent Events
+
+A student arrives late to school on rainy days **40\%** of the time, and on dry days only **10\%** of the time. Suppose it rains on 30\% of school days.
+
+### Questions:
+
+**a)** What is the overall probability the student is late on a random day?  
+**b)** If the student is late, what is the probability that it was raining?
+
+---
+
+For extra and more interesting exercises, check out one of MIT's problem sets on [MIT 18.05 Problem Set 1 website](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/resources/mit18_05_s22_pset01_pdf)!
+
+## Summary
+
+- **Independent events** don't affect each other, while **Dependent events** do.
+- **Conditional probability** focuses on **"given that"** situations.
+- **Venn diagrams** help visualize overlaps and relationships.
+- **Continuous distributions** model values over a range, not individual outcomes.
