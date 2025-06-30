@@ -81,11 +81,38 @@ Let:
 The **overlap** shows students who play **both** sports → P(A and B)
 
 > Conditional probability is about **focusing only on part of the diagram**.  
-> For example, given event A (we’re inside circle A), what part of that is also in B?
+> For example, given event A (we're inside circle A), what part of that is also in B?
 
 Use:
 
 $$ P(B | A) = \frac{P(A \text{ and } B)}{P(A)} $$
+
+<div style="text-align: center; margin: 2px 0;">
+<svg width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Universal set rectangle -->
+  <rect x="50" y="50" width="300" height="200" fill="none" stroke="#666" stroke-width="2" stroke="5,5"/>
+  
+  <!-- Circle A (Soccer) - Blue with transparency -->
+  <circle cx="150" cy="150" r="80" fill="#007bff" fill-opacity="0.8" stroke="#007bff" stroke-width="2"/>
+  
+  <!-- Circle B (Tennis) - Green with transparency -->
+  <circle cx="250" cy="150" r="80" fill="#00ff88" fill-opacity="0.8" stroke="#00ff88" stroke-width="2"/>
+  
+  <!-- Overlap area - Purple -->
+  <path d="M 150 70 A 80 80 0 0 1 150 230 A 80 80 0 0 1 150 70 Z" fill="#6f42c1" fill-opacity="0.4"/>
+  <path d="M 250 70 A 80 80 0 0 0 250 230 A 80 80 0 0 0 250 70 Z" fill="#6f42c1" fill-opacity="0.4"/>
+  
+</svg>
+</div>
+
+**Visual Explanation:**
+- **Blue circle (A)**: All students who play soccer
+- **Green circle (B)**: All students who play tennis  
+- **Purple overlap (A∩B)**: Students who play both sports
+- **Conditional probability P(B|A)**: Given we're in the blue circle (soccer players), what fraction are also in the green circle (tennis players)?
 
 ---
 

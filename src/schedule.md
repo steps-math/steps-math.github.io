@@ -28,7 +28,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 |-----|------|-------------|-----------|
 | 1 | Sunday, June 29 | **Program orientation (no class)** |  |
 | 2 | Monday, June 30 |  Course overview. Probability introduction (meaning of probability), events, sample space, and basic counting rules. | [_lecture 1_](/notes/lecture-01/) |
-| 3 | Tuesday, July 1 | Dependent vs independent events and their formal definition. Independence as conditional probability. Venn diagrams. | _lecture 2_ |
+| 3 | Tuesday, July 1 | Dependent vs independent events and their formal definition. Independence as conditional probability. Venn diagrams. | [_lecture 2_](/notes/lecture-02/) |
 | 4 | Wednesday, July 2 | Descriptive statistics: mean, median, variance, and standard deviation. Applications in real life. | _lecture 3_ |
 | 5 | Thursday, July 3 | **Lab 1**: Toy probability experiment / expectation lab. | _lab 1_ |
 | - | Friday, July 4 | **No Class** |  |
