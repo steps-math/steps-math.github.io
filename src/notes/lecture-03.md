@@ -48,7 +48,10 @@ category: probability
     
     $$ Standard\_Deviation=\sqrt{Variance}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i-Mean)^2} $$
     
-- **Real-Life Example**: Consistency of delivery times for a courier company. Two delivery teams may have the same mean time, but very different consistency (standard deviation).
+> **Real-Life Example**: Consistency of delivery times for a courier company. Two delivery teams may have the same mean time, but very different consistency (standard deviation).
+> <div style="text-align: center; margin: 20px 0;">
+>     <img src="/images/03-delivery.png" alt="Delivery times" style="max-width: 80%; height: auto; border: 1px solid gray;">
+> </div>
     
 
 ---
