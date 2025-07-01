@@ -68,9 +68,9 @@ category: probability
 
 We'll plot normal distributions with:
 
-- Same **mean**
+- Same **mean**
     
-- Increasing **variance**
+- Increasing **variance**
     
 
 This shows how data spreads more as variance increases.
@@ -83,6 +83,51 @@ This shows how data spreads more as variance increases.
     
 - Distribution C: $\mu = 0, \sigma^2 = 5$
     
+<div style="text-align: center; margin: 20px 0;">
+    <div id="imageContainer">
+        <img id="toggleImage" src="/images/normal_distributions.gif" alt="Normal distributions visualization" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+    </div>
+    
+    <div style="margin-top: 15px;">
+        <button id="imageToggle" style="
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: 'Lora', serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
+            line-height: 1.2;
+            vertical-align: middle;
+            display: inline-block;
+        " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52, 152, 219, 0.3)'" 
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(52, 152, 219, 0.2)'">
+            Show Static Image
+        </button>
+    </div>
+</div>
+
+<script>
+document.getElementById('imageToggle').addEventListener('click', function() {
+    const image = document.getElementById('toggleImage');
+    const button = document.getElementById('imageToggle');
+    
+    if (image.src.includes('.gif')) {
+        image.src = '/images/normal_distributions.png';
+        button.textContent = 'Show Animated GIF';
+        button.style.background = 'linear-gradient(135deg, #28a745 0%, #20c997 100%)';
+    } else {
+        image.src = '/images/normal_distributions.gif';
+        button.textContent = 'Show Static Image';
+        button.style.background = 'linear-gradient(135deg, #3498db 0%, #2980b9 100%)';
+    }
+});
+</script>
+
 
 # Exercises
 

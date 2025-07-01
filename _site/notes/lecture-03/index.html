@@ -128,10 +128,10 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <p>We'll plot normal distributions with:</p>
 <ul>
 <li>
-<p>Same <strong>mean</strong></p>
+<p>Same <strong>mean</strong></p>
 </li>
 <li>
-<p>Increasing <strong>variance</strong></p>
+<p>Increasing <strong>variance</strong></p>
 </li>
 </ul>
 <p>This shows how data spreads more as variance increases.</p>
@@ -147,6 +147,48 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
 <p>Distribution C: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\mu = 0, \sigma^2 = 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></p>
 </li>
 </ul>
+<div style="text-align: center; margin: 20px 0;">
+    <div id="imageContainer">
+        <img id="toggleImage" src="/images/normal_distributions.gif" alt="Normal distributions visualization" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+    </div>
+<p><div style="margin-top: 15px;"><br>
+<button id="imageToggle" style="
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: 'Lora', serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
+            line-height: 1.2;
+            vertical-align: middle;
+            display: inline-block;
+        " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52, 152, 219, 0.3)'" 
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(52, 152, 219, 0.2)'"><br>
+Show Static Image<br>
+</button><br>
+</div></p>
+</div>
+<script>
+document.getElementById('imageToggle').addEventListener('click', function() {
+    const image = document.getElementById('toggleImage');
+    const button = document.getElementById('imageToggle');
+    
+    if (image.src.includes('.gif')) {
+        image.src = '/images/normal_distributions.png';
+        button.textContent = 'Show Animated GIF';
+        button.style.background = 'linear-gradient(135deg, #28a745 0%, #20c997 100%)';
+    } else {
+        image.src = '/images/normal_distributions.gif';
+        button.textContent = 'Show Static Image';
+        button.style.background = 'linear-gradient(135deg, #3498db 0%, #2980b9 100%)';
+    }
+});
+</script>
 <h1>Exercises</h1>
 <h3>1. Outlier Impact Analysis</h3>
 <p>You are given two datasets:</p>
