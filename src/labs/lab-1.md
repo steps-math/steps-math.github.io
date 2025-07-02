@@ -188,7 +188,7 @@ This formula helps you:
 
 You are exploring a dark forest. At every step, there is a chance you'll encounter **one of three monsters**, each equally likely.
 
-Each monster deals an **integer random amount of damage** to you when it attacks, according to a uniform distribution:
+Each monster deals an **random integer amount of damage** to you when it attacks, according to a uniform distribution:
 
 | Monster     | Behavior    | Damage Range | Damage Type      |
 |-------------|-------------|--------------|------------------|
@@ -224,7 +224,6 @@ You still don’t know which monster it is — but now you can **narrow it down*
 
 ###  Hint:
 - Which monsters are capable of dealing 15 damage?
-- Eliminate the ones that can’t.
 - What is the expected damage from the remaining monster(s)?
 
 ---
