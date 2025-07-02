@@ -148,7 +148,7 @@ Imagine **20,000 people** get tested.
 
 ---
 
-### 💡 Hints:
+###  Hints:
 
 - Use the fact that 1 in 200 people have the disease to figure out how many sick people there are.
 - Apply the test accuracy to calculate how many of them will test **positive**.
@@ -270,7 +270,7 @@ and its plot is shown below (notice that the area under the curve is 1):
 
 ### The Game Show:
 
-You’re on a game show! In front of you are **4 closed doors**. Behind **one** door is a shiny **car**, and behind the other **three** are goats 🐐.
+You’re on a game show! In front of you are **4 closed doors**. Behind **one** door is a shiny **car**, and behind the other **three** are goats .
 
 Here’s how the game works:
 
