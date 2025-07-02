@@ -188,7 +188,7 @@ This formula helps you:
 
 You are exploring a dark forest. At every step, there is a chance you'll encounter **one of three monsters**, each equally likely.
 
-Each monster deals an **random integer amount of damage** to you when it attacks, according to a uniform distribution:
+Each monster deals a **random integer amount of damage** to you when it attacks, according to a uniform distribution:
 
 | Monster     | Behavior    | Damage Range | Damage Type      |
 |-------------|-------------|--------------|------------------|
