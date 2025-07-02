@@ -56,8 +56,8 @@ If a customer notices a product, they then purchase it with probability $p_{buy}
 
 |Product|Purchase Probability $p_{buy}$| Price (Riyals)|
 |---|:---:|:---:|
-|Chocolate|0.80|3.00|
-|Tea|0.25|2.00|
+|Chocolate|0.60|3.00|
+|Tea|0.40|2.00|
 |Cookies|0.50|2.50|
 
 >For example, if the products were placed in this order:
@@ -66,7 +66,7 @@ If a customer notices a product, they then purchase it with probability $p_{buy}
 > - **Cookies** on the bottom
 > then the expected revenue is:
 > $$
-> 0.8 \times 3 \times 0.75 + 0.25 \times 2 \times 0.6 + 0.5 \times 2.5 \times 0.3 = 1.8 + 0.3 + 0.375 = 2.475
+> 0.75 \times 3 \times 0.6 + 0.6 \times 2 \times 0.4 + 0.3 \times 2.5 \times 0.5 = 1.35 + 0.48 + 0.375 = 2.205
 > $$
 
 The shop owner wants to maximize the expected revenue from sales.
@@ -75,9 +75,9 @@ The shop owner wants to maximize the expected revenue from sales.
 2. What is the maximum expected revenue?
 
 3. Whenever a product sells, the shop pays a wholesale “restocking” cost to replace it:  
-   - Chocolate: 2.00 Riyals per unit  
-   - Tea: 0.20 Riyals per unit  
-   - Cookies: 0.70 Riyals per unit  
+   - Chocolate: 1.00 Riyals per unit  
+   - Tea: 0.50 Riyals per unit  
+   - Cookies: 2.00 Riyals per unit  
   
     Find the placement of Chocolate, Tea, and Cookies on Top/Middle/Bottom that **maximizes** the **total** expected profit.
 
