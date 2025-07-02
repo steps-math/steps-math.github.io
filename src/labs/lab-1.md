@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: base.njk
 title: "Lab 1: Probability and Statistics"
 date: 2025-07-03
