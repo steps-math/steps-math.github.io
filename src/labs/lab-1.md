@@ -214,7 +214,7 @@ Each time you encounter a monster, one is chosen **at random** (with equal proba
 
 ---
 
-###  Part 2: What if You Were Hit for 12?
+###  Part 2: What if You Were Hit for 15?
 
 You are hit for **exactly 15 damage**.  
 You still don’t know which monster it is — but now you can **narrow it down**.
