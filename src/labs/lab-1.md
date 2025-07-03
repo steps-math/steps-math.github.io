@@ -264,6 +264,13 @@ and its plot is shown below (notice that the area under the curve is 1):
 
 ---  
 
+## Your Feedback!
+
+Please fill the following Google form to provide feedback on the first week:  
+- [Math class week 1 feedback form](https://docs.google.com/forms/d/e/1FAIpQLSchkddKuP5_WUtLQdIWiHkE58WH3QbwidMHWJcPkXFLuqc3Xw/viewform?usp=dialog)
+
+---
+
 ## Extra Problem: # Should You Switch?A Monty Hall Mystery
 
 ### The Game Show:

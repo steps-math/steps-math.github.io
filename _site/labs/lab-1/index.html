@@ -90,87 +90,199 @@
 </ul>
 </li>
 </ol>
-<h2>Problem 2: Shelf Placement for Maximum Expected Revenue</h2>
-<p>A small grocery shop will stock three products—chocolate, tea, and cookies—one on each of three shelves. Customer behavior is as follows:</p>
-<table>
-<thead>
-<tr>
-<th>Shelf Position</th>
-<th style="text-align:center">Notice Probability <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">p_s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Top</td>
-<td style="text-align:center">0.75</td>
-</tr>
-<tr>
-<td>Middle</td>
-<td style="text-align:center">0.60</td>
-</tr>
-<tr>
-<td>Bottom</td>
-<td style="text-align:center">0.30</td>
-</tr>
-</tbody>
-</table>
-<p>If a customer notices a product, they then purchase it with probability <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>b</mi><mi>u</mi><mi>y</mi></mrow></msub></mrow><annotation encoding="application/x-tex">p_{buy}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> that depends on the product:</p>
-<table>
-<thead>
-<tr>
-<th>Product</th>
-<th style="text-align:center">Purchase Probability <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>b</mi><mi>u</mi><mi>y</mi></mrow></msub></mrow><annotation encoding="application/x-tex">p_{buy}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></th>
-<th style="text-align:center">Price (Riyals)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Chocolate</td>
-<td style="text-align:center">0.60</td>
-<td style="text-align:center">3.00</td>
-</tr>
-<tr>
-<td>Tea</td>
-<td style="text-align:center">0.40</td>
-<td style="text-align:center">2.00</td>
-</tr>
-<tr>
-<td>Cookies</td>
-<td style="text-align:center">0.50</td>
-<td style="text-align:center">2.50</td>
-</tr>
-</tbody>
-</table>
+<h3>So What Should You Expect?</h3>
+<p>In your experiment above, you tossed a coin 10 times per run, and recorded the number of <strong>heads</strong>. You did this multiple times and averaged the results.</p>
+<p>You probably noticed something interesting:</p>
+<ul>
+<li>The number of heads changed from run to run.</li>
+<li>But the <strong>average</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>H</mi><mo stretchy="true">‾</mo></mover><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">( \overline{H} )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1333em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span><span style="top:-3.8033em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> started to <strong>settle around a specific number</strong> as you did more runs.</li>
+</ul>
+<p>Let’s take a step back:</p>
 <blockquote>
-<p>For example, if the products were placed in this order:</p>
-<ul>
-<li><strong>Chocolate</strong> on top</li>
-<li><strong>Tea</strong> in the middle</li>
-<li><strong>Cookies</strong> on the bottom<br>
-then the expected revenue is:</li>
-</ul>
-<p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>0.75</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>0.6</mn><mo>+</mo><mn>0.6</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>0.4</mn><mo>+</mo><mn>0.3</mn><mo>×</mo><mn>2.5</mn><mo>×</mo><mn>0.5</mn><mo>=</mo><mn>1.35</mn><mo>+</mo><mn>0.48</mn><mo>+</mo><mn>0.375</mn><mo>=</mo><mn>2.205</mn></mrow><annotation encoding="application/x-tex">0.75 \times 3 \times 0.6 + 0.6 \times 2 \times 0.4 + 0.3 \times 2.5 \times 0.5 = 1.35 + 0.48 + 0.375 = 2.205
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.75</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.6</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.6</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.4</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2.5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.35</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.48</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.375</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2.205</span></span></span></span></span></p>
+<p>Is there a way to <strong>predict</strong> that average value using math, even without running the experiment?</p>
 </blockquote>
-<p>The shop owner wants to maximize the expected revenue from sales.</p>
-<ol>
-<li>
-<p>What shelf position should the shop owner place the products on to maximize the expected revenue?</p>
-</li>
-<li>
-<p>What is the maximum expected revenue?</p>
-</li>
-<li>
-<p>Whenever a product sells, the shop pays a wholesale “restocking” cost to replace it:</p>
+<hr>
+<p>In probability, the <strong>expected value</strong> (or <strong>expectation</strong>) is a way to predict what will happen <strong>on average</strong> over many repeated trials.</p>
+<p>It tells you the average outcome you’d get if you repeated an experiment forever.</p>
+<p>In the case of coin flips, it helps answer:</p>
+<blockquote>
+<p>&quot;How many heads should I expect in 10 tosses of a fair coin?&quot;</p>
+</blockquote>
+<h3>Expectation Formula</h3>
+<p>If a random variable <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">( X )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span> can take values <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">( x_1, x_2, ..., x_n )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>with probabilities <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>p</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>p</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">( p_1, p_2, ..., p_n )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>, the <strong>expected value</strong> of ( X ) is:</p>
+<p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="double-struck">E</mi><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>p</mi><mi>i</mi></msub><mo>⋅</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\mathbb{E}[X] = \sum_{i} p_i \cdot x_i
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">E</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.3277em;vertical-align:-1.2777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>This means:</p>
+<blockquote>
+<p>Multiply each outcome by its probability, then add them up.</p>
+</blockquote>
+<h3>Applying It to Coin Tosses</h3>
+<p>Each coin toss has:</p>
 <ul>
-<li>Chocolate: 1.00 Riyals per unit</li>
-<li>Tea: 0.50 Riyals per unit</li>
-<li>Cookies: 2.00 Riyals per unit</li>
+<li>A 50% chance of heads (value = 1)</li>
+<li>A 50% chance of tails (value = 0)</li>
 </ul>
-<p>Find the placement of Chocolate, Tea, and Cookies on Top/Middle/Bottom that <strong>maximizes</strong> the <strong>total</strong> expected profit.</p>
+<p>So the expected value for <strong>one toss</strong> is:</p>
+<p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="double-struck">E</mi><mo stretchy="false">[</mo><mtext>one toss</mtext><mo stretchy="false">]</mo><mo>=</mo><mn>1</mn><mo>⋅</mo><mn>0.5</mn><mo>+</mo><mn>0</mn><mo>⋅</mo><mn>0.5</mn><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">\mathbb{E}[\text{one toss}] = 1 \cdot 0.5 + 0 \cdot 0.5 = 0.5
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">E</span><span class="mopen">[</span><span class="mord text"><span class="mord">one toss</span></span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span></span></span></span></span></p>
+<p>That means:</p>
+<blockquote>
+<p>On average, you get <strong>half a head</strong> per toss.</p>
+</blockquote>
+<p>So for <strong>10 tosses</strong>:</p>
+<p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="double-struck">E</mi><mo stretchy="false">[</mo><mtext>10 tosses</mtext><mo stretchy="false">]</mo><mo>=</mo><mn>10</mn><mo>⋅</mo><mn>0.5</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\mathbb{E}[\text{10 tosses}] = 10 \cdot 0.5 = 5
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">E</span><span class="mopen">[</span><span class="mord text"><span class="mord">10 tosses</span></span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></span></p>
+<h2>Why It Matters</h2>
+<p>Expectation helps you:</p>
+<ul>
+<li>Predict long-term outcomes</li>
+<li>Compare strategies in games and simulations</li>
+<li>Build models in statistics and computer science</li>
+</ul>
+<h3>Check Your Results</h3>
+<ul>
+<li>Look back at your <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>H</mi><mo stretchy="true">‾</mo></mover><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">( \overline{H} )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1333em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span><span style="top:-3.8033em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>. How close was it to 5?</li>
+<li>Did averaging over more trials bring you closer to the expected value?</li>
+<li>Can you explain why?</li>
+</ul>
+<h2>Problem 2: What Does a Positive Test Really Mean?</h2>
+<h3>You Get Tested for a Rare Disease</h3>
+<p>Imagine there’s a disease that is <strong>not very common</strong> — it affects <strong>1 out of every 200 people</strong>.</p>
+<p>There’s a test for the disease that is:</p>
+<ul>
+<li><strong>95% accurate</strong> if you <strong>do have</strong> the disease (it gives a positive result 95% of the time).</li>
+<li><strong>90% accurate</strong> if you <strong>don’t have</strong> the disease (it gives a negative result 90% of the time).</li>
+</ul>
+<p>You go to the clinic and take the test.<br>
+A few days later… the result comes back: <strong>positive</strong>.</p>
+<h3>What Do You Think?</h3>
+<blockquote>
+<p>Does this mean you almost certainly have the disease?<br>
+Is your chance of being sick close to 95%?</p>
+</blockquote>
+<p>It’s tempting to think so — after all, the test is 95% accurate!<br>
+But let’s dig deeper.</p>
+<hr>
+<h3>Let’s Think About It Another Way</h3>
+<p>Imagine <strong>20,000 people</strong> get tested.</p>
+<ul>
+<li>How many of them actually have the disease?</li>
+<li>How many will test positive because they’re sick?</li>
+<li>How many will test positive <strong>even though they’re not sick</strong>?</li>
+<li>Out of all the people who tested positive, how many are truly sick?</li>
+</ul>
+<hr>
+<h3>Hints:</h3>
+<ul>
+<li>Use the fact that 1 in 200 people have the disease to figure out how many sick people there are.</li>
+<li>Apply the test accuracy to calculate how many of them will test <strong>positive</strong>.</li>
+<li>Use the 90% accuracy for healthy people to figure out how many <strong>false positives</strong> happen.</li>
+<li>Add all the <strong>positive results</strong>, and compute what fraction are actually sick.</li>
+</ul>
+<h3>What You’ll Discover</h3>
+<p>You might be surprised!<br>
+Even though the test is <strong>pretty good</strong>, your actual chance of having the disease — <strong>given</strong> a positive test result — is probably <strong>much lower than 95%</strong>.</p>
+<hr>
+<h3>Bayes’ Theorem: The General Tool</h3>
+<p>Once you’ve figured it out using numbers, there's a general formula that works for all situations like this — where you get new evidence and want to <strong>update your belief</strong>.</p>
+<p>It's called <strong>Bayes’ Theorem</strong>.</p>
+<p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>Disease</mtext><mo>∣</mo><mtext>Positive</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>Positive</mtext><mo>∣</mo><mtext>Disease</mtext><mo stretchy="false">)</mo><mo>⋅</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>Disease</mtext><mo stretchy="false">)</mo></mrow><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>Positive</mtext><mo stretchy="false">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(\text{Disease} \mid \text{Positive}) = \frac{P(\text{Positive} \mid \text{Disease}) \cdot P(\text{Disease})}{P(\text{Positive})}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord text"><span class="mord">Disease</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Positive</span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord text"><span class="mord">Positive</span></span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord text"><span class="mord">Positive</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">Disease</span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord text"><span class="mord">Disease</span></span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>This formula helps you:</p>
+<ul>
+<li>Combine <strong>how rare or common something is</strong> (base rate)</li>
+<li>With <strong>how accurate the evidence is</strong> (likelihood)</li>
+<li>To get the <strong>updated probability</strong> that you care about</li>
+</ul>
+<hr>
+<h3>Takeaway</h3>
+<blockquote>
+<p>Bayes’ Theorem tells us how to <strong>revise probabilities</strong> when we get new information.<br>
+It shows that <strong>even accurate tests</strong> can lead to misleading conclusions when the thing you're testing for is <strong>rare</strong>.</p>
+</blockquote>
+<h2>Problem 3: Random Monster in the Woods!</h2>
+<p>You are exploring a dark forest. At every step, there is a chance you'll encounter <strong>one of three monsters</strong>, each equally likely.</p>
+<p>Each monster deals a <strong>random integer amount of damage</strong> to you when it attacks, according to a uniform distribution:</p>
+<table>
+<thead>
+<tr>
+<th>Monster</th>
+<th>Behavior</th>
+<th>Damage Range</th>
+<th>Damage Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timid</td>
+<td>Cautious</td>
+<td>1 to 6</td>
+<td>Uniform</td>
+</tr>
+<tr>
+<td>Aggressive</td>
+<td>Reckless</td>
+<td>1 to 12</td>
+<td>Uniform</td>
+</tr>
+<tr>
+<td>Deadly</td>
+<td>Lethal</td>
+<td>1 to 20</td>
+<td>Uniform</td>
+</tr>
+</tbody>
+</table>
+<p>Each time you encounter a monster, one is chosen <strong>at random</strong> (with equal probability). You don't know which monster it is until you're hit.</p>
+<hr>
+<h3>Part 1: Expected Damage from a Random Monster</h3>
+<p><strong>Question:</strong></p>
+<blockquote>
+<p>What is the expected amount of damage you would take from a single monster encounter?</p>
+</blockquote>
+<h4>Hint:</h4>
+<ul>
+<li>Start by computing the expected value of an integer uniform distribution on:
+<ul>
+<li>1 to 6</li>
+<li>1 to 12</li>
+<li>1 to 20</li>
+</ul>
 </li>
-</ol>
-<h2>Problem 3: Project Completion Time with Triangular Distribution</h2>
+<li>Then, average those values using the fact that each monster appears with equal probability.</li>
+</ul>
+<hr>
+<h3>Part 2: What if You Were Hit for 12?</h3>
+<p>You are hit for <strong>exactly 15 damage</strong>.<br>
+You still don’t know which monster it is — but now you can <strong>narrow it down</strong>.</p>
+<p><strong>Question:</strong></p>
+<blockquote>
+<p>Based on this hit, what is the most likely monster, and what is your new expected damage?</p>
+</blockquote>
+<h3>Hint:</h3>
+<ul>
+<li>Which monsters are capable of dealing 15 damage?</li>
+<li>What is the expected damage from the remaining monster(s)?</li>
+</ul>
+<hr>
+<h3>Part 3: What if You Were Hit for 4?</h3>
+<p>Now, you are hit for <strong>4 damage</strong>.</p>
+<p><strong>Question:</strong></p>
+<blockquote>
+<p>Given this information, what is your updated expected damage?</p>
+</blockquote>
+<h3>Hint:</h3>
+<ul>
+<li>All three monsters could have caused this hit — but with different likelihoods.</li>
+<li>For each monster:
+<ul>
+<li>What is the probability that it would deal exactly 4 damage?</li>
+<li>Combine that with the chance of encountering that monster to estimate how likely it is that each monster hit you.</li>
+</ul>
+</li>
+<li>Use those weights to find a new expected damage.</li>
+</ul>
+<h2>Problem 4: Project Completion Time with Triangular Distribution</h2>
 <p>A small engineering team estimates that a certain project task will take at least 4 days, most likely 7 days, and at most 12 days to complete. They model the completion time <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> using a triangular distribution on the interval <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>4</mn><mo separator="true">,</mo><mn>12</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[4, 12]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">12</span><span class="mclose">]</span></span></span></span> with peak at <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">c=7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span>. Its probability density function is given by:</p>
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mfrac><mn>1</mn><mn>12</mn></mfrac><mo stretchy="false">(</mo><mi>t</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if </mtext><mn>4</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>7</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mfrac><mn>1</mn><mn>20</mn></mfrac><mo stretchy="false">(</mo><mn>12</mn><mo>−</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if </mtext><mn>7</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>12</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>otherwise</mtext></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(t) = \begin{cases}
 \frac{1}{12}(t-4) &amp; \text{if } 4 \leq t \leq 7 \\
@@ -187,6 +299,81 @@ then the expected revenue is:</li>
 <li>The team needs a 90% confidence that the task finishes by a certain day <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span>. Find <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mo>≤</mo><mi>d</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.90</mn></mrow><annotation encoding="application/x-tex">P(T \leq d) = 0.90</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.90</span></span></span></span>.</li>
 </ol>
 <hr>
+<h2>Your Feedback!</h2>
+<p>Please fill the following Google form to provide feedback on the first week:</p>
+<ul>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSchkddKuP5_WUtLQdIWiHkE58WH3QbwidMHWJcPkXFLuqc3Xw/viewform?usp=dialog">Math class week 1 feedback form</a></li>
+</ul>
+<hr>
+<h2>Extra Problem: # Should You Switch?A Monty Hall Mystery</h2>
+<h3>The Game Show:</h3>
+<p>You’re on a game show! In front of you are <strong>4 closed doors</strong>. Behind <strong>one</strong> door is a shiny <strong>car</strong>, and behind the other <strong>three</strong> are goats .</p>
+<p>Here’s how the game works:</p>
+<ol>
+<li>You choose one door (say, Door 1).</li>
+<li>The host, who <strong>knows</strong> what’s behind every door, opens <strong>two other doors</strong> — and both have goats.</li>
+<li>You are now left with:
+<ul>
+<li>Your original choice (Door 1)</li>
+<li>One unopened door (say, Door 3)</li>
+</ul>
+</li>
+</ol>
+<p>The host says:</p>
+<blockquote>
+<p>“Would you like to stay with your first pick or switch to the other unopened door?”</p>
+</blockquote>
+<h3>What’s Your Strategy?</h3>
+<ul>
+<li>Would you stay or switch?</li>
+<li>Do you think it’s a 50/50 chance now?</li>
+</ul>
+<p>Many people say:</p>
+<blockquote>
+<p>“There are only two doors left — it must be even odds!”</p>
+</blockquote>
+<p>But what if it’s not?</p>
+<hr>
+<h3>Let’s Think It Through</h3>
+<p>Imagine playing this game <strong>many times</strong>. Suppose you always choose Door 1.</p>
+<h3>Question 1:</h3>
+<p>What’s the chance that you picked the <strong>car</strong> on your first try?</p>
+<h3>Question 2:</h3>
+<p>If you didn’t pick the car, where is it?</p>
+<p>Now the host opens <strong>two goat doors</strong> from those three.</p>
+<p>Important: The host <strong>always opens goat doors</strong>. He <strong>never reveals the car</strong>.</p>
+<h3>Question 3:</h3>
+<p>If your original choice was wrong, what happens to the car's location?</p>
+<ul>
+<li>Can the host open the door hiding the car?</li>
+<li>Where must the car end up, from your point of view?</li>
+</ul>
+<h3>Try This Experiment</h3>
+<p>Play a few rounds with a friend:</p>
+<ol>
+<li>Place 1 car and 3 goats under 4 cups or cards.</li>
+<li>Randomly choose one.</li>
+<li>Let your friend (the host) peek and reveal 2 goats from the remaining 3.</li>
+<li>Decide whether to stay or switch.</li>
+<li>Track your wins over many rounds.</li>
+</ol>
+<p>Do you win more often when you switch?</p>
+<hr>
+<h3>Reflection: What Did You Discover?</h3>
+<ul>
+<li>Did your first pick usually have the car?</li>
+<li>How often did switching win?</li>
+<li>Why might the remaining unopened door have a better chance than it seems?</li>
+</ul>
+<h3>Key Idea</h3>
+<p>Even though only two doors remain, the odds are <strong>not 50/50</strong>.<br>
+Your original choice only had a <strong>1 in 4 chance</strong>.<br>
+The host’s action gives you <strong>extra information</strong>.</p>
+<p>But we’ll hold off on the full answer for now — you might already have a good guess!<br>
+Try explaining your reasoning to a friend.</p>
+<blockquote>
+<p>Why might switching win <strong>more than 50% of the time</strong>?</p>
+</blockquote>
 <h2>Additional Resources</h2>
 <p>If you are interested in additional practice with probability and statistics, you can check out the following resources:</p>
 <ul>
