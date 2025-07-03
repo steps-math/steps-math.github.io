@@ -137,7 +137,7 @@ $$f(x) = \frac{1}{x^2}$$
 ---
 
 # Regular Exercises
-<!-- 
+
 ## 1. Domain and Discontinuity
 
 Find the **domain** of each function and describe any **discontinuities**:
@@ -146,28 +146,45 @@ Find the **domain** of each function and describe any **discontinuities**:
 - **b)** $f(x) = \frac{2x + 3}{x^2 - 4}$  
 - **c)** $f(x) = \frac{x^2 - 4}{x - 2}$
 
-
-## 2. Sketch and Analyze
-
-Use Desmos to sketch and answer:
-
-- **a)** $f(x) = \frac{1}{x}$  
-- **b)** $f(x) = \frac{1}{x^2}$  
-- **c)** $f(x) = \sqrt{x}$
-
-For each:
-
-- What is the **domain**?
-- Are there any **asymptotes** or **holes**?
-- What is the **end behavior** as $x \to \infty$?  
-
-
-## 3. Types of Discontinuity
+## 2. Types of Discontinuity
 
 Determine whether the discontinuity is **removable** or **essential**:
 
 - **a)** $f(x) = \frac{x^2 - 9}{x - 3}$
 - **b)** $f(x) = \frac{1}{x + 5}$
-- **c)** $f(x) = \frac{(x - 2)^2}{x - 2}$ -->
+- **c)** $f(x) = \frac{(x - 2)^2}{x - 2}$
 
----
+
+## 3. Root Domain Puzzle
+For each function, find the domain, but without graphing. Justify your reasoning algebraically:
+
+- **a)** $f(x) = \sqrt{4 - x^2}$
+- **b)** $g(x) = \sqrt{x^2 - 4}$
+- **c)** $h(x) = \sqrt{(x - 1)(x + 2)}$
+
+## 4. Impossible Graph?
+
+Here is a graph sketch:
+
+- It has a hole at $x = 2$
+- It has a vertical asymptote at $x = -1$
+- It has a horizontal asymptote at $y = 3$
+
+  - **a)** Can you write a rational function that fits this behavior?
+  - **b)** Justify how each part of your expression creates the desired graph features.
+  - **c)** What happens if you remove the factor that causes the hole?
+
+
+## 5. Graph from Clues
+Build a rational function that:
+
+- Has a vertical asymptote at $x = 2$
+- Has a hole at $x = -1$
+- Has a horizontal asymptote at $y = 0$
+- Crosses the x-axis at $x = 3$
+
+  - **a)** Write a possible expression.
+  - **b)** Label all key features on a sketch.
+  - **c)** Change your function so that the horizontal asymptote is now $y = 5$. What did you change?
+
+
