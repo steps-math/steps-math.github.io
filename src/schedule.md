@@ -41,7 +41,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topics | Notes link |
 |-----|------|-------------|-----------|
-| 6 | Saturday, July 5 | Formal definition of a function, simple examples of functions (linear, quadratic), how to draw them and how to figure out their domain and range. |  |
+| 6 | Saturday, July 5 | Formal definition of a function, simple examples of functions (linear, quadratic), how to draw them and how to figure out their domain and range. | [_lecture 4_](/notes/lecture-04/) |
 | 7 | Sunday, July 6 | Polynomial functions, their graphs, their domain and range, and their infinity behavior. |  |
 | 8 | Monday, July 7 | Root and rational functions, their graphs, their domain and range, points of discontinuity, and their infinity behavior. |  |
 | 9 | Tuesday, July 8 | Exponential and log functions, their graphs, their domain and range, points of discontinuity, and their infinity behavior. |  |
