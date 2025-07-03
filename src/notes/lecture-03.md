@@ -2,6 +2,8 @@
 layout: base.njk
 title: Descriptive Statistics – Mean, Median, and Variance
 category: probability
+description: Lecture 3
+date: 2025-07-02
 ---
 
 # Lecture 3: Descriptive Statistics – Mean, Median, and Variance

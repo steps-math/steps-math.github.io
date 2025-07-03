@@ -2,6 +2,8 @@
 layout: base.njk
 title: Functions definition and basic examples (linear, quadratic)
 category: functions
+description: Lecture 4
+date: 2025-07-06
 ---
 
 # lecture 4: Formal definition of a function, simple examples of functions (linear, quadratic), how to draw them and how to figure out their domain and range.

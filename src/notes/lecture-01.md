@@ -2,7 +2,7 @@
 layout: base.njk
 title: Introduction to Probability
 category: probability
-description: probability, events, and sample space.
+description: Lecture 1
 date: 2025-06-30
 ---
 

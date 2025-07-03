@@ -2,6 +2,8 @@
 layout: base.njk
 title: Polynomial functions, graphs, and infinity behavior
 category: functions
+description: Lecture 5
+date: 2025-07-07
 ---
 
 # lecture 5: Polynomial functions, their graphs, their domain and range, and their infinity behavior

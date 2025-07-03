@@ -2,7 +2,7 @@
 layout: base.njk
 title: Dependent vs Independent Events, Conditional Probability, and Continuous Distributions
 category: probability
-description: dependent vs independent events, conditional probability, and continuous distributions.
+description: Lecture 2
 date: 2025-07-01
 ---
 
