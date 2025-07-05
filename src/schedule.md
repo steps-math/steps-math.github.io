@@ -10,13 +10,13 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 ## Quick Navigation
 
 <div class="week-nav">
-  <button onclick="showWeek(1)" class="week-btn">Week 1</button>
-  <button onclick="showWeek(2)" class="week-btn">Week 2</button>
-  <button onclick="showWeek(3)" class="week-btn">Week 3</button>
-  <button onclick="showWeek(4)" class="week-btn">Week 4</button>
-  <button onclick="showWeek(5)" class="week-btn">Week 5</button>
-  <button onclick="showWeek(6)" class="week-btn">Week 6</button>
-  <button onclick="showWeek(7)" class="week-btn">Week 7</button>
+  <button onclick="showWeek(1, this)" class="week-btn">Week 1</button>
+  <button onclick="showWeek(2, this)" class="week-btn">Week 2</button>
+  <button onclick="showWeek(3, this)" class="week-btn">Week 3</button>
+  <button onclick="showWeek(4, this)" class="week-btn">Week 4</button>
+  <button onclick="showWeek(5, this)" class="week-btn">Week 5</button>
+  <button onclick="showWeek(6, this)" class="week-btn">Week 6</button>
+  <button onclick="showWeek(7, this)" class="week-btn">Week 7</button>
   <button onclick="showToday()" class="today-btn">Today</button>
 </div>
 
@@ -42,7 +42,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | Day | Date | Topics | Notes link |
 |-----|------|-------------|-----------|
 | 6 | Saturday, July 5 | Formal definition of a function, simple examples of functions (linear, quadratic), how to draw them and how to figure out their domain and range. | [_lecture 4_](/notes/lecture-04/) |
-| 7 | Sunday, July 6 | Polynomial functions, their graphs, their domain and range, and their infinity behavior. |  |
+| 7 | Sunday, July 6 | Polynomial functions, their graphs, their domain and range, and their infinity behavior. | [_lecture 5_](/notes/lecture-05/) |
 | 8 | Monday, July 7 | Root and rational functions, their graphs, their domain and range, points of discontinuity, and their infinity behavior. |  |
 | 9 | Tuesday, July 8 | Exponential and log functions, their graphs, their domain and range, points of discontinuity, and their infinity behavior. |  |
 | 10 | Wednesday, July 9 | Operations on functions. Transformations: shifting, squeezing, reflecting, and composing functions. |  |
@@ -133,7 +133,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 <script>
 // Week navigation functionality
-function showWeek(weekNumber) {
+function showWeek(weekNumber, clickedButton = null) {
     // Hide all week sections
     const weekSections = document.querySelectorAll('.week-section');
     weekSections.forEach(section => {
@@ -165,13 +165,85 @@ function showWeek(weekNumber) {
     
     // Update active button
     document.querySelectorAll('.week-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    if (clickedButton) {
+        clickedButton.classList.add('active');
+    }
 }
 
 function showToday() {
     const today = new Date();
-    const startDate = new Date('2024-06-29'); // Actual start date
+    const startDate = new Date('2025-06-29'); // Actual start date
     const daysDiff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+    
+    console.log('Today:', today.toDateString()); // Debug log
+    console.log('Start date:', startDate.toDateString()); // Debug log
+    console.log('Days difference:', daysDiff); // Debug log
+    
+    if (daysDiff >= 0 && daysDiff <= 40) {
+        let weekNumber;
+        if (daysDiff < 5) {
+            weekNumber = 1; // First week (Sunday-Friday)
+        } else {
+            weekNumber = Math.floor((daysDiff - 5) / 7) + 2; // Subsequent weeks (Saturday-Friday)
+        }
+        showWeek(weekNumber);
+        
+        // Highlight today's row by finding the row with today's date
+        highlightTodayRow();
+    } else {
+        showWeek(1); // Show week 1 if before start date
+        // For testing: also try to highlight today's row even if course hasn't started
+        highlightTodayRow();
+    }
+    
+    // Update active button to Today button
+    document.querySelectorAll('.week-btn, .today-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+}
+
+function highlightTodayRow() {
+    // Remove any existing today highlights
+    document.querySelectorAll('tr.today').forEach(row => {
+        row.classList.remove('today');
+    });
+    
+    const today = new Date();
+    const todayString = today.toLocaleDateString('en-US', { 
+        weekday: 'long', 
+        month: 'long', 
+        day: 'numeric' 
+    });
+    
+    console.log('Looking for date:', todayString); // Debug log
+    console.log('Looking for date (quoted):', `"${todayString}"`); // Debug log
+    
+    // Find all table rows and check if they contain today's date
+    const allRows = document.querySelectorAll('tbody tr');
+    console.log('Found', allRows.length, 'table rows'); // Debug log
+    
+    allRows.forEach((row, index) => {
+        const cells = row.querySelectorAll('td');
+        if (cells.length > 1) {
+            const dateCell = cells[1]; // Date is in the second column
+            const cellText = dateCell.textContent.trim();
+            console.log(`Row ${index + 1} cell text:`, `"${cellText}"`); // Debug log
+            if (cellText === todayString) {
+                row.classList.add('today');
+                console.log('Found today! Row', index + 1); // Debug log
+            }
+        }
+    });
+}
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    // Show current week by default
+    const today = new Date();
+    const startDate = new Date('2025-06-29'); // Actual start date
+    const daysDiff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+    
+    console.log('Page load - Today:', today.toDateString()); // Debug log
+    console.log('Page load - Days difference:', daysDiff); // Debug log
     
     if (daysDiff >= 0 && daysDiff <= 40) {
         let weekNumber;
@@ -183,32 +255,11 @@ function showToday() {
         showWeek(weekNumber);
         
         // Highlight today's row
-        const todayRow = document.querySelector(`tr[data-day="${daysDiff + 1}"]`);
-        if (todayRow) {
-            todayRow.classList.add('today');
-        }
-    } else {
-        showWeek(1); // Show week 1 if before start date
-    }
-}
-
-// Initialize page
-document.addEventListener('DOMContentLoaded', function() {
-    // Show current week by default
-    const today = new Date();
-    const startDate = new Date('2024-06-29'); // Actual start date
-    const daysDiff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
-    
-    if (daysDiff >= 0 && daysDiff <= 40) {
-        let weekNumber;
-        if (daysDiff < 5) {
-            weekNumber = 1; // First week (Sunday-Friday)
-        } else {
-            weekNumber = Math.floor((daysDiff - 5) / 7) + 2; // Subsequent weeks (Saturday-Friday)
-        }
-        showWeek(weekNumber);
+        highlightTodayRow();
     } else {
         showWeek(1); // Default to week 1 if before start date
+        // For testing: also try to highlight today's row even if course hasn't started
+        highlightTodayRow();
     }
 });
 </script>
@@ -261,8 +312,31 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 tr.today {
-    background-color: #fff3cd !important;
-    border-left: 4px solid #ffc107;
+    background: linear-gradient(135deg, #e0f7fa 0%, #e8f5e8 100%) !important;
+    border-left: 4px solid #3498db;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.15);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+tr.today td {
+    font-weight: 600;
+    color: #2c3e50;
+    position: relative;
+}
+
+tr.today:hover {
+    background: linear-gradient(135deg, #e8f5e8 0%, #e0f7fa 100%) !important;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.25);
+}
+
+/* Ensure table layout is not affected by the today styling */
+table {
+    position: relative;
+}
+
+tbody tr {
+    position: relative;
 }
 
 h2 {
