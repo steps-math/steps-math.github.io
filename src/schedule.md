@@ -273,33 +273,33 @@ document.addEventListener('DOMContentLoaded', function() {
 .week-btn, .today-btn {
     margin: 5px;
     padding: 10px 15px;
-    border: 2px solid #007bff;
-    background: white;
-    color: #007bff;
+    border: 2px solid var(--primary-color);
+    background: var(--card-bg);
+    color: var(--primary-color);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .week-btn:hover, .today-btn:hover {
-    background: #007bff;
+    background: var(--primary-color);
     color: white;
 }
 
 .week-btn.active {
-    background: #007bff;
+    background: var(--primary-color);
     color: white;
 }
 
 .today-btn {
-    background: #0056b3;
-    border-color: #0056b3;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     color: white;
 }
 
 .today-btn:hover {
-    background: #004085;
-    border-color: #004085;
+    background: var(--heading-color);
+    border-color: var(--heading-color);
 }
 
 .week-section {
@@ -312,22 +312,38 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 tr.today {
-    background: linear-gradient(135deg, #e0f7fa 0%, #e8f5e8 100%) !important;
-    border-left: 4px solid #3498db;
-    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.15);
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%) !important;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
     position: relative;
     transition: all 0.3s ease;
 }
 
 tr.today td {
     font-weight: 600;
-    color: #2c3e50;
+    color: #1565c0;
     position: relative;
 }
 
 tr.today:hover {
-    background: linear-gradient(135deg, #e8f5e8 0%, #e0f7fa 100%) !important;
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.25);
+    background: linear-gradient(135deg, #bbdefb 0%, #e3f2fd 100%) !important;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Dark mode specific today highlighting */
+[data-theme="dark"] tr.today {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c4a6e 100%) !important;
+    border-left: 4px solid #64b5f6;
+    box-shadow: 0 2px 8px rgba(100, 181, 246, 0.3);
+}
+
+[data-theme="dark"] tr.today td {
+    color: #90caf9;
+}
+
+[data-theme="dark"] tr.today:hover {
+    background: linear-gradient(135deg, #2c4a6e 0%, #1e3a5f 100%) !important;
+    box-shadow: 0 4px 12px rgba(100, 181, 246, 0.4);
 }
 
 /* Ensure table layout is not affected by the today styling */
@@ -342,9 +358,10 @@ tbody tr {
 h2 {
     margin-top: 30px;
     padding: 15px;
-    background: #f8f9fa;
+    background: var(--blockquote-bg);
     border-radius: 5px;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid var(--primary-color);
+    color: var(--heading-color);
 }
 
 </style>
