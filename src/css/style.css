@@ -123,6 +123,16 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     z-index: 1001;
+    transition: color 0.3s ease;
+}
+
+/* Override general link styles for nav brand */
+.nav-brand,
+.nav-brand:hover,
+.nav-brand:visited {
+    color: var(--navbar-text) !important;
+    border-bottom: none !important;
+    text-shadow: none !important;
 }
 
 /* Hamburger menu button */
@@ -172,12 +182,23 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
     display: block;
+    font-weight: 500;
 }
 
 .nav-link:hover {
     background-color: rgba(255,255,255,0.1);
+    color: var(--navbar-text);
+}
+
+/* Override general link styles for navigation */
+.nav-link,
+.nav-link:hover,
+.nav-link:visited {
+    color: var(--navbar-text) !important;
+    border-bottom: none !important;
+    text-shadow: none !important;
 }
 
 /* Theme Toggle Button */
@@ -253,12 +274,28 @@ p {
 
 /* Links */
 a {
-    color: var(--primary-color);
+    color: #2563eb;
     text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid transparent;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #1d4ed8;
+    text-decoration: none;
+    text-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
+
+/* Dark mode links */
+[data-theme="dark"] a {
+    color: #60a5fa;
+    font-weight: 500;
+}
+
+[data-theme="dark"] a:hover {
+    color: #93c5fd;
+    text-shadow: 0 0 8px rgba(96, 165, 250, 0.3);
 }
 
 /* Lists */
@@ -450,6 +487,41 @@ pre code {
     font-weight: 700;
     letter-spacing: 0.01em;
     margin-bottom: 1rem;
+}
+
+/* Dark mode specific content card styles */
+[data-theme="dark"] .content-card {
+    background: linear-gradient(135deg, #1a2531 0%, #2c3e50 100%);
+    border-top: 5px solid #3498db;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 1.5px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #34495e;
+}
+
+[data-theme="dark"] .content-card:hover {
+    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.3), 0 3px 12px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #2c3e50 0%, #1a2531 100%);
+    border-color: #3498db;
+}
+
+[data-theme="dark"] .content-card h3 {
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+
+[data-theme="dark"] .content-card p,
+[data-theme="dark"] .content-card li {
+    color: #e8eaed;
+}
+
+[data-theme="dark"] .content-card a {
+    color: #60a5fa;
+    font-weight: 500;
+}
+
+[data-theme="dark"] .content-card a:hover {
+    color: #93c5fd;
+    text-shadow: 0 0 8px rgba(96, 165, 250, 0.3);
 }
 
 .lab-date, .exercise-date {
