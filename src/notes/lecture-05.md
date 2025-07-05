@@ -151,6 +151,18 @@ Each of the following is a sketch of a polynomial. Without using a calculator:
     <img src="/images/05-exercise.png" alt="Polynomial graphs" style="max-width: 80%; height: auto; border: 1px solid gray;">
 </div>
 
+{% answerChecker %}
+- Graph A:
+  {% multipleChoice "graph-a-degree" '["odd", "even"]' "a" %}
+  {% multipleChoice "graph-a-coeff" '["positive", "negative"]' "a" %}
+  {% answerNumeric "graph-a-turning" 2 "Enter number of turning points" %}
+- Graph B:
+  {% multipleChoice "graph-b-degree" '["odd", "even"]' "a" %}
+  {% multipleChoice "graph-b-coeff" '["positive", "negative"]' "a" %}
+  {% answerNumeric "graph-b-turning" 1 "Enter number of turning points" %}
+
+{% endanswerChecker %}
+
 ## 3. Real-World Modeling
 
 A company's profit over time is modeled by:

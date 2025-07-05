@@ -251,6 +251,74 @@
 <div style="text-align: center; margin: 20px 0;">
     <img src="/images/05-exercise.png" alt="Polynomial graphs" style="max-width: 80%; height: auto; border: 1px solid gray;">
 </div>
+<p><div class="answer-checker"></p>
+<ul>
+<li>
+<p>Graph A:</p>
+  <div class="multiple-choice-options" id="multiple-choice-graph-a-degree">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-a-degree" value="a">
+      <span>A) odd</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-a-degree" value="b">
+      <span>B) even</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-a-degree', 'a')">Check Answer</button>
+    <div id="feedback-graph-a-degree" class="answer-feedback"></div>
+  </div>
+  <div class="multiple-choice-options" id="multiple-choice-graph-a-coeff">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-a-coeff" value="a">
+      <span>A) positive</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-a-coeff" value="b">
+      <span>B) negative</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-a-coeff', 'a')">Check Answer</button>
+    <div id="feedback-graph-a-coeff" class="answer-feedback"></div>
+  </div>
+  <div class="answer-input-group">
+    <input type="number" id="graph-a-turning" class="answer-input numeric" placeholder="Enter number of turning points">
+    <button class="check-button" onclick="checkAnswer('graph-a-turning', 2, 'numeric', {tolerance: 0.001})">Check</button>
+    <div id="feedback-graph-a-turning" class="answer-feedback"></div>
+  </div>
+</li>
+<li>
+<p>Graph B:</p>
+  <div class="multiple-choice-options" id="multiple-choice-graph-b-degree">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-b-degree" value="a">
+      <span>A) odd</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-b-degree" value="b">
+      <span>B) even</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-b-degree', 'a')">Check Answer</button>
+    <div id="feedback-graph-b-degree" class="answer-feedback"></div>
+  </div>
+  <div class="multiple-choice-options" id="multiple-choice-graph-b-coeff">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-b-coeff" value="a">
+      <span>A) positive</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-b-coeff" value="b">
+      <span>B) negative</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-b-coeff', 'a')">Check Answer</button>
+    <div id="feedback-graph-b-coeff" class="answer-feedback"></div>
+  </div>
+  <div class="answer-input-group">
+    <input type="number" id="graph-b-turning" class="answer-input numeric" placeholder="Enter number of turning points">
+    <button class="check-button" onclick="checkAnswer('graph-b-turning', 1, 'numeric', {tolerance: 0.001})">Check</button>
+    <div id="feedback-graph-b-turning" class="answer-feedback"></div>
+  </div>
+  </div>
+</li>
+</ul>
 <h2>3. Real-World Modeling</h2>
 <p>A company's profit over time is modeled by:</p>
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>2</mn><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mn>9</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>11</mn><mi>t</mi><mo>+</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">P(t) = -2t^3 + 9t^2 - 11t + 5

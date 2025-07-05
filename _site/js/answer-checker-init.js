@@ -37,19 +37,31 @@ function checkMultipleChoice(questionName, correctAnswer) {
     showFeedback(feedback, result.message, result.correct ? 'correct' : 'incorrect', questionName, selectedOption.value);
 }
 
-function showFeedback(element, message, type, id, answer) {
+function showFeedback(element, message, type, id = null, answer = null) {
     element.textContent = message;
     element.className = `answer-feedback ${type} show`;
 
-    // Only reset the timer if the answer has changed
-    if (lastAnswers[id] !== answer) {
-        lastAnswers[id] = answer;
+    // Only set up timeout functionality if id is provided
+    if (id) {
+        // Clear any existing timeout
         if (feedbackTimeouts[id]) {
             clearTimeout(feedbackTimeouts[id]);
         }
+        
+        // Set a new timeout to hide the feedback after 4 seconds
         feedbackTimeouts[id] = setTimeout(() => {
             element.classList.remove('show');
         }, 4000);
+        
+        // Update the last answer
+        if (answer !== null) {
+            lastAnswers[id] = answer;
+        }
+    } else {
+        // Fallback timeout for 3-parameter calls
+        setTimeout(() => {
+            element.classList.remove('show');
+        }, 5000);
     }
 }
 
