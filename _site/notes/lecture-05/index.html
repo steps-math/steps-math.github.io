@@ -264,7 +264,7 @@
       <input type="radio" name="graph-a-degree" value="b">
       <span>B) even</span>
     </label>
-    <button class="check-button" onclick="checkMultipleChoice('graph-a-degree', 'a')">Check Answer</button>
+    <button class="check-button" onclick="checkMultipleChoice('graph-a-degree', 'b')">Check Answer</button>
     <div id="feedback-graph-a-degree" class="answer-feedback"></div>
   </div>
   <div class="multiple-choice-options" id="multiple-choice-graph-a-coeff">
@@ -281,7 +281,7 @@
   </div>
   <div class="answer-input-group">
     <input type="number" id="graph-a-turning" class="answer-input numeric" placeholder="Enter number of turning points">
-    <button class="check-button" onclick="checkAnswer('graph-a-turning', 2, 'numeric', {tolerance: 0.001})">Check</button>
+    <button class="check-button" onclick="checkAnswer('graph-a-turning', 3, 'numeric', {tolerance: 0.001})">Check</button>
     <div id="feedback-graph-a-turning" class="answer-feedback"></div>
   </div>
 </li>
@@ -308,13 +308,141 @@
       <input type="radio" name="graph-b-coeff" value="b">
       <span>B) negative</span>
     </label>
-    <button class="check-button" onclick="checkMultipleChoice('graph-b-coeff', 'a')">Check Answer</button>
+    <button class="check-button" onclick="checkMultipleChoice('graph-b-coeff', 'b')">Check Answer</button>
     <div id="feedback-graph-b-coeff" class="answer-feedback"></div>
   </div>
   <div class="answer-input-group">
     <input type="number" id="graph-b-turning" class="answer-input numeric" placeholder="Enter number of turning points">
-    <button class="check-button" onclick="checkAnswer('graph-b-turning', 1, 'numeric', {tolerance: 0.001})">Check</button>
+    <button class="check-button" onclick="checkAnswer('graph-b-turning', 2, 'numeric', {tolerance: 0.001})">Check</button>
     <div id="feedback-graph-b-turning" class="answer-feedback"></div>
+  </div>
+</li>
+<li>
+<p>Graph C:</p>
+  <div class="multiple-choice-options" id="multiple-choice-graph-c-degree">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-c-degree" value="a">
+      <span>A) odd</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-c-degree" value="b">
+      <span>B) even</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-c-degree', 'b')">Check Answer</button>
+    <div id="feedback-graph-c-degree" class="answer-feedback"></div>
+  </div>
+  <div class="multiple-choice-options" id="multiple-choice-graph-c-coeff">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-c-coeff" value="a">
+      <span>A) positive</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-c-coeff" value="b">
+      <span>B) negative</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-c-coeff', 'b')">Check Answer</button>
+    <div id="feedback-graph-c-coeff" class="answer-feedback"></div>
+  </div>
+  <div class="answer-input-group">
+    <input type="number" id="graph-c-turning" class="answer-input numeric" placeholder="Enter number of turning points">
+    <button class="check-button" onclick="checkAnswer('graph-c-turning', 1, 'numeric', {tolerance: 0.001})">Check</button>
+    <div id="feedback-graph-c-turning" class="answer-feedback"></div>
+  </div>
+</li>
+<li>
+<p>Graph D:</p>
+  <div class="multiple-choice-options" id="multiple-choice-graph-d-degree">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-d-degree" value="a">
+      <span>A) odd</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-d-degree" value="b">
+      <span>B) even</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-d-degree', 'a')">Check Answer</button>
+    <div id="feedback-graph-d-degree" class="answer-feedback"></div>
+  </div>
+  <div class="multiple-choice-options" id="multiple-choice-graph-d-coeff">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-d-coeff" value="a">
+      <span>A) positive</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-d-coeff" value="b">
+      <span>B) negative</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-d-coeff', 'a')">Check Answer</button>
+    <div id="feedback-graph-d-coeff" class="answer-feedback"></div>
+  </div>
+  <div class="answer-input-group">
+    <input type="number" id="graph-d-turning" class="answer-input numeric" placeholder="Enter number of turning points">
+    <button class="check-button" onclick="checkAnswer('graph-d-turning', 2, 'numeric', {tolerance: 0.001})">Check</button>
+    <div id="feedback-graph-d-turning" class="answer-feedback"></div>
+  </div>
+</li>
+<li>
+<p>Graph E:</p>
+  <div class="multiple-choice-options" id="multiple-choice-graph-e-degree">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-e-degree" value="a">
+      <span>A) odd</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-e-degree" value="b">
+      <span>B) even</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-e-degree', 'b')">Check Answer</button>
+    <div id="feedback-graph-e-degree" class="answer-feedback"></div>
+  </div>
+  <div class="multiple-choice-options" id="multiple-choice-graph-e-coeff">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-e-coeff" value="a">
+      <span>A) positive</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-e-coeff" value="b">
+      <span>B) negative</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-e-coeff', 'a')">Check Answer</button>
+    <div id="feedback-graph-e-coeff" class="answer-feedback"></div>
+  </div>
+  <div class="answer-input-group">
+    <input type="number" id="graph-e-turning" class="answer-input numeric" placeholder="Enter number of turning points">
+    <button class="check-button" onclick="checkAnswer('graph-e-turning', 1, 'numeric', {tolerance: 0.001})">Check</button>
+    <div id="feedback-graph-e-turning" class="answer-feedback"></div>
+  </div>
+</li>
+<li>
+<p>Graph F:</p>
+  <div class="multiple-choice-options" id="multiple-choice-graph-f-degree">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-f-degree" value="a">
+      <span>A) odd</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-f-degree" value="b">
+      <span>B) even</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-f-degree', 'a')">Check Answer</button>
+    <div id="feedback-graph-f-degree" class="answer-feedback"></div>
+  </div>
+  <div class="multiple-choice-options" id="multiple-choice-graph-f-coeff">
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-f-coeff" value="a">
+      <span>A) positive</span>
+    </label>
+    <label class="multiple-choice-option">
+      <input type="radio" name="graph-f-coeff" value="b">
+      <span>B) negative</span>
+    </label>
+    <button class="check-button" onclick="checkMultipleChoice('graph-f-coeff', 'b')">Check Answer</button>
+    <div id="feedback-graph-f-coeff" class="answer-feedback"></div>
+  </div>
+  <div class="answer-input-group">
+    <input type="number" id="graph-f-turning" class="answer-input numeric" placeholder="Enter number of turning points">
+    <button class="check-button" onclick="checkAnswer('graph-f-turning', 4, 'numeric', {tolerance: 0.001})">Check</button>
+    <div id="feedback-graph-f-turning" class="answer-feedback"></div>
   </div>
   </div>
 </li>

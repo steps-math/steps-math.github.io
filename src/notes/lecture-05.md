@@ -153,14 +153,29 @@ Each of the following is a sketch of a polynomial. Without using a calculator:
 
 {% answerChecker %}
 - Graph A:
-  {% multipleChoice "graph-a-degree" '["odd", "even"]' "a" %}
+  {% multipleChoice "graph-a-degree" '["odd", "even"]' "b" %}
   {% multipleChoice "graph-a-coeff" '["positive", "negative"]' "a" %}
-  {% answerNumeric "graph-a-turning" 2 "Enter number of turning points" %}
+  {% answerNumeric "graph-a-turning" 3 "Enter number of turning points" %}
 - Graph B:
   {% multipleChoice "graph-b-degree" '["odd", "even"]' "a" %}
-  {% multipleChoice "graph-b-coeff" '["positive", "negative"]' "a" %}
-  {% answerNumeric "graph-b-turning" 1 "Enter number of turning points" %}
-
+  {% multipleChoice "graph-b-coeff" '["positive", "negative"]' "b" %}
+  {% answerNumeric "graph-b-turning" 2 "Enter number of turning points" %}
+- Graph C:
+  {% multipleChoice "graph-c-degree" '["odd", "even"]' "b" %}
+  {% multipleChoice "graph-c-coeff" '["positive", "negative"]' "b" %}
+  {% answerNumeric "graph-c-turning" 1 "Enter number of turning points" %}
+- Graph D:
+  {% multipleChoice "graph-d-degree" '["odd", "even"]' "a" %}
+  {% multipleChoice "graph-d-coeff" '["positive", "negative"]' "a" %}
+  {% answerNumeric "graph-d-turning" 2 "Enter number of turning points" %}
+- Graph E:
+  {% multipleChoice "graph-e-degree" '["odd", "even"]' "b" %}
+  {% multipleChoice "graph-e-coeff" '["positive", "negative"]' "a" %}
+  {% answerNumeric "graph-e-turning" 1 "Enter number of turning points" %}
+- Graph F:
+  {% multipleChoice "graph-f-degree" '["odd", "even"]' "a" %}
+  {% multipleChoice "graph-f-coeff" '["positive", "negative"]' "b" %}
+  {% answerNumeric "graph-f-turning" 4 "Enter number of turning points" %}
 {% endanswerChecker %}
 
 ## 3. Real-World Modeling
