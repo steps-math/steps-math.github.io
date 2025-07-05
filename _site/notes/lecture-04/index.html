@@ -29,6 +29,11 @@
                 <li><a href="/syllabus/" class="nav-link">Syllabus</a></li>
                 <li><a href="/notes/" class="nav-link">Notes</a></li>
                 <li><a href="/labs/" class="nav-link">Labs</a></li>
+                <li>
+                    <button class="theme-toggle-button" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -305,6 +310,37 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">â€
     </footer>
 
     <script>
+        // Theme Toggler
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        const applyTheme = (theme) => {
+            if (theme === 'dark') {
+                body.dataset.theme = 'dark';
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                delete body.dataset.theme;
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        };
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.dataset.theme || 'light';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        });
+
+        // Apply saved theme on page load
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        }
+
+
         // Mobile navigation toggle
         document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.querySelector('.hamburger');

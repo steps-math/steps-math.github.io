@@ -1,3 +1,79 @@
+/* THEME VARIABLES */
+:root {
+    --bg-color: #fafafa;
+    --text-color: #333;
+    --heading-color: #2c3e50;
+    --heading-color-secondary: #34495e;
+    --primary-color: #3498db;
+    --primary-gradient: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    --navbar-bg: #2c3e50;
+    --navbar-text: white;
+    --footer-bg: #34495e;
+    --card-bg: #fff;
+    --card-border-top: #3498db;
+    --card-shadow: 0 4px 24px rgba(52, 152, 219, 0.10), 0 1.5px 6px rgba(44, 62, 80, 0.06);
+    --card-shadow-hover: 0 8px 32px rgba(52, 152, 219, 0.18), 0 3px 12px rgba(44, 62, 80, 0.10);
+    --blockquote-bg: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    --blockquote-text: #2c3e50;
+    --blockquote-border: #3498db;
+    --blockquote-cite-text: #7f8c8d;
+    --code-bg: #f8f9fa;
+    --table-bg: white;
+    --table-header-bg: #2c3e50;
+    --table-header-text: white;
+    --table-header-border: #34495e;
+    --table-row-hover: #f8f9fa;
+    --table-row-even: #fafbfc;
+    --table-row-even-hover: #f1f3f4;
+    --table-border: #ecf0f1;
+    --input-bg: white;
+    --input-border: #dee2e6;
+    --input-focus-border: #3498db;
+    --input-focus-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    --hamburger-line: white;
+    --mobile-menu-bg: #2c3e50;
+    --mobile-table-header-text: #2c3e50;
+    --mobile-table-row-bg: white;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a2531;
+    --text-color: #bdc3c7;
+    --heading-color: #ecf0f1;
+    --heading-color-secondary: #d2d8db;
+    --primary-color: #3498db;
+    --primary-gradient: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    --navbar-bg: #1f2c3a;
+    --navbar-text: white;
+    --footer-bg: #151e27;
+    --card-bg: #2c3e50;
+    --card-border-top: #3498db;
+    --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.2), 0 1.5px 6px rgba(0, 0, 0, 0.1);
+    --card-shadow-hover: 0 8px 32px rgba(52, 152, 219, 0.25), 0 3px 12px rgba(0, 0, 0, 0.15);
+    --blockquote-bg: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    --blockquote-text: #ecf0f1;
+    --blockquote-border: #3498db;
+    --blockquote-cite-text: #95a5a6;
+    --code-bg: #1f2c3a;
+    --table-bg: #2c3e50;
+    --table-header-bg: #1f2c3a;
+    --table-header-text: white;
+    --table-header-border: #34495e;
+    --table-row-hover: #34495e;
+    --table-row-even: #273646;
+    --table-row-even-hover: #304153;
+    --table-border: #4a5a6a;
+    --input-bg: #1f2c3a;
+    --input-border: #4a5a6a;
+    --input-focus-border: #3498db;
+    --input-focus-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    --hamburger-line: white;
+    --mobile-menu-bg: #1f2c3a;
+    --mobile-table-header-text: #ecf0f1;
+    --mobile-table-row-bg: #2c3e50;
+}
+
+
 /* Reset and base styles */
 * {
     box-sizing: border-box;
@@ -11,13 +87,14 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 body {
     font-family: 'Lora', serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fafafa;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Navigation */
 .navbar {
-    background-color: #2c3e50;
+    background-color: var(--navbar-bg);
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
@@ -41,7 +118,7 @@ body {
 .nav-brand {
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--navbar-text);
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -62,7 +139,7 @@ body {
 .hamburger-line {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--hamburger-line);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -87,10 +164,11 @@ body {
     gap: 2rem;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .nav-link {
-    color: white;
+    color: var(--navbar-text);
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -100,6 +178,23 @@ body {
 
 .nav-link:hover {
     background-color: rgba(255,255,255,0.1);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-button {
+    background: none;
+    border: none;
+    color: var(--navbar-text);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    line-height: 1; /* Align icon better */
+}
+
+.theme-toggle-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Main content */
@@ -112,14 +207,14 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50;
+    color: var(--heading-color);
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 h1 {
     font-size: 2.5rem;
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid var(--primary-color);
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
     margin-top: 0;
@@ -129,14 +224,14 @@ h2 {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #34495e;
+    color: var(--heading-color-secondary);
 }
 
 h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    color: #34495e;
+    color: var(--heading-color-secondary);
 }
 
 p {
@@ -146,7 +241,7 @@ p {
 
 /* Links */
 a {
-    color: #3498db;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -168,15 +263,15 @@ li {
 
 /* Quote blocks */
 blockquote {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-left: 5px solid #3498db;
+    background: var(--blockquote-bg);
+    border-left: 5px solid var(--blockquote-border);
     border-radius: 0 12px 12px 0;
     padding: 1.5rem 2rem;
     margin: 2rem 0;
     position: relative;
-    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+    box-shadow: var(--card-shadow);
     font-style: italic;
-    color: #2c3e50;
+    color: var(--blockquote-text);
     line-height: 1.7;
 }
 
@@ -187,7 +282,7 @@ blockquote::before {
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(to bottom, #3498db, #2980b9);
+    background: var(--primary-gradient);
     border-radius: 2px;
 }
 
@@ -207,7 +302,7 @@ blockquote p:not(:last-child) {
 
 /* Nested quotes */
 blockquote blockquote {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: var(--card-bg);
     border-left-color: #95a5a6;
     margin: 1rem 0;
     padding: 1rem 1.5rem;
@@ -226,14 +321,14 @@ blockquote cite {
     margin-top: 1rem;
     font-style: normal;
     font-size: 0.9rem;
-    color: #7f8c8d;
+    color: var(--blockquote-cite-text);
     text-align: right;
     font-weight: 500;
 }
 
 blockquote cite::before {
     content: "— ";
-    color: #3498db;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -245,6 +340,7 @@ blockquote cite::before {
 
 .katex {
     font-size: 1.1em;
+    color: var(--text-color);
 }
 
 /* Only target the specific container that causes scrollbars */
@@ -293,16 +389,16 @@ blockquote cite::before {
 
 /* Code blocks */
 pre {
-    background-color: #f8f9fa;
+    background-color: var(--code-bg);
     padding: 1rem;
     border-radius: 4px;
     overflow-x: auto;
     margin: 1rem 0;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid var(--primary-color);
 }
 
 code {
-    background-color: #f8f9fa;
+    background-color: var(--code-bg);
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
@@ -321,24 +417,24 @@ pre code {
 }
 
 .content-card {
-    background: #fff;
+    background: var(--card-bg);
     padding: 2rem 1.5rem 1.5rem 1.5rem;
     border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(52, 152, 219, 0.10), 0 1.5px 6px rgba(44, 62, 80, 0.06);
-    border-top: 5px solid #3498db;
+    box-shadow: var(--card-shadow);
+    border-top: 5px solid var(--card-border-top);
     margin-bottom: 2rem;
-    transition: box-shadow 0.22s, transform 0.22s;
+    transition: box-shadow 0.22s, transform 0.22s, background-color 0.3s;
     position: relative;
 }
 
 .content-card:hover {
-    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.18), 0 3px 12px rgba(44, 62, 80, 0.10);
+    box-shadow: var(--card-shadow-hover);
     transform: translateY(-4px) scale(1.025);
 }
 
 .content-card h3 {
     margin-top: 0;
-    color: #2c3e50;
+    color: var(--heading-color);
     font-weight: 700;
     letter-spacing: 0.01em;
     margin-bottom: 1rem;
@@ -347,13 +443,13 @@ pre code {
 .lab-date, .exercise-date {
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #ecf0f1;
+    border-top: 1px solid var(--table-border);
     font-size: 0.9rem;
-    color: #7f8c8d;
+    color: var(--blockquote-cite-text);
 }
 
 .lab-date strong, .exercise-date strong {
-    color: #2c3e50;
+    color: var(--heading-color);
 }
 
 
@@ -362,33 +458,33 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
-    background: white;
+    background: var(--table-bg);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 thead {
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--table-header-bg);
+    color: var(--table-header-text);
 }
 
 th {
     padding: 1rem;
     text-align: left;
     font-weight: bold;
-    border-bottom: 2px solid #34495e;
+    border-bottom: 2px solid var(--table-header-border);
     font-size: 1.1rem;
 }
 
 td {
     padding: 1rem;
-    border-bottom: 1px solid #ecf0f1;
+    border-bottom: 1px solid var(--table-border);
     vertical-align: top;
 }
 
 tbody tr:hover {
-    background-color: #f8f9fa;
+    background-color: var(--table-row-hover);
     transition: background-color 0.2s ease;
 }
 
@@ -398,16 +494,16 @@ tbody tr:last-child td {
 
 /* Alternating row colors for better readability */
 tbody tr:nth-child(even) {
-    background-color: #fafbfc;
+    background-color: var(--table-row-even);
 }
 
 tbody tr:nth-child(even):hover {
-    background-color: #f1f3f4;
+    background-color: var(--table-row-even-hover);
 }
 
 /* Exercise and lab specific styles */
 .exercise-number {
-    background-color: #3498db;
+    background-color: var(--primary-color);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 50%;
@@ -442,8 +538,8 @@ tbody tr:nth-child(even):hover {
 
 /* Interactive Answer Checker Styles */
 .answer-checker {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border: 2px solid #dee2e6;
+    background: var(--blockquote-bg);
+    border: 2px solid var(--input-border);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 0;
@@ -451,7 +547,7 @@ tbody tr:nth-child(even):hover {
 }
 
 .answer-checker:hover {
-    border-color: #3498db;
+    border-color: var(--primary-color);
     box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
 }
 
@@ -469,18 +565,19 @@ tbody tr:nth-child(even):hover {
     min-width: 200px;
     max-width: 400px;
     padding: 0.75rem 1rem;
-    border: 2px solid #dee2e6;
+    border: 2px solid var(--input-border);
     border-radius: 8px;
     font-family: 'Lora', serif;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-    background: white;
+    background: var(--input-bg);
+    color: var(--text-color);
 }
 
 .answer-input:focus {
     outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    border-color: var(--input-focus-border);
+    box-shadow: var(--input-focus-shadow);
 }
 
 /* Remove arrows from number inputs */
@@ -496,7 +593,7 @@ tbody tr:nth-child(even):hover {
 }
 
 .check-button {
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    background: var(--primary-gradient);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -618,21 +715,25 @@ tbody tr:nth-child(even):hover {
     display: flex;
     align-items: center;
     padding: 0.75rem 1rem;
-    border: 2px solid #dee2e6;
+    border: 2px solid var(--input-border);
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: white;
+    background: var(--input-bg);
 }
 
 .multiple-choice-option:hover {
-    border-color: #3498db;
-    background: #f8f9fa;
+    border-color: var(--primary-color);
+    background: var(--table-row-hover);
 }
 
 .multiple-choice-option.selected {
-    border-color: #3498db;
+    border-color: var(--primary-color);
     background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+[data-theme="dark"] .multiple-choice-option.selected {
+    background: linear-gradient(135deg, #3a5a7e 0%, #2c4a6e 100%);
 }
 
 .multiple-choice-option input[type="radio"] {
@@ -695,8 +796,8 @@ tbody tr:nth-child(even):hover {
 
 /* Footer */
 .footer {
-    background-color: #34495e;
-    color: white;
+    background-color: var(--footer-bg);
+    color: var(--navbar-text);
     text-align: center;
     padding: 2rem 0;
     margin-top: 4rem;
@@ -722,7 +823,7 @@ tbody tr:nth-child(even):hover {
         right: -100%;
         width: 280px;
         height: 100vh;
-        background-color: #2c3e50;
+        background-color: var(--mobile-menu-bg);
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -841,8 +942,8 @@ tbody tr:nth-child(even):hover {
         }
         
         tbody tr {
-            background: white;
-            border: 1px solid #ecf0f1;
+            background: var(--mobile-table-row-bg);
+            border: 1px solid var(--table-border);
             margin-bottom: 1rem;
             border-radius: 8px;
             padding: 0;
@@ -854,7 +955,7 @@ tbody tr:nth-child(even):hover {
             position: relative;
             padding: 1rem;
             text-align: left;
-            border-bottom: 1px solid #ecf0f1;
+            border-bottom: 1px solid var(--table-border);
         }
         
         td:last-child {
@@ -865,18 +966,30 @@ tbody tr:nth-child(even):hover {
         td:before {
             content: attr(data-mobile-label) ": ";
             font-weight: bold;
-            color: #2c3e50;
+            color: var(--mobile-table-header-text);
             display: block;
             margin-bottom: 0.5rem;
         }
         
         /* Remove alternating row colors on mobile */
         tbody tr:nth-child(even) {
-            background-color: white;
+            background-color: var(--mobile-table-row-bg);
         }
         
         tbody tr:nth-child(even):hover {
-            background-color: #f8f9fa;
+            background-color: var(--table-row-hover);
         }
     }
+}
+
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
 }
