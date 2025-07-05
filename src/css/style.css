@@ -446,7 +446,7 @@ tbody tr:nth-child(even):hover {
     border: 2px solid #dee2e6;
     border-radius: 12px;
     padding: 1.5rem;
-    margin: 1.5rem 0;
+    margin: 0;
     transition: all 0.3s ease;
 }
 
@@ -459,7 +459,7 @@ tbody tr:nth-child(even):hover {
     display: flex;
     gap: 1rem;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     flex-wrap: wrap;
     position: relative;
 }
@@ -481,6 +481,18 @@ tbody tr:nth-child(even):hover {
     outline: none;
     border-color: #3498db;
     box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* Remove arrows from number inputs */
+.answer-input[type="number"]::-webkit-outer-spin-button,
+.answer-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.answer-input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .check-button {
