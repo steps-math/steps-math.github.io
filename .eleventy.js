@@ -136,7 +136,7 @@ module.exports = function(eleventyConfig) {
     }
     
     let html = `
-    <div class="multiple-choice-options">`;
+    <div class="multiple-choice-options" id="multiple-choice-${questionName}">`;
     
     optionsArray.forEach((option, index) => {
       const value = String.fromCharCode(97 + index); // a, b, c, d...
@@ -148,9 +148,9 @@ module.exports = function(eleventyConfig) {
     });
     
     html += `
-    </div>
-    <button class="check-button" onclick="checkMultipleChoice('${questionName}', '${correctAnswer}')">Check Answer</button>
-    <div id="feedback-${questionName}" class="answer-feedback"></div>`;
+      <button class="check-button" onclick="checkMultipleChoice('${questionName}', '${correctAnswer}')">Check Answer</button>
+      <div id="feedback-${questionName}" class="answer-feedback"></div>
+    </div>`;
     
     return html;
   });

@@ -606,9 +606,12 @@ tbody tr:nth-child(even):hover {
 
 .multiple-choice-options {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
-    margin: 1rem 0;
+    margin: 1rem 0 0.5rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
 }
 
 .multiple-choice-option {
@@ -635,6 +638,23 @@ tbody tr:nth-child(even):hover {
 .multiple-choice-option input[type="radio"] {
     margin-right: 0.75rem;
     transform: scale(1.2);
+}
+
+/* Style check button within multiple choice options */
+.multiple-choice-options .check-button {
+    margin-left: 0.5rem;
+    align-self: center;
+}
+
+/* Position feedback for multiple choice questions */
+.answer-checker .answer-feedback:not(.answer-input-group .answer-feedback) {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    margin-top: 0.5rem;
+    margin-left: 0;
+    transform: none;
+    z-index: 10;
 }
 
 /* Mobile responsive styles for answer checker */
