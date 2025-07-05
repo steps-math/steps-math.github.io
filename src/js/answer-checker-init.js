@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     setupHints();
 });
 
+let lastAnswers = {};
+let feedbackTimeouts = {};
+
 function checkAnswer(inputId, correctAnswer, answerType, options = {}) {
     const input = document.getElementById(inputId);
     const feedback = document.getElementById('feedback-' + inputId);
@@ -13,12 +16,12 @@ function checkAnswer(inputId, correctAnswer, answerType, options = {}) {
 
     const userAnswer = input.value.trim();
     if (!userAnswer) {
-        showFeedback(feedback, 'Please enter an answer', 'error');
+        showFeedback(feedback, 'Please enter an answer', 'error', inputId, userAnswer);
         return;
     }
 
     const result = window.answerChecker.check(userAnswer, correctAnswer, answerType, options);
-    showFeedback(feedback, result.message, result.correct ? 'correct' : 'incorrect');
+    showFeedback(feedback, result.message, result.correct ? 'correct' : 'incorrect', inputId, userAnswer);
 }
 
 function checkMultipleChoice(questionName, correctAnswer) {
@@ -26,21 +29,28 @@ function checkMultipleChoice(questionName, correctAnswer) {
     const feedback = document.getElementById('feedback-' + questionName);
 
     if (!selectedOption) {
-        showFeedback(feedback, 'Please select an answer', 'error');
+        showFeedback(feedback, 'Please select an answer', 'error', questionName, '');
         return;
     }
 
     const result = window.answerChecker.checkMultipleChoice(selectedOption.value, correctAnswer);
-    showFeedback(feedback, result.message, result.correct ? 'correct' : 'incorrect');
+    showFeedback(feedback, result.message, result.correct ? 'correct' : 'incorrect', questionName, selectedOption.value);
 }
 
-function showFeedback(element, message, type) {
+function showFeedback(element, message, type, id, answer) {
     element.textContent = message;
     element.className = `answer-feedback ${type} show`;
 
-    setTimeout(() => {
-        element.classList.remove('show');
-    }, 5000);
+    // Only reset the timer if the answer has changed
+    if (lastAnswers[id] !== answer) {
+        lastAnswers[id] = answer;
+        if (feedbackTimeouts[id]) {
+            clearTimeout(feedbackTimeouts[id]);
+        }
+        feedbackTimeouts[id] = setTimeout(() => {
+            element.classList.remove('show');
+        }, 4000);
+    }
 }
 
 function setupMultipleChoice() {

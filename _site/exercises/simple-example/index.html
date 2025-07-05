@@ -43,8 +43,8 @@
 <p><div class="answer-input-group"><br>
 <input type="number" id="basic-math" class="answer-input numeric" placeholder="Enter your answer"><br>
 <button class="check-button" onclick="checkAnswer('basic-math', 5, 'numeric', {tolerance: 0.001})">Check</button><br>
-</div><br>
-<div id="feedback-basic-math" class="answer-feedback"></div></p>
+<div id="feedback-basic-math" class="answer-feedback"></div><br>
+</div></p>
 <p></div></p>
 <h2>Multiple Choice Question</h2>
 <p><div class="answer-checker"></p>
@@ -77,8 +77,8 @@
 <input type="text" id="gold-symbol" class="answer-input" placeholder="Enter chemical symbol"><br>
 <button class="check-button" onclick="checkAnswer('gold-symbol', 'Au', 'text')">Check</button><br>
 <button class="hint-button" onclick="toggleHint('hint-gold-symbol')">Hint</button><br>
-</div><br>
 <div id="feedback-gold-symbol" class="answer-feedback"></div><br>
+</div><br>
 <div id="hint-gold-symbol" class="hint-content"><br>
 <p>Think of the periodic table!</p><br>
 </div></p>
@@ -88,9 +88,13 @@
 <p>What is the value of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">2x + 3 = 7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span>?</p>
 <p><div class="answer-input-group"><br>
 <input type="number" id="solve-x" class="answer-input numeric" placeholder="Enter value of x"><br>
-<button class="check-button" onclick="checkAnswer('solve-x', 2, 'numeric', {tolerance: Subtract 3 from both sides, then divide by 2})">Check</button><br>
+<button class="check-button" onclick="checkAnswer('solve-x', 2, 'numeric', {tolerance: 0.001})">Check</button><br>
+<button class="hint-button" onclick="toggleHint('hint-solve-x')">Hint</button><br>
+<div id="feedback-solve-x" class="answer-feedback"></div><br>
 </div><br>
-<div id="feedback-solve-x" class="answer-feedback"></div></p>
+<div id="hint-solve-x" class="hint-content"><br>
+<p>Subtract 3 from both sides, then divide by 2</p><br>
+</div></p>
 <p></div></p>
 
     </main>

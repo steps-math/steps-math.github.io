@@ -461,11 +461,13 @@ tbody tr:nth-child(even):hover {
     align-items: center;
     margin-bottom: 1rem;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .answer-input {
-    flex: 1;
+    width: 400px;
     min-width: 200px;
+    max-width: 400px;
     padding: 0.75rem 1rem;
     border: 2px solid #dee2e6;
     border-radius: 8px;
@@ -513,12 +515,20 @@ tbody tr:nth-child(even):hover {
 }
 
 .answer-feedback {
-    padding: 1rem;
-    border-radius: 8px;
-    margin-top: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    margin-left: 1rem;
     font-weight: 600;
     display: none;
-    animation: fadeIn 0.3s ease;
+    animation: fadeIn 0.15s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80%;
+    margin-left: 1.5rem;
+    z-index: 10;
 }
 
 .answer-feedback.correct {
@@ -569,11 +579,12 @@ tbody tr:nth-child(even):hover {
     background: #fff3cd;
     border: 1px solid #ffeaa7;
     border-radius: 8px;
-    padding: 1rem;
-    margin-top: 1rem;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
     display: none;
     font-style: italic;
     color: #856404;
+    font-size: 0.9rem;
 }
 
 .hint-content.show {
@@ -619,10 +630,22 @@ tbody tr:nth-child(even):hover {
     .answer-input-group {
         flex-direction: column;
         align-items: stretch;
+        position: relative;
     }
     
     .answer-input {
         min-width: auto;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .answer-feedback {
+        position: static;
+        transform: none;
+        left: auto;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        display: inline-block;
     }
     
     .check-button {

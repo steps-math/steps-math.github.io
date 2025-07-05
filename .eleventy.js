@@ -62,8 +62,8 @@ module.exports = function(eleventyConfig) {
     }
     
     html += `
-    </div>
-    <div id="feedback-${id}" class="answer-feedback"></div>`;
+      <div id="feedback-${id}" class="answer-feedback"></div>
+    </div>`;
     
     if (hint) {
       html += `
@@ -75,11 +75,11 @@ module.exports = function(eleventyConfig) {
     return html;
   });
 
-  eleventyConfig.addShortcode('answerNumeric', function(id, correctAnswer, placeholder = '', tolerance = 0.001, hint = '') {
+  eleventyConfig.addShortcode('answerNumeric', function(id, correctAnswer, placeholder = '', hint = '') {
     let html = `
     <div class="answer-input-group">
       <input type="number" id="${id}" class="answer-input numeric" placeholder="${placeholder}">
-      <button class="check-button" onclick="checkAnswer('${id}', ${correctAnswer}, 'numeric', {tolerance: ${tolerance}})">Check</button>`;
+      <button class="check-button" onclick="checkAnswer('${id}', ${correctAnswer}, 'numeric', {tolerance: 0.001})">Check</button>`;
     
     if (hint) {
       html += `
@@ -87,8 +87,8 @@ module.exports = function(eleventyConfig) {
     }
     
     html += `
-    </div>
-    <div id="feedback-${id}" class="answer-feedback"></div>`;
+      <div id="feedback-${id}" class="answer-feedback"></div>
+    </div>`;
     
     if (hint) {
       html += `
@@ -112,8 +112,8 @@ module.exports = function(eleventyConfig) {
     }
     
     html += `
-    </div>
-    <div id="feedback-${id}" class="answer-feedback"></div>`;
+      <div id="feedback-${id}" class="answer-feedback"></div>
+    </div>`;
     
     if (hint) {
       html += `
