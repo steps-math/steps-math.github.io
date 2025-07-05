@@ -124,9 +124,20 @@ $$
 
 For each function, write the **degree**, **leading coefficient**, and whether it has an **absolute maximum or minimum**:
 
+{% answerChecker %}
 - **a)** $f(x) = 2x^3 - x^2 + 5$
+  {% answerNumeric "degree-a" 3 "Enter degree" %}
+  {% answerNumeric "leading-coeff-a" 2 "Enter leading coefficient" %}
+  {% answerText "max-min-a" "no" "Enter yes or no (small letters)" %}
 - **b)** $g(x) = -4x^4 + 3x^2 - 7x + 9$
+  {% answerNumeric "degree-b" 4 "Enter degree" %}
+  {% answerNumeric "leading-coeff-b" -4 "Enter leading coefficient" %}
+  {% answerText "max-min-b" "yes" "Enter yes or no (small letters)" %}
 - **c)** $h(x) = 6x - 1$
+  {% answerNumeric "degree-c" 1 "Enter degree" %}
+  {% answerNumeric "leading-coeff-c" 6 "Enter leading coefficient" %}
+  {% answerText "max-min-c" "no" "Enter yes or no (small letters)" %}
+{% endanswerChecker %}
 
 ## 2. Match the Graph to the Function
 
