@@ -128,7 +128,7 @@ For each function, write the **degree**, **leading coefficient**, and whether it
 - **a)** $f(x) = 2x^3 - x^2 + 5$
   {% answerNumeric "degree-a" 3 "Enter degree" %}
   {% answerNumeric "leading-coeff-a" 2 "Enter leading coefficient" %}
-  {% answerText "max-min-a" "yes" "Enter yes or no (small letters)" %}
+  {% answerText "max-min-a" "no" "Enter yes or no (small letters)" %}
 - **b)** $g(x) = -4x^4 + 3x^2 - 7x + 9$
   {% answerNumeric "degree-b" 4 "Enter degree" %}
   {% answerNumeric "leading-coeff-b" -4 "Enter leading coefficient" %}
