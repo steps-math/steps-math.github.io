@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labs - STEPs Math Course</title>
+    <title>Simple Answer Checker Example - STEPs Math Course</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,14 +35,63 @@
     </nav>
 
     <main class="main-content">
-        <h1>Guided Exploration Labs</h1>
-<p>Hands-on activities designed to deepen your understanding of mathematical concepts through exploration and discovery.</p>
-<h2>Available Labs</h2>
-<div class="content-card">
-<h3><a href="/labs/lab-1/">Lab 1: Probability and Statistics</a></h3>
-<p></p>
-<p class="lab-date"><strong>Date:</strong> July 3, 2025</p>
-</div>
+        <h1>Simple Answer Checker Example</h1>
+<p>This page demonstrates how to write exercises using clean, markdown-friendly syntax.</p>
+<h2>Basic Numeric Question</h2>
+<p><div class="answer-checker"></p>
+<p>What is 2 + 3?</p>
+<p><div class="answer-input-group"><br>
+<input type="number" id="basic-math" class="answer-input numeric" placeholder="Enter your answer"><br>
+<button class="check-button" onclick="checkAnswer('basic-math', 5, 'numeric', {tolerance: 0.001})">Check</button><br>
+</div><br>
+<div id="feedback-basic-math" class="answer-feedback"></div></p>
+<p></div></p>
+<h2>Multiple Choice Question</h2>
+<p><div class="answer-checker"></p>
+<p>What is the capital of France?</p>
+<p><div class="multiple-choice-options"><br>
+<label class="multiple-choice-option"><br>
+<input type="radio" name="capital" value="a"><br>
+<span>A) London</span><br>
+</label><br>
+<label class="multiple-choice-option"><br>
+<input type="radio" name="capital" value="b"><br>
+<span>B) Paris</span><br>
+</label><br>
+<label class="multiple-choice-option"><br>
+<input type="radio" name="capital" value="c"><br>
+<span>C) Berlin</span><br>
+</label><br>
+<label class="multiple-choice-option"><br>
+<input type="radio" name="capital" value="d"><br>
+<span>D) Madrid</span><br>
+</label><br>
+</div><br>
+<button class="check-button" onclick="checkMultipleChoice('capital', 'b')">Check Answer</button><br>
+<div id="feedback-capital" class="answer-feedback"></div></p>
+<p></div></p>
+<h2>Text Answer with Hint</h2>
+<p><div class="answer-checker"></p>
+<p>What is the chemical symbol for gold?</p>
+<p><div class="answer-input-group"><br>
+<input type="text" id="gold-symbol" class="answer-input" placeholder="Enter chemical symbol"><br>
+<button class="check-button" onclick="checkAnswer('gold-symbol', 'Au', 'text')">Check</button><br>
+<button class="hint-button" onclick="toggleHint('hint-gold-symbol')">Hint</button><br>
+</div><br>
+<div id="feedback-gold-symbol" class="answer-feedback"></div><br>
+<div id="hint-gold-symbol" class="hint-content"><br>
+<p>Think of the periodic table!</p><br>
+</div></p>
+<p></div></p>
+<h2>Mathematical Expression</h2>
+<p><div class="answer-checker"></p>
+<p>What is the value of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">2x + 3 = 7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span>?</p>
+<p><div class="answer-input-group"><br>
+<input type="number" id="solve-x" class="answer-input numeric" placeholder="Enter value of x"><br>
+<button class="check-button" onclick="checkAnswer('solve-x', 2, 'numeric', {tolerance: Subtract 3 from both sides, then divide by 2})">Check</button><br>
+</div><br>
+<div id="feedback-solve-x" class="answer-feedback"></div></p>
+<p></div></p>
 
     </main>
 
