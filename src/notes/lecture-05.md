@@ -60,6 +60,31 @@ The range depends on:
 
 ---
 
+## Roots of Polynomials
+
+### 1. What are Roots?
+
+A root of a polynomial is a value of $x$ that makes the polynomial equal to zero.
+
+### 2. How to find roots?
+
+- **Factoring**: If $p(x) = (x-r_1)(x-r_2)\cdots(x-r_n)$, then $r_1, r_2, \ldots, r_n$ are the roots.
+- **Quadratic formula**: For $ax^2 + bx + c = 0$, the roots are $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+- **Synthetic division**: If $p(r) = 0$, then $r$ is a root. Then, $p(x) = (x-r)q(x)$ for some polynomial $q(x)$.
+
+### 3. Example
+
+Let:
+$$
+f(x) = x^3 - 6x^2 + 11x - 6
+$$
+
+- **Roots**: $x = 1, 2, 3$
+- **Factored form**: $f(x) = (x-1)(x-2)(x-3)$
+
+
+---
+
 ## Graphing Polynomial Functions
 
 ### 1. Shape and Degree
@@ -72,6 +97,11 @@ The **degree** of a polynomial controls how many “turns” the graph can have.
 | 2      | Parabola       | 1                  |
 | 3      | S-shaped       | 2                  |
 | 4      | W- or M-shaped | 3                  |
+
+> Example of polynomials of different degrees:
+> <div style="text-align: center; margin: 20px 0;">
+>    <img src="/images/05-polynomials.png" alt="Polynomial degree" style="max-width: 80%; height: auto; border: 1px solid gray;">
+> </div>  
 
 > A degree-$n$ polynomial has at most $n-1$ turning points.
 
@@ -204,7 +234,7 @@ Create a polynomial function that meets all of the following conditions:
 
 You are told a cubic polynomial passes through the following points:
 
-- $f(0)=6$
+- $f(0)=12$
 - $f(1)=0$
 - $f(2)=0$
 - $f(3)=0$
