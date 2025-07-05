@@ -38,7 +38,7 @@
 
 [data-theme="dark"] {
     --bg-color: #1a2531;
-    --text-color: #bdc3c7;
+    --text-color: #e8eaed;
     --heading-color: #ecf0f1;
     --heading-color-secondary: #d2d8db;
     --primary-color: #3498db;
@@ -475,12 +475,15 @@ th {
     font-weight: bold;
     border-bottom: 2px solid var(--table-header-border);
     font-size: 1.1rem;
+    color: var(--table-header-text);
 }
 
 td {
     padding: 1rem;
     border-bottom: 1px solid var(--table-border);
     vertical-align: top;
+    color: var(--text-color);
+    font-weight: 500;
 }
 
 tbody tr:hover {
