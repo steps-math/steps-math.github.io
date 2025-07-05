@@ -39,7 +39,7 @@
 [data-theme="dark"] {
     --bg-color: #1a2531;
     --text-color: #e8eaed;
-    --heading-color: #ecf0f1;
+    --heading-color: #ffffff;
     --heading-color-secondary: #d2d8db;
     --primary-color: #3498db;
     --primary-gradient: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
@@ -210,6 +210,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
     margin-bottom: 1rem;
     line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 h1 {
@@ -218,20 +220,30 @@ h1 {
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
     margin-top: 0;
+    color: var(--heading-color);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: var(--heading-color-secondary);
+    color: var(--heading-color);
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    background: linear-gradient(135deg, var(--blockquote-bg) 0%, transparent 100%);
+    padding: 0.75rem 1rem;
+    border-radius: 0 8px 8px 0;
 }
 
 h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--heading-color-secondary);
+    color: var(--heading-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
 }
 
 p {
