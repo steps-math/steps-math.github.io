@@ -104,19 +104,29 @@ Occurs when the denominator goes to zero and **does not cancel**.
 
 ---
 
-### 3. Example
+### 3. Examples
 
-Let:
-
-$$f(x) = \frac{1}{x^2}$$
-
-- **Domain**: $x \neq 0$
-- **Vertical asymptote**: $x = 0$
-- **Horizontal asymptote**: $y = 0$
-- **Range**: $(0, \infty)$
-
+> **Example 1**:
+> Left side: $f(x)=\frac{x^3-2x^2+3x-1}{x-1}$
+> **Domain**: $x \neq 1$
+> **Vertical asymptote**: $x = 1$
+> **Oblique asymptote**: $y = x^2 - x + 2$
+> 
+> Right side: $f(x)=\frac{x^4-3x^2+2x}{x^2+1}$
+> **Domain**: $\mathbb{R}$
+> **No vertical asymptotes**
+> **Oblique asymptote**: $y = x^2 - 4$
 > <div style="text-align: center; margin: 20px 0;">
->     <img src="/images/06-rational-asymptote.png" alt="Rational function" style="max-width: 80%; height: auto; border: 1px solid gray;">
+>     <img src="/images/06-asymptotes.png" alt="Rational function" style="max-width: 80%; height: auto; border: 1px solid gray;">
+> </div>
+>
+> **Example 2**:
+> $f(x)=\frac{2x^2+3x-1}{x^2-4}$
+> **Domain**: $x \neq \pm 2$
+> **Vertical asymptotes**: $x = \pm 2$
+> **Horizontal asymptote**: $y = 2$
+> <div style="text-align: center; margin: 20px 0;">
+>     <img src="/images/06-equal-degrees.png" alt="Rational function" style="max-width: 80%; height: auto; border: 1px solid gray;">
 > </div>
 
 ---
@@ -138,7 +148,54 @@ $$f(x) = \frac{1}{x^2}$$
 
 # Regular Exercises
 
-## 1. Domain and Discontinuity
+## 1. Graph Analysis
+
+Study the graph below and answer the questions about this rational function:
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/images/06-rational-asymptote.png" alt="Rational function graph for analysis" style="max-width: 80%; height: auto; border: 1px solid gray;">
+</div>
+
+{% answerChecker %}
+**a)** What is the domain of this function?
+
+{% multipleChoice "domain-analysis" '["All real numbers", "All real numbers except x = 0", "All real numbers except x = 1", "All real numbers except x = 2"]' "b" %}
+
+**b)** What type of discontinuity occurs at x = 0?
+
+{% multipleChoice "discontinuity-type" '["Removable discontinuity (hole)", "Essential discontinuity (vertical asymptote)", "No discontinuity", "Jump discontinuity"]' "b" %}
+
+**c)** What is the horizontal asymptote of this function?
+
+{% answerText "horizontal-asymptote" "y=0" "Enter the equation of the horizontal asymptote" "write your answer in the form y=... with no spaces" %}
+
+**d)** What is the range of this function?
+
+{% multipleChoice "range-analysis" '["All real numbers", "All real numbers except y = 0", "All positive real numbers", "All negative real numbers"]' "c" %}
+
+**e)** As x approaches 0 from the right, what happens to f(x)?
+
+{% multipleChoice "right-limit" '["f(x) approaches 0", "f(x) approaches infinity", "f(x) approaches negative infinity", "f(x) approaches 1"]' "b" %}
+
+**f)** As x approaches 0 from the left, what happens to f(x)?
+
+{% multipleChoice "left-limit" '["f(x) approaches 0", "f(x) approaches infinity", "f(x) approaches negative infinity", "f(x) approaches 1"]' "b" %}
+{% endanswerChecker %}
+
+## 2. Types of Discontinuity
+
+Determine whether the discontinuity is **removable** or **essential**:
+
+{% answerChecker %}
+- **a)** $f(x) = \frac{x^2 - 9}{x - 3}$
+  {% multipleChoice "a-discontinuity" '["removable", "essential"]' "a" %}
+- **b)** $f(x) = \frac{1}{x + 5}$
+  {% multipleChoice "b-discontinuity" '["removable", "essential"]' "b" %}
+- **c)** $f(x) = \frac{(x - 2)^2}{x - 2}$
+  {% multipleChoice "c-discontinuity" '["removable", "essential"]' "a" %}
+{% endanswerChecker %}
+
+## 3. Domain and Discontinuity
 
 Find the **domain** of each function and describe any **discontinuities**:
 
@@ -146,23 +203,15 @@ Find the **domain** of each function and describe any **discontinuities**:
 - **b)** $f(x) = \frac{2x + 3}{x^2 - 4}$  
 - **c)** $f(x) = \frac{x^2 - 4}{x - 2}$
 
-## 2. Types of Discontinuity
 
-Determine whether the discontinuity is **removable** or **essential**:
-
-- **a)** $f(x) = \frac{x^2 - 9}{x - 3}$
-- **b)** $f(x) = \frac{1}{x + 5}$
-- **c)** $f(x) = \frac{(x - 2)^2}{x - 2}$
-
-
-## 3. Root Domain Puzzle
+## 4. Root Domain Puzzle
 For each function, find the domain, but without graphing. Justify your reasoning algebraically:
 
 - **a)** $f(x) = \sqrt{4 - x^2}$
 - **b)** $g(x) = \sqrt{x^2 - 4}$
 - **c)** $h(x) = \sqrt{(x - 1)(x + 2)}$
 
-## 4. Impossible Graph?
+## 5. Impossible Graph?
 
 Here is a graph sketch:
 
@@ -171,20 +220,18 @@ Here is a graph sketch:
 - It has a horizontal asymptote at $y = 3$
 
   - **a)** Can you write a rational function that fits this behavior?
-  - **b)** Justify how each part of your expression creates the desired graph features.
   - **c)** What happens if you remove the factor that causes the hole?
 
 
-## 5. Graph from Clues
+## 6. Graph from Clues
 Build a rational function that:
 
 - Has a vertical asymptote at $x = 2$
 - Has a hole at $x = -1$
-- Has a horizontal asymptote at $y = 0$
+- Has a horizontal asymptote at $y = 1$
 - Crosses the x-axis at $x = 3$
 
   - **a)** Write a possible expression.
   - **b)** Label all key features on a sketch.
   - **c)** Change your function so that the horizontal asymptote is now $y = 5$. What did you change?
-
 
