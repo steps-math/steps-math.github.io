@@ -3,7 +3,7 @@ layout: base.njk
 title: Root and Rational Functions, Discontinuities, and Infinity Behavior
 category: functions
 description: Lecture 6
-date: 2025-07-08
+date: 2025-07-07
 ---
 
 # lecture 6: Root and Rational Functions — Graphs, Domain and Range, Discontinuities, and Infinity Behavior
