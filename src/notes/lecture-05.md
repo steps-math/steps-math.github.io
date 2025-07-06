@@ -118,6 +118,12 @@ As $x \to \pm \infty$, the graph of the polynomial behaves like its **leading te
 | Odd    | Positive              | $f(x) \to -\infty$ as $x \to -\infty$,<br>$f(x) \to +\infty$ as $x \to +\infty$ |
 | Odd    | Negative              | $f(x) \to +\infty$ as $x \to -\infty$,<br>$f(x) \to -\infty$ as $x \to +\infty$ |
 
+An infographic picture of polynomials behaviour at **infinities**:
+
+ <div style="text-align: center; margin: 20px 0;">
+     <img src="/images/05-infinite-behavior-2.png" alt="General Infinity behavior" style="max-width: 80%; height: auto; border: 1px solid gray;">
+ </div>
+
 > Example with functions: 
 > 1. $f(x) = x^2 + 2x - 3$
 > 2. $f(x) = -x^2 + 2x + 3$
