@@ -113,9 +113,27 @@ You can often find **multiple** decompositions by regrouping operations.
 
 # Regular Exercises
 
+<div id="student-info-container"></div>
+
 ### 1. Graphing Transformations
 
 Sketch $f(x)=\ln(x)$ and then sketch $g(x)=-3\,\ln(2(x-1))+2$. Label asymptotes and intercepts.
+
+<div class="question-section">
+    <label for="q1">
+        <strong>Question 1:</strong> Sketch g(x) = -3 ln(2(x-1)) + 2. Describe the asymptotes and intercepts.
+    </label>
+    <textarea 
+        id="q1" 
+        name="Graphing Transformation Answer" 
+        class="form-control" 
+        rows="5"></textarea>
+    
+    <button type="button" class="submit-question-button" onclick="solutionFormGenerator.submitQuestion(1)">
+        Submit Question 1
+    </button>
+    <div id="status-q1" class="question-status"></div>
+</div>
 
 ### 2. Chain of Transformations
 
@@ -124,6 +142,22 @@ Sketch $f(x)=\ln(x)$ and then sketch $g(x)=-3\,\ln(2(x-1))+2$. Label asymptotes 
 ### 3. Composition Practice
 
 If $f(x)=x^2-1$ and $g(x)=3x+2$, find and simplify $(f\circ g)(x)$ and $(g\circ f)(x)$. Determine their domains.
+
+<div class="question-section">
+    <label for="q2">
+        <strong>Question 2:</strong> If f(x)=x²-1 and g(x)=3x+2, find and simplify (f∘g)(x).
+    </label>
+    <textarea 
+        id="q2" 
+        name="Composition Answer" 
+        class="form-control" 
+        rows="3"></textarea>
+    
+    <button type="button" class="submit-question-button" onclick="solutionFormGenerator.submitQuestion(2)">
+        Submit Question 2
+    </button>
+    <div id="status-q2" class="question-status"></div>
+</div>
 
 ### 4. Transformation Proof
 
@@ -134,48 +168,25 @@ Prove that performing a horizontal stretch by factor $k$ then a shift by $h$ is 
 
 Given $f(x)=\sqrt{x-1}$ and $g(x)=\ln(x)$, determine the domain of $g\circ f$ and $f\circ g$, and explain any restrictions.
 
----
+<script>
+window.solutionFormData = {
+    lectureId: "Lecture 08: Operations on Functions",
+    questions: [
+        {
+            text: "Sketch g(x) = -3 ln(2(x-1)) + 2. Describe the asymptotes and intercepts.",
+            name: "Graphing Transformation Answer",
+            rows: 5
+        },
+        {
+            text: "If f(x)=x²-1 and g(x)=3x+2, find and simplify (f∘g)(x).",
+            name: "Composition Answer", 
+            rows: 3
+        }
+    ]
+};
+</script>
 
-## Submit Your Solutions
-
-<form id="solution-form" class="solution-form">
-    <input type="hidden" name="lectureId" value="Lecture 08: Operations on Functions">
-
-    <div class="form-group">
-        <label for="student-name">Full Name</label>
-        <input type="text" id="student-name" name="studentName" class="form-control" required>
-    </div>
-
-    <div class="form-group">
-        <label for="kaust-id">KAUST ID</label>
-        <input type="text" id="kaust-id" name="kaustId" class="form-control" required>
-    </div>
-
-    <div class="form-group-checkbox">
-        <input type="checkbox" id="remember-me">
-        <label for="remember-me">Remember my name and ID on this device</label>
-    </div>
-
-    <hr>
-
-    <div class="form-group">
-        <label for="q1"><strong>Question 1:</strong> Sketch g(x) = -3 ln(2(x-1)) + 2. Describe the asymptotes and intercepts.</label>
-        <textarea id="q1" name="Graphing Transformation Answer" class="form-control" rows="5"></textarea>
-    </div>
-
-    <div class="form-group">
-        <label for="q2"><strong>Question 3:</strong> If f(x)=x²-1 and g(x)=3x+2, find and simplify (f∘g)(x).</label>
-        <textarea id="q2" name="Composition Answer" class="form-control" rows="3"></textarea>
-    </div>
-
-    <div class="form-group">
-        <button type="submit" class="submit-button">Submit All Answers</button>
-    </div>
-
-    <div id="form-status" class="form-status"></div>
-</form>
-
-<script src="/js/form-handler.js"></script>
+<script src="/js/solution-form-init.js"></script>
 
 
 

@@ -159,6 +159,8 @@ Change of base formula:
 
 # Regular Exercises
 
+<div id="student-info-container"></div>
+
 ## 1. Calculate the following
 
 {% answerChecker %}
@@ -203,9 +205,57 @@ Questions:
 
 - **a)** Write an exponential function $P(t)$ that models the population after $t$ hours.
 
+<div class="question-section">
+    <label for="q1">
+        <strong>Question 1:</strong> For question 4a, write the exponential function P(t) that models the bacteria population.
+    </label>
+    <textarea 
+        id="q1" 
+        name="Bacteria Growth Function" 
+        class="form-control" 
+        rows="3"></textarea>
+    
+    <button type="button" class="submit-question-button" onclick="solutionFormGenerator.submitQuestion(1)">
+        Submit Question 1
+    </button>
+    <div id="status-q1" class="question-status"></div>
+</div>
+
 - **b)** How many bacteria will there be after 12 hours?
 
+<div class="question-section">
+    <label for="q2">
+        <strong>Question 2:</strong> For question 4b, calculate how many bacteria will there be after 12 hours.
+    </label>
+    <textarea 
+        id="q2" 
+        name="Population After 12 Hours" 
+        class="form-control" 
+        rows="2"></textarea>
+    
+    <button type="button" class="submit-question-button" onclick="solutionFormGenerator.submitQuestion(2)">
+        Submit Question 2
+    </button>
+    <div id="status-q2" class="question-status"></div>
+</div>
+
 - **c)** After how many hours will the population reach at least 6,400 bacteria?
+
+<div class="question-section">
+    <label for="q3">
+        <strong>Question 3:</strong> For question 4c, determine after how many hours the population will reach at least 6,400 bacteria.
+    </label>
+    <textarea 
+        id="q3" 
+        name="Time to Reach 6400 Bacteria" 
+        class="form-control" 
+        rows="2"></textarea>
+    
+    <button type="button" class="submit-question-button" onclick="solutionFormGenerator.submitQuestion(3)">
+        Submit Question 3
+    </button>
+    <div id="status-q3" class="question-status"></div>
+</div>
 
 ## 5. Solve the exponential equation
 
@@ -213,8 +263,75 @@ Solve for $x$:
 
 $$5^{2x} = 5^{x+1} - 6$$
 
+<div class="question-section">
+    <label for="q4">
+        <strong>Question 4:</strong> Solve the exponential equation: 5^(2x) = 5^(x+1) - 6
+    </label>
+    <textarea 
+        id="q4" 
+        name="Exponential Equation Solution" 
+        class="form-control" 
+        rows="4"></textarea>
+    
+    <button type="button" class="submit-question-button" onclick="solutionFormGenerator.submitQuestion(4)">
+        Submit Question 4
+    </button>
+    <div id="status-q4" class="question-status"></div>
+</div>
+
 ## 6. Solve the logarithmic equation
 
 Solve for $x$:
 
 $$4 \log_3(x^2) - \log_3(x) = 14$$
+
+<div class="question-section">
+    <label for="q5">
+        <strong>Question 5:</strong> What's the value of $x$?
+    </label>
+    <textarea 
+        id="q5" 
+        name="Logarithmic Equation Solution" 
+        class="form-control" 
+        rows="1"></textarea>
+    
+    <button type="button" class="submit-question-button" onclick="solutionFormGenerator.submitQuestion(5)">
+        Submit Question 5
+    </button>
+    <div id="status-q5" class="question-status"></div>
+</div>
+
+<script>
+window.solutionFormData = {
+    lectureId: "Lecture 07: Exponential and Logarithmic Functions",
+    questions: [
+        {
+            text: "For question 4a, write the exponential function P(t) that models the bacteria population.",
+            name: "Bacteria Growth Function",
+            rows: 3
+        },
+        {
+            text: "For question 4b, calculate how many bacteria will there be after 12 hours.",
+            name: "Population After 12 Hours",
+            rows: 2
+        },
+        {
+            text: "For question 4c, determine after how many hours the population will reach at least 6,400 bacteria.",
+            name: "Time to Reach 6400 Bacteria",
+            rows: 2
+        },
+        {
+            text: "Solve the exponential equation: 5^(2x) = 5^(x+1) - 6",
+            name: "Exponential Equation Solution",
+            rows: 4
+        },
+        {
+            text: "Solve the logarithmic equation: 4 log₃(x²) - log₃(x) = 14",
+            name: "Logarithmic Equation Solution",
+            rows: 4
+        }
+    ]
+};
+</script>
+
+<script src="/js/solution-form-init.js"></script>
