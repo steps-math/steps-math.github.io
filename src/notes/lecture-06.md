@@ -245,9 +245,9 @@ $$
 f(x) = \frac{\sqrt{x^2 + 5} - x}{x}
 $$
 
-- **a)** Find the limit as \( x \to \infty \) using rationalization
+- **a)** Find the limit as $\( x \to \infty \)$ using rationalization
 - **b)** Does this function have a **horizontal asymptote**?
-- **c)** Analyze symmetry and behavior as \( x \to -\infty \)
+- **c)** Analyze symmetry and behavior as $\( x \to -\infty \)$
 
 ## 2. Rational Function with Parameters
 
@@ -273,4 +273,4 @@ $$
 
 - **a)** Determine the **domain** algebraically
 - **b)** Identify and classify all **discontinuities**
-- **c)** Analyze **end behavior** as \( x \to \pm\infty \)
+- **c)** Analyze **end behavior** as $\( x \to \pm\infty \)$
