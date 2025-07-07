@@ -218,3 +218,27 @@ $$5^{2x} = 5^{x+1} - 6$$
 Solve for $x$:
 
 $$4 \log_3(x^2) - \log_3(x) = 14$$
+
+# Extra Advanced Exercises
+
+## 1. Exponential and Logarithmic Equation Combo
+
+Solve for \( x \):
+
+$$
+2^x = 5^{x - 1}
+$$
+
+## 2. Domain Puzzle: Log of a Log
+
+Find the **domain** of:
+
+$$
+f(x) = \log_2(\log_3(x - 1))
+$$
+
+## 3. Change of base formula. 
+
+Prove the change of base formula for the log function:
+
+$\log_b(x) = \frac{\log_k(x)}{\log_k(b)}$
