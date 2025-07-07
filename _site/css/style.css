@@ -1080,3 +1080,113 @@ tbody tr:nth-child(even):hover {
     clip: rect(0,0,0,0);
     border: 0;
 }
+
+/* Google Form Container */
+.google-form-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    margin: 2rem 0;
+}
+
+.google-form-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Solution Form Styles */
+.solution-form {
+    background: var(--card-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: var(--card-shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group-checkbox input[type="checkbox"] {
+    margin-right: 0.75rem;
+    width: 18px;
+    height: 18px;
+}
+
+.form-group-checkbox label {
+    margin: 0;
+    font-weight: 500;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    background: var(--input-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: var(--input-focus-shadow);
+}
+
+.submit-button {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.form-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+}
+
+.form-status.success {
+    background: #d4edda;
+    color: #155724;
+    display: block;
+}
+
+.form-status.error {
+    background: #f8d7da;
+    color: #721c24;
+    display: block;
+}

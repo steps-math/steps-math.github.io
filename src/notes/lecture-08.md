@@ -134,5 +134,48 @@ Prove that performing a horizontal stretch by factor $k$ then a shift by $h$ is 
 
 Given $f(x)=\sqrt{x-1}$ and $g(x)=\ln(x)$, determine the domain of $g\circ f$ and $f\circ g$, and explain any restrictions.
 
+---
+
+## Submit Your Solutions
+
+<form id="solution-form" class="solution-form">
+    <input type="hidden" name="lectureId" value="Lecture 08: Operations on Functions">
+
+    <div class="form-group">
+        <label for="student-name">Full Name</label>
+        <input type="text" id="student-name" name="studentName" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="kaust-id">KAUST ID</label>
+        <input type="text" id="kaust-id" name="kaustId" class="form-control" required>
+    </div>
+
+    <div class="form-group-checkbox">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">Remember my name and ID on this device</label>
+    </div>
+
+    <hr>
+
+    <div class="form-group">
+        <label for="q1"><strong>Question 1:</strong> Sketch g(x) = -3 ln(2(x-1)) + 2. Describe the asymptotes and intercepts.</label>
+        <textarea id="q1" name="Graphing Transformation Answer" class="form-control" rows="5"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="q2"><strong>Question 3:</strong> If f(x)=x²-1 and g(x)=3x+2, find and simplify (f∘g)(x).</label>
+        <textarea id="q2" name="Composition Answer" class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="submit-button">Submit All Answers</button>
+    </div>
+
+    <div id="form-status" class="form-status"></div>
+</form>
+
+<script src="/js/form-handler.js"></script>
+
 
 
