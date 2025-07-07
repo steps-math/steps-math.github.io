@@ -57,7 +57,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
-| 12 | Saturday, July 12 | Operations on functions (continued). Inverse functions and implicit vs. explicit functions. |  |
+| 12 | Saturday, July 12 | Operations on functions (continued). Inverse functions and implicit vs. explicit functions. | [_lecture 9_](/notes/lecture-09/) |
 | 13 | Sunday, July 13 | **Review Quiz Session 1** (Probability and Functions) |  |
 | 14 | Monday, July 14 | Introduction of discontinuities, discontinuities in graphs. Desmos exercises. |  |
 | 15 | Tuesday, July 15 | Formal definition of discontinuities, removable vs essential discontinuities, and various functions behaviors. |  |
