@@ -234,4 +234,43 @@ Build a rational function that:
   - **a)** Write a possible expression.
   - **b)** Label all key features on a sketch.
   - **c)** Change your function so that the horizontal asymptote is now $y = 5$. What did you change?
+ 
+# Extra Advanced Exercises:
 
+## 1. Asymptotic Limit Puzzle
+
+Let
+
+$$
+f(x) = \frac{\sqrt{x^2 + 5} - x}{x}
+$$
+
+- **a)** Find the limit as \( x \to \infty \) using rationalization
+- **b)** Does this function have a **horizontal asymptote**?
+- **c)** Analyze symmetry and behavior as \( x \to -\infty \)
+
+## 2. Rational Function with Parameters
+
+Let
+
+$$
+f(x) = \frac{x^2 + ax + b}{x^2 - 4}
+$$
+
+- **a)** Find conditions on \( a \) and \( b \) such that:
+  - The function has **no x-intercepts**
+  - A **vertical asymptote** at \( x = 2 \)
+  - A **horizontal asymptote** at \( y = 1 \)
+- **b)** Based on those conditions, determine the **range** of \( f(x) \)
+
+## 3. Domain and Discontinuity of a Root-Rational Combo
+
+Let
+
+$$
+f(x) = \frac{\sqrt{x^2 - 9}}{x^2 - 16}
+$$
+
+- **a)** Determine the **domain** algebraically
+- **b)** Identify and classify all **discontinuities**
+- **c)** Analyze **end behavior** as \( x \to \pm\infty \)
