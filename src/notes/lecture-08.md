@@ -125,16 +125,12 @@ Sketch $f(x)=\ln(x)$ and then sketch $g(x)=-3\,\ln(2(x-1))+2$. Label asymptotes 
 
 If $f(x)=x^2-1$ and $g(x)=3x+2$, find and simplify $(f\circ g)(x)$ and $(g\circ f)(x)$. Determine their domains.
 
-### 4. Inverse & Composition
-
-   Let $f(x)=2x+5$. Find $f^{-1}(x)$, then compute $(f\circ f^{-1})(x)$ and $(f^{-1}\circ f)(x)$, where $f^{-1}$ is the inverse of $f$.
-
-### 5. Transformation Proof
+### 4. Transformation Proof
 
 Let $f(x)=x^2, k=2, h=3$. 
 Prove that performing a horizontal stretch by factor $k$ then a shift by $h$ is **not** the same as shifting first then stretching (unless $h=0$).
 
-### 6. Domain Composition
+### 5. Domain Composition
 
 Given $f(x)=\sqrt{x-1}$ and $g(x)=\ln(x)$, determine the domain of $g\circ f$ and $f\circ g$, and explain any restrictions.
 

@@ -211,10 +211,10 @@ Questions:
 
 Solve for $x$:
 
-$$5^{2x} - 5^{x+1} + 6 = 0$$
+$$5^{2x} = 5^{x+1} - 6$$
 
 ## 6. Solve the logarithmic equation
 
 Solve for $x$:
 
-$$4 \log_3(x^2) - \log_3(x) = 2$$
+$$4 \log_3(x^2) - \log_3(x) = 14$$
