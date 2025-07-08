@@ -53,6 +53,16 @@ Hands-on exploration activities to deepen understanding of mathematical concepts
 </div>
 </div>
 
+### For more practice and review,
+you can also check out the following resources:
+- [Khan Academy Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) for extra practice and review.
+- [Khan Academy Pre-Calculus](https://www.khanacademy.org/math/precalculus) for extra practice and review.
+- [Khan Academy Calculus AP AB](https://www.khanacademy.org/math/ap-calculus-ab) for extra practice and review.
+- [3Blue1Brown Website](https://www.3blue1brown.com) for visual explanations of math concepts including calculus and probability.
+- [MIT OpenCourseWare 18.05](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/) for a more rigorous approach to probability and statistics given by MIT professors.
+- [Professor Leonard's YouTube Channel](https://www.youtube.com/@ProfessorLeonard/playlists) for videos on calculus concepts.
+- [Flipped Math](https://calculus.flippedmath.com) for more practice and review of calculus.
+
 <style>
 .content-grid {
     display: grid;
