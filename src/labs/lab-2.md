@@ -47,6 +47,14 @@ Start with $f(x) = x^2 - 1$. In the same GeoGebra view, add:
 
 ---
 
+## Take a few seconds to fill the feedback form
+
+Please fill the following Google form to provide feedback on the second week:
+
+- [Math class week 2 feedback form](https://docs.google.com/forms/d/e/1FAIpQLSc4tD1e9uJsdb04H5A02l8E061Bny890DIbr_Kd1DRVwt2C9g/viewform?usp=dialog)
+
+---
+
 ## Problem 3: Multi-Step Word Transformation & Evaluation
 
 Start with $f(x) = \sqrt{x}$. Apply the following transformations in order to obtain a new function $g(x)$:
