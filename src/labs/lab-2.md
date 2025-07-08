@@ -6,7 +6,7 @@ date: 2025-07-10
 
 # Lab 2: Function Plotting (GeoGebra)
 
-**Submit your answers here:** [Google Form Link]()
+**Submit your answers here:** [Google Form Link](https://docs.google.com/forms/d/e/1FAIpQLSdRrTazGwQ6C_QD2iWz8va9gWm-ZoVh18VXEWCevk0UCWhNhg/viewform?usp=dialog)
 
 > **Note:** Questions marked **(Submit)** require you to enter your answer in the Google Form.
 
