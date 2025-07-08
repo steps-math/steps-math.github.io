@@ -27,9 +27,9 @@ In GeoGebra, enter:
    - **x-axis intercepts**  
 
 > **Submit:**  
-> - f-domain, f-range, f-intercepts  
-> - g-domain, g-range, g-intercepts
-> - h-domain, h-range, h-intercepts
+> - **a)** f-domain, f-range, f-intercepts  
+> - **b)** g-domain, g-range, g-intercepts
+> - **c)** h-domain, h-range, h-intercepts
 
 ---
 
@@ -39,9 +39,9 @@ Start with $f(x) = x^2 - 1$. In the same GeoGebra view, add:
 
 | Transform                             | Formula                    | What to Record                        |
 |---------------------------------------|----------------------------|---------------------------------------|
-| 1. Vertical shift up 2                   | $f_1(x) = f(x) + 2$        | Find the two $x$-values where $f_1(x)=5$. How far apart are they? (i.e. if $f_1(z_1)=f_1(z_2)=5$, what is $z_2-z_1$?)|
-| 2. Horizontal shift right 1              | $f_2(x) = f(x - 1)$        | at $x=2$, draw the tangent line to $f_2(x)$. What is the equation of the tangent line?|
-| 3. Reflection about the x-axis           | $f_3(x) = -\,f(x)$         | what is the maximum value that $f_3(x)$ can attain?|
+| **a)** Vertical shift up 2                   | $f_1(x) = f(x) + 2$        | Find the two $x$-values where $f_1(x)=5$. How far apart are they? (i.e. if $f_1(z_1)=f_1(z_2)=5$, what is $z_2-z_1$?)|
+| **b)** Horizontal shift right 1              | $f_2(x) = f(x - 1)$        | at $x=2$, draw the tangent line to $f_2(x)$. What is the equation of the tangent line?|
+| **c)** Reflection about the x-axis           | $f_3(x) = -\,f(x)$         | what is the maximum value that $f_3(x)$ can attain?|
 
 > **Submit:** For each $f_i$, enter the requested feature.
 
@@ -61,8 +61,8 @@ Let the final function be $g(x)$.
 - **Evaluate**: What is $g(4)$?  
 
 > **Submit:**  
-> - Final formula $g(x)$  
-> - Numerical value $g(4)$  
+> - **a)** Final formula $g(x)$  
+> - **b)** Numerical value $g(4)$  
 
 ---
 
@@ -78,8 +78,8 @@ Define:
    - Domain of $\sqrt{\log_{2} x}$  
 
 > **Submit:**  
-> - Domain of $\log_{2}\bigl(\sqrt{x}\bigr)$  
-> - Domain of $\sqrt{\log_{2} x}$  
+> - **a)** Domain of $\log_{2}\bigl(\sqrt{x}\bigr)$  
+> - **b)** Domain of $\sqrt{\log_{2} x}$  
 
 ---
 
@@ -94,9 +94,9 @@ Define:
 1. (If you have the time:) Compare Desmos vs. GeoGebra descriptions: where is each feature easiest to spot?
 
 > **Submit:**  
-> - Hole in $r(x)$: location $(x_0, y_0)$  
-> - Vertical asymptotes of $s(x)$  
-> - Horizontal asymptote of $s(x)$  
+> - **a)** Hole in $r(x)$: location $(x_0, y_0)$  
+> - **b)** Vertical asymptotes of $s(x)$  
+> - **c)** Horizontal asymptote of $s(x)$  
 
 ---
 
@@ -110,7 +110,7 @@ Use GeoGebra to graph both:
 2. Why would solving $2^{-x} = x^2 - 1$ algebraically be difficult?
 
 > **Submit:**  
-> - Approximate intersection points $(x_1, y_1)$ and $(x_2, y_2)$  
+> - Approximate intersection points $(x_1, y_1)$ and $(x_2, y_2)$ up to 2 decimal places.
 
 ---
 
