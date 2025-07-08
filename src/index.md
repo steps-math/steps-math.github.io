@@ -7,6 +7,11 @@ title: Home
 
 Welcome to our high school summer math course covering pre-calculus and differentiation topics. This website contains all the materials you'll need for our classes.
 
+### <i class="fas fa-edit icon notation-icon"></i> Notation Notes
+Essential mathematical notation and symbols used throughout the course.
+
+[View Notation Notes →](/notation-notes/)
+
 ## Course Structure
 
 <div class="content-grid">
@@ -117,6 +122,10 @@ Hands-on exploration activities to deepen understanding of mathematical concepts
 
 .lab-icon {
     color: #dc3545;
+}
+
+.notation-icon {
+    color: #6f42c1;
 }
 </style>
 
