@@ -62,6 +62,7 @@ you can also check out the following resources:
 - [MIT OpenCourseWare 18.05](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/) for a more rigorous approach to probability and statistics given by MIT professors.
 - [Professor Leonard's YouTube Channel](https://www.youtube.com/@ProfessorLeonard/playlists) for videos on calculus concepts.
 - [Flipped Math](https://calculus.flippedmath.com) for more practice and review of calculus.
+- [Paul's Online Math Notes](https://tutorial.math.lamar.edu) for more practice and review of calculus.
 
 <style>
 .content-grid {
