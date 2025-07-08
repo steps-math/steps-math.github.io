@@ -115,11 +115,12 @@ You can often find **multiple** decompositions by regrouping operations.
 
 ### 1. Graphing Transformations
 
-Sketch $f(x)=\ln(x)$ and then sketch $g(x)=-3\,\ln(2(x-1))+2$. Label asymptotes and intercepts.
+Sketch $f(x)=\log_{2}(x)$ and then sketch $g(x)=-3\,\log_{2}(2(x-1))+2$. Label asymptotes and intercepts.
 
 ### 2. Chain of Transformations
 
-   Describe the sequence of shifts, stretches, and reflections to go from $y=x^3$ to $y=4\,( - (x+2)^3 ) -1$.
+   Describe the sequence of shifts, stretches, and reflections to go 
+   from $y=x^3$ to $y=4\,( - (x+2)^3 ) -1$.
 
 ### 3. Composition Practice
 
