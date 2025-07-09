@@ -224,6 +224,33 @@ $$P(t) = -2t^3 + 9t^2 - 11t + 5$$
 - **b)** What does the negative leading coefficient tell you about its long-term behavior?
 - **c)** When might the company be losing money? (Estimate from the graph or table of values)
 
+> **Solution**  
+> **a)** The function is:  
+> $$P(t) = -2t^3 + 9t^2 - 11t + 5$$  
+> The degree of a polynomial is the highest power of the variable. Here, the highest power is $t^3$, so the degree is:  
+> **Degree = 3**  
+>  
+> **b)** The leading coefficient is the coefficient of the highest degree term, which is **−2**.  
+> Since it is **negative** and the degree is **odd**, the graph will rise to the **left** and fall to the **right**.  
+> In other words, as $t \to -\infty$, $P(t) \to \infty$  
+> and as $t \to \infty$, $P(t) \to -\infty$  
+>  
+> This means that **in the long run**, the company's profits will **decrease** (possibly losses grow).  
+>  
+> **c)** The company is **losing money** when $P(t) < 0$.  
+> Without graphing exactly, we can estimate by plugging in a few values:  
+> $$
+> \begin{aligned}
+> P(0) &= 5 \quad (\text{positive}) \\
+> P(1) &= -2(1)^3 + 9(1)^2 - 11(1) + 5 = -2 + 9 - 11 + 5 = 1 \quad (\text{positive}) \\
+> P(2) &= -16 + 36 - 22 + 5 = 3 \quad (\text{positive}) \\
+> P(3) &= -54 + 81 - 33 + 5 = -1 \quad (\text{negative}) \\
+> P(4) &= -128 + 144 - 44 + 5 = -23 \quad (\text{negative})
+> \end{aligned}
+> $$ 
+> So the company begins **losing money around $t = 3$** and continues downward afterward.
+
+
 ## 4. Design a Polynomial
 Create a polynomial function that meets all of the following conditions:
 
@@ -235,6 +262,22 @@ Create a polynomial function that meets all of the following conditions:
   - **a)** Write a possible formula.
   - **b)** Sketch a rough graph.
   - **c)** What is the domain and range?
+
+> **Solution**  
+> **a)** We want a degree 3 polynomial, with positive leading coefficient, that passes through the origin ($f(0) = 0$), and has a turning point between $x = 1$ and $x = 3$.  
+>  
+> One possible function is:  
+> $$f(x) = x(x - 1)(x - 3)$$  
+>  
+> - Degree = 3 ✔️  
+> - Leading coefficient = 1 (positive) ✔️  
+> - $f(0) = 0$ ✔️  
+> - Turning points occur near $x = 1.5$ ✔️  
+>  
+> **c)**  
+> - **Domain**: All real numbers, $\mathbb{R}$  
+> - **Range**: All real numbers, $\mathbb{R}$ (since cubic polynomials have no upper/lower bounds)
+
 
 ## 5. Polynomial Passing Through Points
 
