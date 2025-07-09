@@ -95,7 +95,7 @@ Define:
 
 1. Enter $r(x) = (x^3 -21 x - 20) / (x + 1)$.  
    - Use GeoGebra’s Point tool to mark the **hole** location.  
-   - What is the y-value of the hole (use the Trace feature)?  
+   - What is the y-value of the hole?  
 1. Enter $s(x) = (2 x^2 + 2 x - 4) / (x^2 - 3)$.  
    - Identify vertical asymptotes (you can use `Asymptote(..)`).  
    - Find the horizontal asymptote by graphing a line $y = c$ that the curve approaches.  
