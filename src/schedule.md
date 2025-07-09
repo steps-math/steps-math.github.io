@@ -58,8 +58,8 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
 | 12 | Saturday, July 12 | Operations on functions (continued). Inverse functions and implicit vs. explicit functions. | [_lecture 9_](/notes/lecture-09/) |
-| 13 | Sunday, July 13 | **Review Quiz Session 1** (Probability and Functions) |  |
-| 14 | Monday, July 14 | Introduction of discontinuities, discontinuities in graphs. Desmos exercises. |  |
+| 13 | Sunday, July 13 | Problem solving session. |  |
+| 14 | Monday, July 14 | **Quiz 1** (Probability and Functions) | -- |
 | 15 | Tuesday, July 15 | Formal definition of discontinuities, removable vs essential discontinuities, and various functions behaviors. |  |
 | 16 | Wednesday, July 16 | Introduction to limits, limits on graphs, and limits of infinity. |  |
 | 17 | Thursday, July 17 | Introductory limits problems and exercises. |  |
@@ -78,7 +78,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | 20 | Monday, July 21 | Existence of limits, one sided limits, and infinity limits. |  |
 | 21 | Tuesday, July 22 | Squeeze Theorem. Intermediate Value Theorem. Examples and Applications. |  |
 | 22 | Wednesday, July 23 | **Lab 3**: Limits lab. Case study of $\sin(\frac{1}{x})$, and guided exploration of $\epsilon-\delta$ definition of limits. |  |
-| 23 | Thursday, July 24 | **Review Quiz Session 2** (Limits and Continuity) |  |
+| 23 | Thursday, July 24 | **Quiz 2** (Limits and Continuity) | -- |
 | - | Friday, July 25 | **No Class** |  |
 
 </div>
@@ -110,7 +110,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | 32 | Monday, August 4 | **Lab 5**: Derivates Lab 2. Guided example of an elaborate optimization problem. |  |
 | 33 | Tuesday, August 5 | Derivatives and graphs of functions. Derivatives use to understand behavior of functions. First and second derivative tests. |  |
 | 34 | Wednesday, August 6 | Trigonometric functions derivatives. Geometrical proof of $\frac{d}{dx} \sin(x)$. problems and examples. |  |
-| 35 | Thursday, July 31 | **Review Quiz Session 3** (Derivatives) |  |
+| 35 | Thursday, July 31 | **Quiz 3** (Derivatives) | -- |
 | - | Friday, August 8 | **No Class** |  |
 
 </div>
