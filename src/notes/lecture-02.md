@@ -225,7 +225,7 @@ Interpret the formulas of independent events and conditional probability by draw
 > - Left circle (Basketball): 20 total  
 > - Right circle (Soccer): 15 total  
 > - Overlap (Both): 8  
-> - So, only basketball = $\( 20 - 8 = 12 \)$
+> - So, only basketball = ( 20 - 8 = 12 )
 > - Only soccer = \( 15 - 8 = 7 \)
 >
 > ### b) How many play only basketball?
@@ -259,8 +259,8 @@ A card is drawn from a deck. Then a second card is drawn **without replacement**
 > There are 52 cards in a deck, with 4 aces. Cards are drawn **without replacement**, so the total changes after each draw.  
 >
 > **a)** Probability both cards are aces  
-> First card is an ace: $\( \frac{4}{52} \)$  
-> Second card is an ace (only 3 left out of 51): $\( \frac{3}{51} \)$  
+> First card is an ace: $( \frac{4}{52} )$  
+> Second card is an ace (only 3 left out of 51): $( \frac{3}{51} )$  
 > $$
 > P(\text{Ace}_1 \cap \text{Ace}_2) = \frac{4}{52} \times \frac{3}{51} = \frac{12}{2652} = \frac{1}{221}
 > $$  
