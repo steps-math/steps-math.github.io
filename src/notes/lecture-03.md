@@ -149,22 +149,57 @@ Tasks:
 - **b)** Discuss how the outlier (100) in Dataset B affects both measures.
 - **c)** Which measure (mean or median) better represents the "typical" value?
 
+> **Solution**  
+> **a)** Calculate mean and median for both datasets:  
+> - Dataset A: [10, 12, 13, 15, 15, 16]  
+> Mean = (10 + 12 + 13 + 15 + 15 + 16) / 6 = 81 / 6 = 13.5  
+> Median = average of middle two values (13 and 15) = (13 + 15) / 2 = 14  
+>  
+> - Dataset B: [10, 12, 13, 15, 15, 100]  
+> Mean = (10 + 12 + 13 + 15 + 15 + 100) / 6 = 165 / 6 = 27.5  
+> Median = (13 + 15) / 2 = 14 (same as Dataset A)  
+>  
+> **b)** The outlier (100) greatly increases the mean from 13.5 to 27.5, but does not affect the median.  
+>  
+> **c)** The median better represents the "typical" value here because it is resistant to outliers, unlike the mean which is pulled up by the extreme value.
+
+
 ### 2. Comparing Two Schools
 School X and School Y both claim to have "the same average SAT score." Their score distributions are:
 
 - School X: $[1200, 1210, 1220, 1180, 1190]$
 - School Y: $[1000, 1050, 1200, 1350, 1400]$
 
-Tasks:
-
 - **a)** Compute the mean and standard deviation for both schools.
 - **b)** Which school is more "consistent" in student performance?
+
+> **Solution**  
+> **a)** Calculate mean and standard deviation (SD) for both schools:  
+>  
+> - School X: [1200, 1210, 1220, 1180, 1190]  
+> Mean = (1200 + 1210 + 1220 + 1180 + 1190) / 5 = 6000 / 5 = 1200  
+> Variance = [(0)^2 + (10)^2 + (20)^2 + (-20)^2 + (-10)^2] / 5  
+> = (0 + 100 + 400 + 400 + 100) / 5 = 1000 / 5 = 200  
+> SD = sqrt(200) ≈ 14.14  
+>  
+> - School Y: [1000, 1050, 1200, 1350, 1400]  
+> Mean = (1000 + 1050 + 1200 + 1350 + 1400) / 5 = 6000 / 5 = 1200  
+> Variance = [(-200)^2 + (-150)^2 + 0^2 + 150^2 + 200^2] / 5  
+> = (40000 + 22500 + 0 + 22500 + 40000) / 5 = 125000 / 5 = 25000  
+> SD = sqrt(25000) = 158.11  
+>  
+> **b)** School X is more consistent because it has a much smaller standard deviation (~14.14) compared to School Y (~158.11).
 
 ### 3. Mean vs Median
 
 Suppose that the average income in a city is 10,000 Riyals, and the median income is 5,000 Riyals.
 
 What can you say about the distribution of income in this city? More people are richer or poorer than the average?
+
+> **Solution**  
+> The mean income (10,000 Riyals) is much higher than the median income (5,000 Riyals).  
+> This suggests the income distribution is right-skewed, meaning that a few people earn much more than most others.  
+> Because the mean is pulled upward by these high incomes, more people actually earn **less** than the average (mean).
 
 ### 4. Reverse Engineering a Dataset
 You are told that a dataset of 5 numbers has:
@@ -178,6 +213,20 @@ Tasks:
 - **a)** Find at least one possible dataset that fits this description.
 - **b)** Can you find a second dataset that fits the criteria but looks very different?
 - **c)** What does this tell you about the uniqueness of statistical summaries?
+
+
+> **Solution**  
+> Given mean = 10, median = 8, SD ≈ 4, and 5 numbers in the dataset:  
+>  
+> **a)** One possible dataset: [5, 7, 8, 14, 16]  
+> - Mean = (5 + 7 + 8 + 14 + 16) / 5 = 50 / 5 = 10  
+> - Median = 8 (middle value when sorted)  
+> - SD (approximate) close to 4  
+>  
+> **b)** Another dataset: [6, 6, 8, 12, 18]  
+> - Mean = 10, median = 8, SD ≈ 4 as well  
+>  
+> **c)** This shows that statistical summaries like mean, median, and standard deviation are **not unique** and many different datasets can have the same summary statistics but very different values.
 
 
 # Additional Advanced Exercises
