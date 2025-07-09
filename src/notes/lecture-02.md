@@ -231,7 +231,7 @@ Interpret the formulas of independent events and conditional probability by draw
 > ### b) How many play only basketball?
 >
 > $$
-> \boxed{12}
+> 20-8 = \boxed{12}
 > $$
 > 
 > ### c) How many play neither sport (class has 35 students)?
@@ -259,8 +259,8 @@ A card is drawn from a deck. Then a second card is drawn **without replacement**
 > There are 52 cards in a deck, with 4 aces. Cards are drawn **without replacement**, so the total changes after each draw.  
 >
 > **a)** Probability both cards are aces  
-> First card is an ace: $\( \frac{4}{52} \)$  
-> Second card is an ace (only 3 left out of 51): $\( \frac{3}{51} \)$  
+> First card is an ace: $ \( \frac{4}{52} \) $  
+> Second card is an ace (only 3 left out of 51): $ \( \frac{3}{51} \) $  
 > $$
 > P(\text{Ace}_1 \cap \text{Ace}_2) = \frac{4}{52} \times \frac{3}{51} = \frac{12}{2652} = \frac{1}{221}
 > $$  
@@ -315,9 +315,9 @@ A factory has a 5\% chance a part is defective. If a part is found defective, an
 > Probability a part is defective = 0.05  
 >
 > **a)** Probability both parts are defective:  
-> \[
+> **
 > 0.05 \times 0.05 = 0.0025
-> \]  
+> **  
 > That’s a 0.25% chance if the events are independent.  
 >
 > **b)** Does independence hold?  
