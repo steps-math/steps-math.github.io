@@ -133,7 +133,7 @@ Prove that performing a horizontal stretch by factor $k$ then a shift by $h$ is 
 
 ### 5. Domain Composition
 
-Given $f(x)=\sqrt{x-1}$ and $g(x)=\ln(x)$, determine the domain of $g\circ f$ and $f\circ g$, and explain any restrictions.
+Given $f(x)=\sqrt{x-1}$ and $g(x)=\log_{2}(x)$, determine the domain of $g\circ f$ and $f\circ g$, and explain any restrictions.
 
 
 
