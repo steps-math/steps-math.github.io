@@ -203,6 +203,30 @@ Find the **domain** of each function and describe any **discontinuities**:
 - **b)** $f(x) = \frac{2x + 3}{x^2 - 4}$  
 - **c)** $f(x) = \frac{x^2 - 4}{x - 2}$
 
+> **Solution**  
+> **a)** $( f(x) = \sqrt{x - 3} )$  
+> - A square root is only defined when the expression inside is ≥ 0.  
+> - So:  
+> $$
+> x - 3 \geq 0 \Rightarrow x \geq 3
+> $$  
+> - **Domain**: $( [3, \infty) )$  
+> - **Discontinuity**: None; the function is continuous for all values in its domain.  
+>  
+> **b)** $( f(x) = \frac{2x + 3}{x^2 - 4} )$  
+> - Denominator cannot be zero:  
+> $$
+> x^2 - 4 = 0 \Rightarrow x = \pm2
+> $$ 
+> - **Domain**: $( \mathbb{R} \setminus \{-2, 2\} )$  
+> - **Discontinuity**: Vertical asymptotes at $( x = -2 ) and ( x = 2 )$  
+>  
+> **c)** $( f(x) = \frac{x^2 - 4}{x - 2} )$  
+> - Factor numerator: $( (x - 2)(x + 2) )$  
+> - The \( x - 2 \) cancels, leaving $( f(x) = x + 2 )$, but the original function is undefined at \( x = 2 \).  
+> - **Domain**: $( \mathbb{R} \setminus \{2\} )$  
+> - **Discontinuity**: **Removable discontinuity (hole)** at \( x = 2 \)
+
 
 ## 4. Root Domain Puzzle
 For each function, find the domain, but without graphing. Justify your reasoning algebraically:
@@ -210,6 +234,31 @@ For each function, find the domain, but without graphing. Justify your reasoning
 - **a)** $f(x) = \sqrt{4 - x^2}$
 - **b)** $g(x) = \sqrt{x^2 - 4}$
 - **c)** $h(x) = \sqrt{(x - 1)(x + 2)}$
+
+> **Solution**  
+> **a)** $( f(x) = \sqrt{4 - x^2} )$  
+> - Inside square root must be ≥ 0:  
+> $$
+> 4 - x^2 \geq 0 \Rightarrow -2 \leq x \leq 2
+> $$  
+> - **Domain**: \( [-2, 2] \)  
+>  
+> **b)** $( g(x) = \sqrt{x^2 - 4} )$  
+> - Square root is defined when:  
+> $$
+> x^2 - 4 \geq 0 \Rightarrow x \leq -2 \text{ or } x \geq 2
+> $$  
+> - **Domain**: $( (-\infty, -2] \cup [2, \infty) )$  
+>  
+> **c)** $( h(x) = \sqrt{(x - 1)(x + 2)} )$  
+> - Find where the expression is ≥ 0. Use sign chart:  
+> - Critical points: \( x = -2 \) and \( x = 1 \)  
+> - Test intervals:  
+>   - \( x < -2 \): both factors negative → product positive  
+>   - \( -2 < x < 1 \): one factor negative → product negative  
+>   - \( x > 1 \): both positive → product positive  
+> - Include points where the expression = 0  
+> - **Domain**: $( (-\infty, -2] \cup [1, \infty) )$
 
 ## 5. Impossible Graph?
 
@@ -221,6 +270,26 @@ Here is a graph sketch:
 
   - **a)** Can you write a rational function that fits this behavior?
   - **c)** What happens if you remove the factor that causes the hole?
+
+> **Solution**  
+> **a)** We need a rational function with:  
+> - Hole at \( x = 2 \): this means the factor \( (x - 2) \) is **canceled**  
+> - Vertical asymptote at \( x = -1 \): the factor \( (x + 1) \) is in the denominator but **not** canceled  
+> - Horizontal asymptote at \( y = 3 \): degree of numerator = degree of denominator; leading coefficients ratio = 3  
+>  
+> One possible function:  
+> $$
+> f(x) = \frac{3(x - 2)}{(x - 2)(x + 1)} = \frac{3}{x + 1} \text{ for } x \neq 2
+> $$  
+>  
+> - Hole at \( x = 2 \), vertical asymptote at \( x = -1 \), and horizontal asymptote at \( y = 3 \) ✔️  
+>  
+> **b)** If we **remove** the factor that causes the hole (i.e., cancel \( (x - 2) \) from numerator and denominator), the hole disappears.  
+> The function becomes:  
+> $$
+> f(x) = \frac{3}{x + 1}
+> $$  
+> Now it is defined at $( x = 2 )$ and is no longer discontinuous there.
 
 
 ## 6. Graph from Clues
@@ -234,7 +303,37 @@ Build a rational function that:
   - **a)** Write a possible expression.
   - **b)** Label all key features on a sketch.
   - **c)** Change your function so that the horizontal asymptote is now $y = 5$. What did you change?
- 
+
+
+> **Solution**  
+> **a)** Features needed:  
+> - Vertical asymptote at \( x = 2 \): means factor \( (x - 2) \) in denominator  
+> - Hole at \( x = -1 \): means factor \( (x + 1) \) in both numerator and denominator  
+> - Horizontal asymptote at \( y = 1 \): numerator and denominator same degree; leading coefficients equal  
+> - Zero at \( x = 3 \): factor \( (x - 3) \) in numerator  
+>  
+> A possible function:  
+> $$
+> f(x) = \frac{(x - 3)(x + 1)}{(x - 2)(x + 1)}
+> $$  
+> - The \( (x + 1) \) cancels, creating a **hole** at \( x = -1 \)  
+>  
+> **b)** Key features on the graph:  
+> - Hole at \( x = -1 \)  
+> - Vertical asymptote at \( x = 2 \)  
+> - x-intercept at \( x = 3 \)  
+> - Horizontal asymptote at \( y = 1 \) (degrees equal, leading coefficients = 1)  
+>  
+> **c)** To change the horizontal asymptote to \( y = 5 \), make the **leading coefficient** of the numerator 5:  
+> $$
+> f(x) = \frac{5(x - 3)(x + 1)}{(x - 2)(x + 1)}
+> $$ 
+> After canceling, this becomes:  
+> $$
+> f(x) = \frac{5(x - 3)}{x - 2}
+> $$ 
+> Now the degrees are still equal, but the ratio of leading coefficients is 5, so the horizontal asymptote is \( y = 5 \).
+
 # Extra Advanced Exercises:
 
 ## 1. Asymptotic Limit Puzzle
