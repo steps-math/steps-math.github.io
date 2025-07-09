@@ -293,6 +293,47 @@ You are told a cubic polynomial passes through the following points:
 - **c)** What is the leading coefficient and what does it tell you about end behavior?
 - **d)** What is the domain and range of your function?
 
+  
+> **Solution**  
+> **a)** We're told the function is cubic and passes through three x-intercepts (three roots):  
+> $f(1) = 0$, $f(2) = 0$, $f(3) = 0$, and $f(0) = 12$  
+>  
+> This suggests we can write the function in factored form:  
+> $$f(x) = a(x - 1)(x - 2)(x - 3)$$  
+>  
+> Use $f(0) = 12$ to solve for $a$:  
+> $$
+> f(0) = a(-1)(-2)(-3) = -6a = 12 \Rightarrow a = -2
+> $$  
+>  
+> So, the function is:  
+> $$f(x) = -2(x - 1)(x - 2)(x - 3)$$  
+>  
+> **b)** Expand the expression:  
+> First expand two of the factors:  
+> $$
+> (x - 1)(x - 2) = x^2 - 3x + 2
+> $$ 
+> Multiply with the third:  
+> $$
+> (x^2 - 3x + 2)(x - 3) = x^3 - 3x^2 + 2x - 3x^2 + 9x - 6 = x^3 - 6x^2 + 11x - 6
+> $$ 
+> Multiply by $-2$:  
+> $$
+> f(x) = -2x^3 + 12x^2 - 22x + 12
+> $$  
+>  
+> **c)** The **leading coefficient** is **−2**  
+> - Since the degree is 3 (odd) and the leading coefficient is negative, the end behavior is:  
+>   - $x \to -\infty$, $f(x) \to \infty$  
+>   - $x \to \infty$, $f(x) \to -\infty$  
+>  
+> This tells us the function **falls to the right** and **rises to the left**.  
+>  
+> **d)**  
+> - **Domain**: All real numbers, $\mathbb{R}$  
+> - **Range**: All real numbers, $\mathbb{R}$ (cubic polynomials are unbounded vertically)
+
 ---
 
 # Extra Advanced Exercises
