@@ -186,6 +186,26 @@ The tank starts full at 100 liters, and drains at 5 liters per minute, until emp
 - **c)** What is the range of $h(t)$?
 - **d)** Could this function continue forever?
 
+> **Solution**  
+> **a)** The tank starts full at 100 liters and drains at a rate of 5 liters per minute. Once it’s empty, the amount of water stays at 0.  
+>  
+> A piecewise function to represent this is:  
+> $$
+> h(t) = 
+> \begin{cases}
+> 100 - 5t & \text{if } 0 \leq t \leq 20 \\
+> 0 & \text{if } t > 20
+> \end{cases}
+> $$
+>  
+> **b)** The domain is all non-negative real numbers since time can continue indefinitely:  
+> $$\text{Domain: } [0, \infty)$$  
+>  
+> **c)** The range is all the possible values of $h(t)$. The tank drains from 100 liters to 0 and stays at 0:  
+> $$\text{Range: } [0, 100]$$  
+>  
+> **d)** Yes, the function continues forever. After 20 minutes, the tank is empty and the water level remains at 0 for all $t > 20$.
+
 ## 2. Photo Frame
 
 You have a square photo print with side length $x$ centimeters. You want to add a frame of constant width $2$ centimeters all around it.
@@ -195,12 +215,49 @@ You have a square photo print with side length $x$ centimeters. You want to add 
   
 Hint: Write the area of the frame as a function of $x$, and then solve for $x$.
 
+> **Solution**  
+> Let the photo side length be $x$ cm. The frame adds 2 cm all around, so the total side length with frame is:  
+> $$x + 2 + 2 = x + 4$$  
+>  
+> The area of the photo alone is:  
+> $$x^2$$  
+>  
+> The area of the photo plus frame is:  
+> $$(x + 4)^2$$  
+>  
+> The area of the frame alone is the difference:  
+> $$\text{Frame area} = (x + 4)^2 - x^2$$  
+> Given frame area = 100 cm², write the equation:  
+> $$(x + 4)^2 - x^2 = 100$$  
+>  
+> Expand:  
+> $$x^2 + 8x + 16 - x^2 = 100 \implies 8x + 16 = 100$$  
+>  
+> Solve for $x$:  
+> $$8x = 84 \implies x = 10.5$$  
+>  
+> So, the photo side length should be **10.5 cm**.
+
+
 ## 3. Quadratic Function Construction
 
 Construct a quadratic function $f(x)$ that satisfies the following:
 
 - The vertex is at $(2,−3)$
 - $f(0)=5$
+
+> **Solution**  
+> The vertex form of a quadratic is:  
+> $$f(x) = a(x - h)^2 + k$$  
+> where vertex is at $(h,k)$. Here, vertex $(2,-3)$ gives:  
+> $$f(x) = a(x - 2)^2 - 3$$  
+>  
+> Use $f(0) = 5$ to find $a$:  
+> $$5 = a(0 - 2)^2 - 3 \implies 5 = 4a - 3$$  
+> $$4a = 8 \implies a = 2$$  
+>  
+> Therefore, the function is:  
+> $$f(x) = 2(x - 2)^2 - 3$$
 
 ## 4. Reverse Engineering a Function
 
@@ -214,6 +271,41 @@ You are given that:
   - **a)** Can you guess a formula for $f(x)$?
   - **b)** Is your function linear or nonlinear? How can you tell?
   - **c)** Could more than one rule produce these values? Why or why not?
+
+> **Solution**  
+> **a)** Look at the values:  
+> $$
+> \begin{aligned}
+> f(0) &= 2 \\
+> f(1) &= 5 \\
+> f(2) &= 8 \\
+> f(3) &= 11
+> \end{aligned}
+> $$
+> Notice that each time $x$ increases by 1, $f(x)$ increases by 3. So the function increases linearly with slope 3.  
+> A possible formula is:  
+> $$f(x) = 3x + 2$$  
+>  
+> **b)** The function is linear because the output changes by a constant amount (3) for every increase of 1 in $x$.  
+>  
+> **c)** Could more than one rule produce these values?  
+> Technically, yes — more than one function could match these four points but behave differently elsewhere.  
+>  
+> For example, consider the absolute value function:  
+> $$f(x) = 3|x - 1| + 2$$  
+>  
+> Let's check the values:  
+> $$
+> \begin{aligned}
+> f(0) &= 3|0 - 1| + 2 = 3(1) + 2 = 5 \\
+> f(1) &= 3|1 - 1| + 2 = 0 + 2 = 2 \\
+> f(2) &= 3|2 - 1| + 2 = 3(1) + 2 = 5 \\
+> f(3) &= 3|3 - 1| + 2 = 3(2) + 2 = 8
+> \end{aligned}
+> $$  
+> These outputs do **not** match the original $f(x)$ values, proving this is a **different rule**. However, with careful design, a nonlinear function could be made to match specific points.  
+>  
+> This example shows that **just a few input-output pairs aren’t enough to uniquely determine a function**, especially if you're not assuming linearity. Different rules can fit the same values at some $x$ but behave differently elsewhere.
 
 ---
 
