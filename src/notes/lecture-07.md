@@ -187,6 +187,30 @@ Determine the domain and range of each:
 - **b)** $f(x) = \log_{10}(x^2 - 1)$
 - **c)** $f(x) = \log_{10}(2 - x)$
 
+> **Solution**  
+> **a)** $( f(x) = 3^{x^2 - 4} )$  
+> - Exponential functions are always defined for all real numbers.  
+> - So, **domain**: $( \mathbb{R} )$  
+> - The base 3 raised to any power is always positive, so the output is always greater than 0.  
+> - **Range**: $( (0, \infty) )$  
+>  
+> **b)** $( f(x) = \log_{10}(x^2 - 1) )$  
+> - Logarithms are only defined for positive inputs.  
+> - So:  
+> $$
+> x^2 - 1 > 0 \Rightarrow x^2 > 1 \Rightarrow x < -1 \text{ or } x > 1
+> $$  
+> - **Domain**: $(-\infty, -1) \cup (1, \infty)$  
+> - Since $( x^2 - 1 )$ can get very large or very small positive values, the output (log) can be any real number.  
+> - **Range**: $( \mathbb{R} )$  
+>  
+> **c)** $f(x) = \log_{10}(2 - x)$  
+> - Require: $2 - x > 0 \Rightarrow x < 2$  
+> - **Domain**: $( (-\infty, 2) )$  
+> - As $x \to -\infty$, $2 - x \to \infty$, so $\log_{10}(2 - x) \to \infty$  
+> - As $x \to 2^-$, $2 - x \to 0^+$, so $\log_{10}(2 - x) \to -\infty$  
+> - **Range**: $\mathbb{R}$
+
 ## 3. Prove Logarithmic Properties
 
 Use the definition $\log_b(x) = y \iff b^y = x$ to prove the following properties:
@@ -194,6 +218,31 @@ Use the definition $\log_b(x) = y \iff b^y = x$ to prove the following propertie
 - **a)** $\log_b(xy) = \log_b(x) + \log_b(y)$
 - **b)** $\log_b(x/y) = \log_b(x) - \log_b(y)$
 - **c)** $\log_b(x^k) = k \log_b(x)$
+
+> **Solution**  
+> **a)** Prove: $\log_b(xy) = \log_b(x) + \log_b(y)$  
+> Let:  
+> $$
+> \log_b(x) = m \Rightarrow b^m = x \quad \text{and} \quad \log_b(y) = n \Rightarrow b^n = y  
+> $$  
+> Multiply:  
+> $$
+> xy = b^m \cdot b^n = b^{m+n}  
+> \Rightarrow \log_b(xy) = m + n = \log_b(x) + \log_b(y)
+> $$ 
+>  
+> **b)** Prove: $\log_b(x/y) = \log_b(x) - \log_b(y)$  
+> Let $\log_b(x) = m$ and $\log_b(y) = n$  
+> $$
+> \Rightarrow x = b^m, \; y = b^n \Rightarrow \frac{x}{y} = \frac{b^m}{b^n} = b^{m - n}  
+> \Rightarrow \log_b(x/y) = m - n = \log_b(x) - \log_b(y)
+> $$  
+>  
+> **c)** Prove: $\log_b(x^k) = k \log_b(x)$  
+> Let $\log_b(x) = m \Rightarrow x = b^m$  
+> $$
+> x^k = (b^m)^k = b^{km} \Rightarrow \log_b(x^k) = km = k \log_b(x)
+> $$
 
 ## 4. Bacteria Growth
 
@@ -207,17 +256,87 @@ Questions:
 
 - **c)** After how many hours will the population reach at least 6,400 bacteria?
 
+
+> **Solution**  
+> **a)** The bacteria **doubles every 3 hours** starting from 100.  
+> General exponential form:  
+> $$
+> P(t) = P_0 \cdot 2^{t/3}
+> $$ 
+> So:  
+> $$
+> P(t) = 100 \cdot 2^{t/3}
+> $$ 
+>  
+> **b)** After 12 hours:  
+> $$
+> P(12) = 100 \cdot 2^{12/3} = 100 \cdot 2^4 = 100 \cdot 16 = 1600
+> $$ 
+> So, **1600 bacteria** after 12 hours.  
+>  
+> **c)** Want:  
+> $$
+> 100 \cdot 2^{t/3} \geq 6400  
+> \Rightarrow 2^{t/3} \geq 64  
+> \Rightarrow 2^{t/3} = 2^6 \Rightarrow \frac{t}{3} = 6 \Rightarrow t = 18
+> $$ 
+> So, the population reaches at least 6400 after **18 hours**.
+
 ## 5. Solve the exponential equation
 
 Solve for $x$:
 
 $$5^{2x} = 5^{x+1} - 6$$
 
+> **Solution**  
+> Solve:  
+> $$
+> 5^{2x} = 5^{x+1} - 6
+> $$ 
+> Let’s set $y = 5^x$.  
+> Then:  
+> $$
+> 5^{2x} = (5^x)^2 = y^2, \quad 5^{x+1} = 5 \cdot 5^x = 5y  
+> $$ 
+> Substituting:  
+> $$
+> y^2 = 5y - 6 \Rightarrow y^2 - 5y + 6 = 0  
+> \Rightarrow (y - 2)(y - 3) = 0 \Rightarrow y = 2 \text{ or } y = 3
+> $$
+> Recall $y = 5^x$:  
+> - If $5^x = 2 \Rightarrow x = \log_5(2)$  
+> - If $5^x = 3 \Rightarrow x = \log_5(3)$
+>  
+> **Final answers**:  
+> $$
+> x = \log_5(2) \quad \text{or} \quad x = \log_5(3)
+> $$
+
 ## 6. Solve the logarithmic equation
 
 Solve for $x$:
 
 $$4 \log_3(x^2) - \log_3(x) = 14$$
+
+> **Solution**  
+> Given:  
+> $$
+> 4 \log_3(x^2) - \log_3(x) = 14
+> $$  
+> Use log power rule:  
+> $$
+> \log_3(x^2) = 2 \log_3(x) \Rightarrow 4 \cdot 2 \log_3(x) = 8 \log_3(x)
+> $$  
+> So the equation becomes:  
+> $$
+> 8 \log_3(x) - \log_3(x) = 14 \Rightarrow 7 \log_3(x) = 14  
+> \Rightarrow \log_3(x) = 2
+> $$  
+> Now rewrite in exponential form:  
+> $$
+> x = 3^2 = 9
+> $$  
+> **Final answer**: $x = 9$
 
 # Extra Advanced Exercises
 
