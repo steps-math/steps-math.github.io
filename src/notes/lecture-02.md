@@ -162,6 +162,17 @@ Identify whether the following pairs of events are independent or dependent:
 **b)** Drawing two cards from a deck without replacement  
 **c)** Rain today and whether you carry an umbrella
 
+> **Solution**  
+> **a)** Flipping a coin and rolling a die  
+> These events are **independent**. The outcome of flipping a coin does not affect the outcome of rolling a die.  
+>
+> **b)** Drawing two cards from a deck without replacement  
+> These events are **dependent**. Drawing the first card changes the total number of cards in the deck, affecting the probability of the second draw.  
+>
+> **c)** Rain today and whether you carry an umbrella  
+> These events are **dependent**. If it rains, you're more likely to carry an umbrella. One event influences the other.
+
+
 ### 2. Conditional Probability Basics
 A bag contains 3 red and 2 blue marbles. A marble is drawn and **not replaced**, then a second marble is drawn.
 
@@ -170,8 +181,26 @@ What is the probability that:
 **a)** The first is red and the second is blue?  
 **b)** Both are red?
 
+> **Solution**  
+> There are 3 red and 2 blue marbles (total = 5). The draws are **without replacement**, so probabilities change after the first draw.  
+>
+> **a)** First is red, second is blue  
+> $$
+> P(\text{Red}_1 \cap \text{Blue}_2) = P(\text{Red}_1) \times P(\text{Blue}_2 \mid \text{Red}_1)
+> $$
+> $$
+> = \frac{3}{5} \times \frac{2}{4} = \frac{6}{20} = \frac{3}{10}
+> $$  
+>
+> **b)** Both are red  
+> $$
+> P(\text{Red}_1 \cap \text{Red}_2) = \frac{3}{5} \times \frac{2}{4} = \frac{6}{20} = \frac{3}{10}
+> $$
+
 ### 3. Venn Diagram Logic
 Interpret the formulas of independent events and conditional probability by drawing Venn diagrams.
+
+> Hint: Return back to the lecture notes on conditional probability. 
 
 ### 4. In a class:
 - 20 students play basketball (B)
@@ -182,6 +211,42 @@ Interpret the formulas of independent events and conditional probability by draw
 **b)** How many play only basketball?  
 **c)** How many play neither sport if the class has 35 students?
 
+### **Solution**: 
+
+> We are given:
+>
+> - 20 students play **basketball** (B)  
+> - 15 students play **soccer** (S)  
+> - 8 students play **both**
+>
+> ### a) Venn Diagram
+>
+> Two overlapping circles:
+> - Left circle (Basketball): 20 total  
+> - Right circle (Soccer): 15 total  
+> - Overlap (Both): 8  
+> - So, only basketball = $\( 20 - 8 = 12 \)$
+> - Only soccer = $\( 15 - 8 = 7 \)$
+>
+> ### b) How many play only basketball?
+>
+> $$
+> \boxed{12}
+> $$
+> 
+> ### c) How many play neither sport (class has 35 students)?
+>
+> Total playing at least one sport:
+>
+> $$
+> 12 (\text{only B}) + 7 (\text{only S}) + 8 (\text{both}) = 27
+> $$
+>
+> $$
+> \boxed{35 - 27 = 8} \text{ students play neither}
+> $$
+
+
 ### 5. Drawing Cards
 A card is drawn from a deck. Then a second card is drawn **without replacement**.
 
@@ -189,6 +254,24 @@ A card is drawn from a deck. Then a second card is drawn **without replacement**
 **b)** What is the probability the second card is an ace **given** the first was an ace?
 
 > *Hint:* There are 4 aces in 52 cards.
+
+> **Solution**  
+> There are 52 cards in a deck, with 4 aces. Cards are drawn **without replacement**, so the total changes after each draw.  
+>
+> **a)** Probability both cards are aces  
+> First card is an ace: $\( \frac{4}{52} \)$  
+> Second card is an ace (only 3 left out of 51): $\( \frac{3}{51} \)$  
+> $$
+> P(\text{Ace}_1 \cap \text{Ace}_2) = \frac{4}{52} \times \frac{3}{51} = \frac{12}{2652} = \frac{1}{221}
+> $$  
+>
+> **b)** Probability second card is an ace **given** the first was an ace  
+> $$
+> P(\text{Ace}_2 \mid \text{Ace}_1) = \frac{3}{51} \approx 0.0588
+> $$ 
+> This is a conditional probability based on the first card already being an ace.
+
+
 
 ### 6. Continuous Probability
 The time to complete an online quiz is uniformly distributed between 10 and 30 minutes.
@@ -200,6 +283,26 @@ The time to complete an online quiz is uniformly distributed between 10 and 30 m
 > *Hint:* Use the formula:  
 > $$P(a \leq X \leq b) = \frac{b - a}{\text{range width}}$$
 
+
+> **Solution**  
+> The quiz time is uniformly distributed from 10 to 30 minutes.  
+> Total range: \(30 - 10 = 20\)  
+>
+> **a)** Probability of finishing in less than 15 minutes:  
+> $$
+> \frac{15 - 10}{20} = \frac{5}{20} = 0.25
+> $$  
+>
+> **b)** Probability of taking more than 25 minutes:  
+> $$
+> \frac{30 - 25}{20} = \frac{5}{20} = 0.25
+> $$  
+>
+> **c)** Probability of taking between 18 and 22 minutes:  
+> $$
+> \frac{22 - 18}{20} = \frac{4}{20} = 0.2
+> $$
+
 ### 7. Real-Life Dependent Event
 A factory has a 5\% chance a part is defective. If a part is found defective, another one is checked.
 
@@ -207,6 +310,18 @@ A factory has a 5\% chance a part is defective. If a part is found defective, an
 **b)** What does this suggest about the assumption of independence?
 
 > *Hint:* Think about whether the second part's probability should be the same as the first.
+
+>**Solution**  
+> Probability a part is defective = 0.05  
+>
+> **a)** Probability both parts are defective:  
+> \[
+> 0.05 \times 0.05 = 0.0025
+> \]  
+> That’s a 0.25% chance if the events are independent.  
+>
+> **b)** Does independence hold?  
+> In real life, defects may be caused by the same machine or batch, making defects **dependent**. So, the second defect might be **more likely** if the first one was defective.
 
 # Advanced exercises
 
