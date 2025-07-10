@@ -66,11 +66,11 @@ Start with $f(x) = \sqrt{x}$. Apply the following transformations in order to ob
 
 Let the final function be $g(x)$.  
 - **Write** the final formula: $g(x) = \dots$  
-- **Evaluate**: What is $g(4)$?  
+- **Evaluate**: What is $g(-4)$?  
 
 > **Submit:**  
 > - **a)** Final formula $g(x)$  
-> - **b)** Numerical value $g(4)$  
+> - **b)** Numerical value $g(-4)$  
 
 ---
 
