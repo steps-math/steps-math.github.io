@@ -14,7 +14,7 @@ date: 2025-07-13
 
 3. Solve for $x$: $\log (x^2) + \log (\frac{1}{x}) = 3$
 
-4. Find the domain and range of the function $f(x)=2-\sqrt{6-3x}$.
+4. Find the domain and range of the function $f(x)=2-\sqrt{9-3x}$.
 
 5. Consider the functions $f(x)=\log_3(x-1)$ and $g(x)=\sqrt{2x-4}$.
     a. What are the domains of $f(x)$ and $g(x)$?
