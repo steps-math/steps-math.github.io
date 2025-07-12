@@ -99,7 +99,7 @@ where solving for $y$ may require multiple branches or be impossible in closed f
 
 1. **Inverse Practice**  
    **a)** $f(x)=3x-5$  
-   **b)** $f(x)=\sqrt{x+2}$ (restrict to $x\ge -2$)  
+   **b)** $f(x)=\sqrt{x+2}$  
    **c)** $f(x)=\dfrac{2x+1}{x-1}$
 
 2. **Horizontal Line Test**  
@@ -113,20 +113,19 @@ where solving for $y$ may require multiple branches or be impossible in closed f
    - On $[1,\infty)$, find and plot its inverse branch.  
    - Include the line $y = x$.
 
-4. **Implicit → Explicit**  
-   Given $x^2 + xy + y^2 - 7 = 0$:  
-   - Solve for $y$ to find both branches.  
-   - State the domain for each branch.
-
-5. **Implicit Curve Analysis**  
-    For $x^4 + y^4 = 8xy$:  
-   - Sketch or graph the relation.  
-   - Identify loops or intersections.  
-   - Explain why no single explicit $y=f(x)$ exists.
-
-6. **Inverse Composition**  
+4. **Inverse Composition**  
    Let $f(x)=2x+3$, $g(x)=\sqrt{x}$.  
    - Compute $(f\circ g)^{-1}$.  
    - Compare with $g^{-1}\circ f^{-1}$.
 
+5. **Implicit → Explicit**  
+   Given $x^2 + xy + y^2 - 7 = 0$:  
+   - Solve for $y$ to find both branches.  
+   - State the domain for each branch.
+
+6. **Implicit Curve Analysis**  
+    For $x^4 + y^4 = 8xy$:  
+   - Sketch or graph the relation.  
+   - Identify loops or intersections.  
+   - Explain why no single explicit $y=f(x)$ exists.
 
