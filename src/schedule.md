@@ -60,9 +60,9 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | 12 | Saturday, July 12 | Operations on functions (continued). Inverse functions and implicit vs. explicit functions. | [_lecture 9_](/notes/lecture-09/) |
 | 13 | Sunday, July 13 | Problem solving session. | [_review questions_](/notes/lecture-10/) |
 | 14 | Monday, July 14 | **Quiz 1** (Probability and Functions) | -- |
-| 15 | Tuesday, July 15 | Formal definition of discontinuities, removable vs essential discontinuities, and various functions behaviors. |  |
-| 16 | Wednesday, July 16 | Introduction to limits, limits on graphs, and limits of infinity. |  |
-| 17 | Thursday, July 17 | Introductory limits problems and exercises. |  |
+| 15 | Tuesday, July 15 | Quiz 1 problems review. |  |
+| 16 | Wednesday, July 16 | Introduction to limits, limits on graphs, and limits of infinity. | [_lecture 12_](/notes/lecture-12/) |
+| 17 | Thursday, July 17 | Introductory limits problems and exercises. | [_lecture 13_](/notes/lecture-13/) |
 | - | Friday, July 18 | **No Class** |  |
 
 </div>
@@ -73,7 +73,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
-| 18 | Saturday, July 19 | Formal definition of limits, laws of limits (addition/multiplication), and examples on previous functions (could also add step function). |  |
+| 18 | Saturday, July 19 | Formal definition of limits, laws of limits (addition/multiplication), and examples on previous functions. |  |
 | 19 | Sunday, July 20 | Laws of limits continued. More examples and problems. |  |
 | 20 | Monday, July 21 | Existence of limits, one sided limits, and infinity limits. |  |
 | 21 | Tuesday, July 22 | Squeeze Theorem. Intermediate Value Theorem. Examples and Applications. |  |
