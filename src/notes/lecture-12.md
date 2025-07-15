@@ -204,8 +204,10 @@ Using graphical software (like Desmos or GeoGebra), plot the following functions
 ## 4. Compound limits
 Evaluate the following limits:
 
-**a)** $\lim_{x \to \infty} (\sqrt{x^2+5} - x)$
+**a)** $\lim_{x \to \infty} \log_3(\frac{x^3-8}{x+1})$
 
-**b)** $\lim_{x \to -\infty} \frac{\sqrt{x^2+1}}{x}$
+**b)** $\lim_{x \to \infty} (\sqrt{x^2+5} - x)$
 
-**c)** $\lim_{x \to 2} \frac{\sqrt{x+7} - 3}{x-2}$
+**c)** $\lim_{x \to -\infty} \frac{\sqrt{x^2+1}}{x}$
+
+**d)** $\lim_{x \to 2} \frac{\sqrt{x+7} - 3}{x-2}$
