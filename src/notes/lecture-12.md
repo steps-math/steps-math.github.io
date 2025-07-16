@@ -175,7 +175,7 @@ Write **98765** if the limit is $\infty$ and **-98765** if the limit is $-\infty
 **g)** What is $\lim_{x \to \infty} \log_2(x)$?
 {% answerNumeric "lim11" 98765 "Enter your answer" %}
 
-**h)** What is $\lim_{x \to -\infty} \log_2(x)$?
+**h)** What is $\lim_{x \to 0^+} \log_2(x)$?
 {% answerNumeric "lim12" -98765 "Enter your answer" %}
 
 **i)** What is $\lim_{x \to \infty} \log_2(\frac{1}{x})$?
