@@ -3,7 +3,7 @@ layout: base.njk
 title: Introduction to Limits
 category: limits
 description: Lecture 12
-date: 2025-07-15
+date: 2025-07-16
 ---
 
 # Introduction to limits, limits on graphs, and limits of infinity.
