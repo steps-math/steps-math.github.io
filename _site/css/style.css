@@ -381,6 +381,134 @@ blockquote cite::before {
     font-weight: bold;
 }
 
+/* Details and Summary (Toggled Content) Styles */
+details {
+    background: var(--card-bg);
+    border: 2px solid var(--input-border);
+    border-radius: 12px;
+    margin: 1rem 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+details:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.1);
+}
+
+details[open] {
+    background: linear-gradient(135deg, var(--blockquote-bg) 0%, var(--card-bg) 100%);
+    border-color: var(--primary-color);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.15);
+}
+
+summary {
+    background: linear-gradient(135deg, var(--table-header-bg) 0%, var(--heading-color) 100%);
+    color: var(--navbar-text);
+    padding: 0.25rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    user-select: none;
+}
+
+summary:hover {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--table-header-bg) 100%);
+    color: white;
+}
+
+summary::before {
+    content: " ";
+    display: inline-block;
+    margin-right: 0.75rem;
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+    color: white;
+}
+
+details[open] summary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--table-header-bg) 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Content inside details when open */
+details[open] > *:not(summary) {
+    padding: 2rem;
+    background: transparent;
+    animation: slideDown 0.3s ease-out;
+}
+
+/* Animation for opening details */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark mode specific styles for details */
+[data-theme="dark"] details {
+    background: linear-gradient(135deg, #1a2531 0%, #2c3e50 100%);
+    border-color: #4a5a6a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] details:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.2);
+}
+
+[data-theme="dark"] details[open] {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a2531 100%);
+    border-color: var(--primary-color);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.25);
+}
+
+[data-theme="dark"] summary {
+    background: linear-gradient(135deg, #1f2c3a 0%, #334155 100%);
+    color: #ecf0f1;
+}
+
+[data-theme="dark"] summary:hover {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1f2c3a 100%);
+    color: white;
+}
+
+[data-theme="dark"] details[open] summary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1f2c3a 100%);
+    color: white;
+}
+
+/* Mobile responsive styles for details */
+@media (max-width: 768px) {
+    details {
+        margin: 1rem 0;
+        border-radius: 8px;
+    }
+    
+    summary {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+    
+    details[open] > *:not(summary) {
+        padding: 1rem;
+    }
+}
+
 /* Math equations */
 .katex-display {
     margin: 2rem 0;
