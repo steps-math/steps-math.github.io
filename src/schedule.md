@@ -73,11 +73,11 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
-| 18 | Saturday, July 19 | Laws of limits (addition/multiplication), and examples on previous functions. |  |
-| 19 | Sunday, July 20 | Laws of limits continued. More examples and problems. |  |
-| 20 | Monday, July 21 | Trigonometric functions. The unit circle. |  |
-| 21 | Tuesday, July 22 | Squeeze Theorem. Intermediate Value Theorem. Examples and Applications. |  |
-| 22 | Wednesday, July 23 | **Lab 3**: Limits lab. Case study of $\sin(\frac{1}{x})$, and guided exploration of $\epsilon-\delta$ definition of limits. |  |
+| 18 | Saturday, July 19 | Laws of limits and Squeeze theorem. | [_lecture 14_](/notes/lecture-14/) |
+| 19 | Sunday, July 20 | Algebraic manipulation of limits. |  |
+| 20 | Monday, July 21 | Euler Number $e$ and its properties. $\ln(x)$ and $e^x$. |  |
+| 21 | Tuesday, July 22 | Trigonometric functions. The unit circle. |  |
+| 22 | Wednesday, July 23 | **Lab 3**: Limits problem solving session. |  |
 | 23 | Thursday, July 24 | **Quiz 2** (Limits and Continuity) | -- |
 | - | Friday, July 25 | **No Class** |  |
 
