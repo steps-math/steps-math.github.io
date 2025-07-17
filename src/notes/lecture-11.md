@@ -111,6 +111,28 @@ We’ll focus on **three major types** of discontinuities that show up in graphs
 ---
 
 # Exercises
+## 1. Determine Continuity 
+a) $log_3(x)$
+
+b)
+$$
+f(x) = 
+\begin{cases}
+2x & \text{if } x < 2 \\
+x^3 & \text{if } x \geq 2
+\end{cases}
+$$
 
 
+c) 
+$$
+f(x) = 
+\begin{cases}
+2^x & \text{if } x < 4 \\
+x^2 & \text{if } x \geq 4
+\end{cases}
+$$
+
+
+d) $\frac{2}{x+3} +2$
 
