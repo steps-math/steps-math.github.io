@@ -264,7 +264,7 @@ The ASTC rule is an acronym for remembering the **positive** signs of the trigon
 
 ## Sine and cosine
 
-> Trigonometry cheat sheet: [link](https://www.math.net/trigonometry-cheat-sheet)
+> Trigonometry cheat sheet: [link](https://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet.pdf)
 
 The sine and cosine functions are defined as the y and x coordinates of a point on the unit circle, respectively.
 
