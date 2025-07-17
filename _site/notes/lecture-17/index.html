@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topics - STEPs Math Course</title>
+    <title>Trigonometric functions and the unit circle - STEPs Math Course</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,73 +39,149 @@
     </nav>
 
     <main class="main-content">
-        <h1>Daily Topics</h1>
-<p>Here you'll find organized notes for each class session covering probability and statistics, functions and graphs, continuity, limits, and differentiation concepts.</p>
-<h2>Probability and Statistics Topics</h2>
-<ul>
-<li>
-<p><a href="/notes/lecture-01/">Introduction to Probability</a> - Lecture 1</p>
-</li>
-<li>
-<p><a href="/notes/lecture-02/">Dependent vs Independent Events, Conditional Probability, and Continuous Distributions</a> - Lecture 2</p>
-</li>
-<li>
-<p><a href="/notes/lecture-03/">Descriptive Statistics – Mean, Median, and Variance</a> - Lecture 3</p>
-</li>
-</ul>
-<h2>Functions and Graphs Topics</h2>
-<ul>
-<li>
-<p><a href="/notes/lecture-04/">Functions definition and basic examples (linear, quadratic)</a> - Lecture 4</p>
-</li>
-<li>
-<p><a href="/notes/lecture-05/">Polynomial functions, graphs, and infinity behavior</a> - Lecture 5</p>
-</li>
-<li>
-<p><a href="/notes/lecture-06/">Root and Rational Functions, Discontinuities, and Infinity Behavior</a> - Lecture 6</p>
-</li>
-<li>
-<p><a href="/notes/lecture-07/">Exponential and Logarithmic Functions</a> - Lecture 7</p>
-</li>
-<li>
-<p><a href="/notes/lecture-08/">Operations on Functions — Transformations and Composition</a> - Lecture 8</p>
-</li>
-<li>
-<p><a href="/notes/lecture-09/">Operations on Functions — Inverses &amp; Implicit vs. Explicit</a> - Lecture 9</p>
-</li>
-<li>
-<p><a href="/notes/lecture-10-answer-key/">Review Questions Answer Key</a> - Lecture 10 Answer Key</p>
-</li>
-<li>
-<p><a href="/notes/lecture-10/">Review Questions</a> - Lecture 10</p>
-</li>
-</ul>
-<h2>Continuity Topics</h2>
-<ul>
-<li><a href="/notes/lecture-11/">Types of Discontinuities (No Limits)</a> - Lecture 11</li>
-</ul>
-<h2>Limits Topics</h2>
-<ul>
-<li>
-<p><a href="/notes/lecture-12/">Introduction to Limits</a> - Lecture 12</p>
-</li>
-<li>
-<p><a href="/notes/lecture-13/">Existence of limits, one sided limits, and infinity limits.</a> - Lecture 13</p>
-</li>
-<li>
-<p><a href="/notes/lecture-14/">Laws of limits and Squeeze theorem</a> - Lecture 14</p>
-</li>
-<li>
-<p><a href="/notes/lecture-15/">Algebraic manipulation of limits</a> - Lecture 15</p>
-</li>
-<li>
-<p><a href="/notes/lecture-16/">Euler Number <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">e</span></span></span></span> and its properties</a> - Lecture 16</p>
-</li>
-<li>
-<p><a href="/notes/lecture-17/">Trigonometric functions and the unit circle</a> - Lecture 17</p>
-</li>
-</ul>
-<h2>Differentiation Topics</h2>
+        <h1>Trigonometric functions and the unit circle</h1>
+<h2>The unit circle</h2>
+<p>The unit circle is a circle with radius 1 centered at the origin (0,0) in the coordinate plane. It's fundamental to understanding trigonometric functions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">sin(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">s</span><span class="mord mathnormal">in</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">cos(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">cos</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span>.</p>
+<h3>Interactive Unit Circle Visualization</h3>
+<div style="text-align:center; margin:2em 0;">
+  <canvas id="unitCircle" width="400" height="400"
+          style="border:1px solid #ccc; background:#fafafa;"></canvas>
+  <br>
+  <input type="range" id="thetaSlider" min="0" max="6.283" step="0.01" value="0.52"
+         style="width:400px;">
+  <div>θ = <span id="thetaVal">0.52</span> rad = <span id="thetaPi">π/6</span></div>
+</div>
+<script>
+(function(){
+  const canvas = document.getElementById('unitCircle');
+  const ctx    = canvas.getContext('2d');
+  const slider = document.getElementById('thetaSlider');
+  const display= document.getElementById('thetaVal');
+  const displayPi = document.getElementById('thetaPi');
+  const cx = canvas.width/2, cy = canvas.height/2, r = 150;
+
+  function toPiFraction(theta) {
+    const pi = Math.PI;
+    const tolerance = 0.01;
+    
+    // Check for common fractions
+    const fractions = [
+      { value: 0, text: "0" },
+      { value: pi/6, text: "π/6" },
+      { value: pi/4, text: "π/4" },
+      { value: pi/3, text: "π/3" },
+      { value: pi/2, text: "π/2" },
+      { value: 2*pi/3, text: "2π/3" },
+      { value: 3*pi/4, text: "3π/4" },
+      { value: 5*pi/6, text: "5π/6" },
+      { value: pi, text: "π" },
+      { value: 7*pi/6, text: "7π/6" },
+      { value: 5*pi/4, text: "5π/4" },
+      { value: 4*pi/3, text: "4π/3" },
+      { value: 3*pi/2, text: "3π/2" },
+      { value: 5*pi/3, text: "5π/3" },
+      { value: 7*pi/4, text: "7π/4" },
+      { value: 11*pi/6, text: "11π/6" },
+      { value: 2*pi, text: "2π" }
+    ];
+    
+    for (let fraction of fractions) {
+      if (Math.abs(theta - fraction.value) < tolerance) {
+        return fraction.text;
+      }
+    }
+    
+    // If no exact match, show as decimal fraction of π
+    const piFraction = theta / pi;
+    if (Math.abs(piFraction - Math.round(piFraction)) < tolerance) {
+      return Math.round(piFraction) + "π";
+    }
+    return (theta / pi).toFixed(2) + "π";
+  }
+
+  function draw(theta) {
+    // clear
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    
+    // draw axes
+    ctx.strokeStyle = "#ccc";
+    ctx.lineWidth = 1;
+    // x-axis
+    ctx.beginPath();
+    ctx.moveTo(0, cy);
+    ctx.lineTo(canvas.width, cy);
+    ctx.stroke();
+    // y-axis
+    ctx.beginPath();
+    ctx.moveTo(cx, 0);
+    ctx.lineTo(cx, canvas.height);
+    ctx.stroke();
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 2;
+    
+    // circle
+    ctx.beginPath();
+    ctx.arc(cx,cy,r,0,Math.PI*2);
+    ctx.stroke();
+
+    // point on circle
+    const x = cx + r*Math.cos(theta);
+    const y = cy - r*Math.sin(theta);
+
+    // angle arc
+    ctx.strokeStyle = "#ff6b6b";
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(cx, cy, 30, 0, -theta, true);
+    ctx.stroke();
+    
+    // radius line
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.lineTo(x,y);
+    ctx.stroke();
+
+    // projection lines
+    ctx.setLineDash([5,5]);
+    // cos projection (horizontal)
+    ctx.beginPath();
+    ctx.moveTo(x,y);
+    ctx.lineTo(x,cy);
+    ctx.stroke();
+    // sin projection (vertical)
+    ctx.beginPath();
+    ctx.moveTo(x,cy);
+    ctx.lineTo(cx,cy);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // labels
+    ctx.fillStyle = "#000";
+    ctx.font = "14px sans-serif";
+    // cosθ label - positioned right next to the horizontal projection line
+    ctx.fillText("cos θ", (x + cx - 35) / 2, cy + 15);
+    // sinθ label - positioned right next to the vertical projection line
+    ctx.fillText("sin θ", x + 10, (y + cy + 10)/2);
+
+    // draw point
+    ctx.beginPath();
+    ctx.arc(x,y,6,0,2*Math.PI);
+    ctx.fill();
+  }
+
+  slider.addEventListener('input', e => {
+    const θ = parseFloat(e.target.value);
+    display.textContent = θ.toFixed(2);
+    displayPi.textContent = toPiFraction(θ);
+    draw(θ);
+  });
+
+  displayPi.textContent = toPiFraction(0.52);
+  draw(0.52);
+})();
+</script>
 
     </main>
 
