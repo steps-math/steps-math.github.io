@@ -30,8 +30,44 @@ date: 2025-07-20
 
 ---
 
-## Asymptotes
+## Asymptotes & Intuitive Growth
 
+### 1. Growth “Ladder”
+From slowest to fastest (as $x \to \infty$):
+
+1. **Constants**: $f(x)=c$ — flat line  
+2. **Logarithms**: $\log x$ — very slow climb  
+3. **Roots/fractional powers**: $x^{1/2},\,x^{1/3}$ — slow but steady  
+4. **Polynomials**: $x^n$ — speed is proportional to degree $n$  
+5. **Exponentials**: $e^x$ or $a^x$ — rapid “explosion”  
+
+> **Visual**: log = gentle path; root = shallow hill; $x^2$ = ski slope; $e^x$ = cliff.
+
+### 2. Horizontal Asymptotes of Rational Functions
+For $f(x)=\frac{p(x)}{q(x)},\quad p(x)=a_nx^n+\dots,\;q(x)=b_nx^n+\dots$ both of degree $n$,  
+
+$$
+\lim_{x\to\pm\infty}f(x)
+=\frac{a_n}{b_n}.
+$$
+**Asymptote**:  
+$$
+y=\frac{a_n}{b_n}.
+$$
+> **Example**:  
+> $\lim_{x\to\infty}\frac{3x^4- x+2}{5x^4+7x^2}=3/5$, so $y=3/5$.
+
+
+> - Lower‑power terms “vanish” at infinity (e.g. $x^2/x^3=1/x\to0$).
+> - Asymptotes come from comparing only the highest‑power terms.
+
+### 3. Vertical & Slant Asymptotes
+- **Vertical** at $x=c$ if $\lim_{x\to c^\pm}f(x)=\pm\infty$.
+- **Slant** when $\deg p \geq \deg q+1$. Divide:
+  $$
+  \frac{p(x)}{q(x)}=L(x)+\frac{R(x)}{q(x)},
+  $$
+  then $y=L(x)$ is the slant asymptote since $\lim_{x\to\pm\infty}R(x)/q(x)=0$.
 
 
 ---
