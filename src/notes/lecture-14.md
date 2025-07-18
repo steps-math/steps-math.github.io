@@ -26,15 +26,21 @@ $$\lim_{x \to a} (f(x) + g(x)) = \lim_{x \to a} f(x) + \lim_{x \to a} g(x) = L +
 
 $$\lim_{x \to a} (f(x) - g(x)) = \lim_{x \to a} f(x) - \lim_{x \to a} g(x) = L - M$$
 
+> **Caution:** $L$ and $M$ must exist and are finite, so this is not true for $\infty - \infty$ or $\infty + (-\infty)$.
+
 **4. Product limit**
 
 $$\lim_{x \to a} (f(x) \cdot g(x)) = \lim_{x \to a} f(x) \cdot \lim_{x \to a} g(x) = L \cdot M$$
 
 > Example: $\lim_{x \to 3} (x^2) = \lim_{x \to 3} x \cdot \lim_{x \to 3} x = 3 \cdot 3 = 9$
+>
+> **Caution:** $L$ and $M$ must exist and are finite, so this is not true for $\infty \cdot 0$ or $\infty \cdot (-\infty)$.
 
 **5. Quotient limit**
 
 $$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)} = \frac{L}{M}, \text{ where } M \neq 0$$
+
+> **Caution:** $L$ and $M$ must exist and are finite, so this is not true for $\frac{0}{0}$ or $\frac{\infty}{\infty}$.
 
 **6. Power limit**
 
@@ -78,6 +84,10 @@ $$\lim_{x \to a} g(x) = L$$
 > Since $\lim_{x \to 0} (-x) = 0$ and $\lim_{x \to 0} x = 0$, by the Squeeze Theorem,
 >
 > $$\lim_{x \to 0} x \sin(\frac{1}{x}) = 0$$
+>
+> <div style="text-align: center; margin: 20px 0;">
+>    <img src="/images/14-squeeze.png" alt="Graph of squeeze theorem" style="max-width: 90%; height: auto; border: 1px solid gray;">
+> </div>
 
 ---
 ## Exercises
