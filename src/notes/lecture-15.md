@@ -17,6 +17,18 @@ date: 2025-07-20
 5. $a^4 - b^4 = (a+b)(a-b)(a^2 + b^2)$
 6. $ax^2 + bx + c = a(x-r_1)(x-r_2)$ where $r_1$ and $r_2$ are the roots of the quadratic equation $ax^2 + bx + c = 0$
 
+> Usually, you will see these rules involving a number in place of $a$ or $b$.
+> For example: 
+> - $x^2 - 4 = (x-2)(x+2)$
+> - $x^2 - 1 = (x-1)(x+1)$
+> - $x^3 - 1 = (x-1)(x^2 + x + 1)$
+> - $x^3 + 1 = (x+1)(x^2 - x + 1)$
+>
+> For quadratic expressions, you can use the quadratic formula to find the roots.
+> For example: 
+> $x^2 - 4x + 3 = (x-1)(x-3)$, where $r_1 = 1$ and $r_2 = 3$ are the solutions to the quadratic equation $x^2 - 4x + 3 = 0$.
+
+
 ### Reminder of Log rules
 
 1. $\log_b(xy) = \log_b(x) + \log_b(y)$
@@ -75,29 +87,39 @@ $$
 
 ## 1. Limit calculations
 
+Compute the following limits algebraically. (You can use the [limit calculator](https://www.symbolab.com/solver/limit-calculator) to check your answers and steps.)
+
 {% answerChecker %}
 
-**a)** What is $\lim_{x \to 2} \frac{x^3 - 8}{x^2 - 4}$?
-{% answerNumeric "complex1" 3 "Enter your answer" %}
+**a)** What is $\lim_{x \to 0} \frac{x^2 + 2x}{x^2 + x}$?
+{% answerNumeric "complex6" 2 "Enter your answer" %}
 
-**b)** What is $\lim_{x \to 1} \frac{x^4 - 1}{x^2 - 1}$?
+**b)** What is $\lim_{x \to -1} \frac{x^2 - 1}{x+1}$?
+{% answerNumeric "complex7" -2 "Enter your answer" %}
+
+**c)** What is $\lim_{x \to 1} \frac{x^4 - 1}{x^2 - 1}$?
 {% answerNumeric "complex2" 2 "Enter your answer" %}
 
-**c)** What is $\lim_{x \to 0} \frac{\sqrt{1 + x} - 1}{x}$?
-{% answerNumeric "complex3" 0.5 "Enter your answer" %}
-
-**d)** What is $\lim_{x \to 0} \frac{\sqrt{4 + x} - 2}{x}$?
-{% answerNumeric "complex4" 0.25 "Enter your answer" %}
+**d)** What is $\lim_{x \to 2} \frac{x^3 - 8}{x^2 - 4}$?
+{% answerNumeric "complex1" 3 "Enter your answer" %}
 
 **e)** What is $\lim_{x \to 3} \frac{x^2 - 9}{\sqrt{x} - \sqrt{3}}$?
 {% answerNumeric "complex5" 6 "Enter your answer" %}
 
-**f)** What is $\lim_{x \to 0} \frac{x^2 + 2x}{x^2 + x}$?
-{% answerNumeric "complex6" 2 "Enter your answer" %}
+**f)** What is $\lim_{x \to -2} \frac{x^2+x-2}{x^2-4}$?
+{% answerNumeric "complex8" 0.75 "Enter your answer" %}
+
+**g)** What is $\lim_{x \to 0} \frac{\sqrt{1 + x} - 1}{x}$?
+{% answerNumeric "complex3" 0.5 "Enter your answer" %}
+
+**h)** What is $\lim_{x \to 0} \frac{\sqrt{4 + x} - 2}{x}$?
+{% answerNumeric "complex4" 0.25 "Enter your answer" %}
 
 {% endanswerChecker %}
 
 ## 2. Limits with infinity
+
+Compute the following limits algebraically. (You can use the [limit calculator](https://www.symbolab.com/solver/limit-calculator) to check your answers and steps.)
 
 {% answerChecker %}
 Write **98765** if the limit is $\infty$ and **-98765** if the limit is $-\infty$.
@@ -120,4 +142,18 @@ Write **98765** if the limit is $\infty$ and **-98765** if the limit is $-\infty
 **f)** What is $\lim_{x \to -\infty} \frac{\sqrt{x^2 + 1}}{x + 1}$?
 {% answerNumeric "inf6" -1 "Enter your answer" %}
 
+**g)** What is $\lim_{x \to \infty} \frac{\log_3(x)}{\sqrt{x}}$?
+{% answerNumeric "inf7" 0 "Enter your answer" %}
+
+**h)** What is $\lim_{x \to \infty} \frac{x^2+2^x}{x^3 + 2x}$?
+{% answerNumeric "inf8" 98765 "Enter your answer" %}
+
+**i)** What is $\lim_{x \to -\infty} \frac{x^2+2^x}{x^3 + 2x}$?
+{% answerNumeric "inf9" -98765 "Enter your answer" %}
+
 {% endanswerChecker %}
+
+## 3. Additional general practice
+
+- [https://precalculus.flippedmath.com/uploads/1/1/3/0/11305589/pc_15.1_ca1.pdf](https://precalculus.flippedmath.com/uploads/1/1/3/0/11305589/pc_15.1_ca1.pdf)
+- [https://tutorial.math.lamar.edu/Problems/CalcI/LimitsAtInfinityI.aspx](https://tutorial.math.lamar.edu/Problems/CalcI/LimitsAtInfinityI.aspx)
