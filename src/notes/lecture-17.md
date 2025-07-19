@@ -448,4 +448,15 @@ The graphs of the sine and cosine functions are shown below.
 })();
 </script>
 
+### Pythagorean identity
 
+$$\sin^2(x) + \cos^2(x) = 1$$
+
+---
+## Exercises
+
+### Challenge exercises
+
+- $$\lim_{x \to 0} x \sin(\frac{1}{x})$$
+- $$\lim_{x \to 0} \frac{\sin(x)}{x}$$
+  - *Hint*: use the squeeze theorem.
