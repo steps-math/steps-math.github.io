@@ -151,9 +151,16 @@ Write **98765** if the limit is $\infty$ and **-98765** if the limit is $-\infty
 **i)** What is $\lim_{x \to -\infty} \frac{x^2+2^x}{x^3 + 2x}$?
 {% answerNumeric "inf9" -98765 "Enter your answer" %}
 
+**j)** What is $\lim_{x \to 0^+} x^{\log_2(x)}$?
+{% answerNumeric "inf10" 98765 "Enter your answer" %}
+
 {% endanswerChecker %}
 
 ## 3. Additional general practice
 
 - [https://precalculus.flippedmath.com/uploads/1/1/3/0/11305589/pc_15.1_ca1.pdf](https://precalculus.flippedmath.com/uploads/1/1/3/0/11305589/pc_15.1_ca1.pdf)
 - [https://tutorial.math.lamar.edu/Problems/CalcI/LimitsAtInfinityI.aspx](https://tutorial.math.lamar.edu/Problems/CalcI/LimitsAtInfinityI.aspx)
+
+## 4. Previous exercises
+
+Solve any of the given exercises in previous lectures if you haven't already.
