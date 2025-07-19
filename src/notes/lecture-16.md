@@ -122,3 +122,45 @@ $$
 </details>
 
 ## Exercises
+
+### 1. Limit calculations
+
+Compute the following limits algebraically.
+
+{% answerChecker %}
+
+Each of the following limits can be evaluated as $e$ to the power of some expression.
+
+**a)** What is $x$: $\lim_{n \to \infty} (1+\frac{1}{2n})^n = e^x$?
+{% answerNumeric "complex1" 0.5 "Enter your answer" %}
+
+**b)** What is $x$: $\lim_{n \to 0^+} (1+n)^{\frac{3}{n}} = e^x$?
+{% answerNumeric "complex3" 3 "Enter your answer" %}
+
+**c)** What is $x$: $\lim_{n \to \infty} \sqrt{(1+\frac{4}{n})^{n}} = e^x$?
+{% answerNumeric "complex2" 2 "Enter your answer" %}
+
+**d)** What is $x$: $\lim_{n \to \infty} \sqrt[n]{(1+\frac{5}{n})^n} = e^x$?
+{% answerNumeric "complex4" 0 "Enter your answer" %}
+
+{% endanswerChecker %}
+
+## 2. Decay exercise
+
+The amount of Carbon-14 in a sample decays according to 
+$$N(t) = N_0 e^{-kt}$$
+where $N_0$ is the initial amount of Carbon-14 and $k$ is the decay constant.
+
+**a)** If the half-life of Carbon-14 is 5730 years, what is the decay constant $k$? (compute it in terms of $\ln$)
+**b)** If a sample has 1000 grams of Carbon-14, how much will be left after 10000 years?
+**c)** If a relic contains 80% of the Carbon-14 it originally had, how old is the relic?
+
+## Challenge exercise
+
+Try to evaluate the following limits:
+
+**a)** $\lim_{x \to 0} \frac{e^x - 1}{x}$ &nbsp;&nbsp;&nbsp;&nbsp; (**Hint**: use the definition of $e$ and the limit laws.)
+
+**b)** $\lim_{x \to 0} \frac{2^x - 1}{x}$ &nbsp;&nbsp;&nbsp;&nbsp; (**Hint**: the answer should be expressed in terms of $\ln$)
+
+**c)** $\lim_{x \to 0} \frac{b^x - 1}{x}$ for $b > 0$ &nbsp;&nbsp;&nbsp;&nbsp; (**Hint**: the answer should be expressed in terms of $\ln$)
