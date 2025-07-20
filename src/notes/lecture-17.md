@@ -7,7 +7,8 @@ date: 2025-07-23
 ---
 
 # Limits Questions
----
+
+Evaluate the following limits algebraically.
 
 ## 1) Simple Substitution
 
@@ -56,6 +57,7 @@ f) $\frac{3}{2}$
 g) $\frac{5}{3}$  
 
 </details>
+
 ---
 
 ## 3) Trigonometric Limits
@@ -81,6 +83,7 @@ d) 0
 e) $\frac{3}{2}$  
 
 </details>
+
 ---
 
 ## 4) Piecewise / Multi-Definition Functions
@@ -107,6 +110,7 @@ b) 1 (both sides equal)
 c) Does not exist (left limit is 1, right is 1) → But both are 1, so **limit exists and is 1**  
 
 </details>
+
 ---
 
 ## 5) Limits Involving Euler’s Number $e$
@@ -131,6 +135,7 @@ d) 1
 e) 2  
 
 </details>
+
 ---
 ## 6) Advanced Problems 
 
