@@ -270,7 +270,10 @@ The sine and cosine functions are defined as the y and x coordinates of a point 
 
 ### Properties
 
-1. They are periodic with period $2\pi$. ($sin(x + 2\pi) = sin(x)$ and $cos(x + 2\pi) = cos(x)$)
+- **Domain**: all real numbers.
+- **Range**: $[-1, 1]$
+
+1. They are **periodic** with period $2\pi$. ($sin(x + 2\pi) = sin(x)$ and $cos(x + 2\pi) = cos(x)$)
 2. They are bounded between -1 and 1.
 3. They are continuous.
 4. $\sin(x) = \cos(\frac{\pi}{2} - x)$
@@ -282,12 +285,12 @@ The sine and cosine functions are defined as the y and x coordinates of a point 
 
 The graphs of the sine and cosine functions are shown below.
 
-<div style="text-align:center; margin:2em 0;">
+<div style="text-align:center; margin:2em 0; max-width:100%; overflow-x:auto;">
   <canvas id="trigGraphs" width="600" height="400"
-          style="border:1px solid #ccc; background:#fafafa;"></canvas>
+          style="border:1px solid #ccc; background:#fafafa; max-width:100%; height:auto;"></canvas>
   <br>
   <input type="range" id="xSlider" min="-2" max="2" step="0.01" value="0"
-         style="width:400px;">
+         style="width:100%; max-width:400px;">
   <div>x = <span id="xVal">0.00</span>π rad</div>
 </div>
 
