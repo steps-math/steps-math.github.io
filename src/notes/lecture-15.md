@@ -220,7 +220,7 @@ Compute the following limits algebraically. (You can use the [limit calculator](
 {% answerNumeric "complex1" 3 "Enter your answer" %}
 
 **e)** What is $\lim_{x \to 3} \frac{x^2 - 9}{\sqrt{x} - \sqrt{3}}$?
-{% answerNumeric "complex5" 6 "Enter your answer" %}
+{% answerNumeric "complex5" 20.78 "Enter your answer" %}
 
 **f)** What is $\lim_{x \to -2} \frac{x^2+x-2}{x^2-4}$?
 {% answerNumeric "complex8" 0.75 "Enter your answer" %}
