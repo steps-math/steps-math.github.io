@@ -66,12 +66,23 @@ $$
 $$
 y=\frac{a_n}{b_n}.
 $$
-> **Example**:  
-> $\lim_{x\to\infty}\frac{3x^4- x+2}{5x^4+7x^2}=3/5$, so $y=3/5$.
+> **Example 1**:  
+> $$\lim_{x\to\infty}\frac{3x^4- x+2}{5x^4+7x^2}= \lim_{x\to\infty}\frac{3x^4}{5x^4} = \frac{3}{5}$$
+> so $y=\frac{3}{5}$ is the horizontal asymptote.
+> 
+> **Example 2**:  
+> $$\lim_{x\to\infty}\frac{3x^3 + 2x}{x^5 - 3x^2 + 1}= \lim_{x\to\infty}\frac{3x^3}{x^5} = 0$$
+> so $y=0$ is the horizontal asymptote.
+> 
+> **Example 3**:  
+> $$\lim_{x\to\infty}\frac{x^4 + 2x^2 + 1}{x^3 - 3x^2 + 3x - 1}= \lim_{x\to\infty}\frac{x^4}{x^3} = \infty$$
+> so there is no horizontal asymptote.
 
 
 > - Lower‑power terms “vanish” at infinity (e.g. $x^2/x^3=1/x\to0$).
 > - Asymptotes come from comparing only the highest‑power terms.
+> - **Horizontal asymptotes** are found by looking at $x \to \infty$ or $x \to -\infty$.
+> - If you get $\infty$ or $-\infty$, there is no horizontal asymptote. Otherwise, the horizontal asymptote is the answer number you get.
 
 ### 3. Vertical & Slant Asymptotes
 - **Vertical** at $x=c$ if $\lim_{x\to c^\pm}f(x)=\pm\infty$.
@@ -80,6 +91,18 @@ $$
   \frac{p(x)}{q(x)}=L(x)+\frac{R(x)}{q(x)},
   $$
   then $y=L(x)$ is the slant asymptote since $\lim_{x\to\pm\infty}R(x)/q(x)=0$.
+
+> **Example 1**:
+> $$\lim_{x\to 1}\frac{1}{(x-1)^2} = \infty$$
+> so $x=1$ is the vertical asymptote.
+> 
+> **Example 2**:
+> $$\lim_{x\to 0^+}\log_4 (x) = -\infty$$
+> so $x=0$ is the vertical asymptote.
+>
+> **Example 3**:
+> $$\lim_{x \to 1}\frac{x^2 - 1}{x-1} = \lim_{x \to 1}\frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1}(x+1) = 2$$
+> so (1, 2) is a hole in the graph.
 
 ---
 
