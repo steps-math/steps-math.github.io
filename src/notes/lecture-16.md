@@ -268,7 +268,12 @@ The ASTC rule is an acronym for remembering the **positive** signs of the trigon
 
 The sine and cosine functions are defined as the y and x coordinates of a point on the unit circle, respectively.
 
-### Properties
+We also define the tangent function as the ratio of sine and cosine:
+$$
+\tan(x) = \frac{\sin(x)}{\cos(x)}
+$$
+
+### Properties of sine and cosine
 
 - **Domain**: all real numbers.
 - **Range**: $[-1, 1]$
@@ -455,11 +460,118 @@ The graphs of the sine and cosine functions are shown below.
 
 $$\sin^2(x) + \cos^2(x) = 1$$
 
+### Common values
+
+(image source: [link](https://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet.pdf))
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/images/16-trig.png" alt="Common values" style="max-width: 80%; height: auto; border: 1px solid gray;">
+</div>
+
+
 ---
-## Exercises
+# Exercises
 
-### Challenge exercises
+## 1. Basic trigonometric function values
 
-- $$\lim_{x \to 0} x \sin(\frac{1}{x})$$
-- $$\lim_{x \to 0} \frac{\sin(x)}{x}$$
+{% answerChecker %}
+Round your answers to 2 decimal places.
+
+**a)** What is $\sin(\frac{\pi}{6})$?
+{% answerNumeric "sin-pi6" 0.5 "Enter your answer" %}
+
+**b)** What is $\cos(\frac{\pi}{4})$?
+{% answerNumeric "cos-pi4" 0.71 "Enter your answer" %}
+
+**c)** What is $\tan(\frac{\pi}{3})$?
+{% answerNumeric "tan-pi3" 1.73 "Enter your answer" %}
+
+**d)** What is $\sin(\frac{\pi}{2})$?
+{% answerNumeric "sin-pi2" 1 "Enter your answer" %}
+
+**e)** What is $\cos(\pi)$?
+{% answerNumeric "cos-pi" -1 "Enter your answer" %}
+
+**f)** What is $\sin(\frac{3\pi}{2})$?
+{% answerNumeric "sin-3pi2" -1 "Enter your answer" %}
+
+{% endanswerChecker %}
+
+## 2. ASTC rule and quadrant identification
+
+{% answerChecker %}
+
+For each angle, identify which quadrant it's in and whether the given trigonometric function is positive or negative.
+
+**a)** $\sin(\frac{2\pi}{3})$
+- Quadrant: {% multipleChoice "quadrant1a" '["Q1", "Q2", "Q3", "Q4"]' "b" %}
+- Sign: {% multipleChoice "quadrant1b" '["positive", "negative"]' "a" %}
+
+**b)** $\cos(\frac{5\pi}{4})$
+- Quadrant: {% multipleChoice "quadrant2a" '["Q1", "Q2", "Q3", "Q4"]' "c" %}
+- Sign: {% multipleChoice "quadrant2b" '["positive", "negative"]' "b" %}
+
+**c)** $\tan(\frac{7\pi}{6})$
+- Quadrant: {% multipleChoice "quadrant3a" '["Q1", "Q2", "Q3", "Q4"]' "c" %}
+- Sign: {% multipleChoice "quadrant3b" '["positive", "negative"]' "a" %}
+
+**d)** $\sin(\frac{11\pi}{6})$
+- Quadrant: {% multipleChoice "quadrant4a" '["Q1", "Q2", "Q3", "Q4"]' "d" %}
+- Sign: {% multipleChoice "quadrant4b" '["positive", "negative"]' "b" %}
+
+{% endanswerChecker %}
+
+## 3. Graphical analysis
+
+Using the interactive unit circle above or graphing software:
+
+**a)** For what values of $x$ in $[0, 2\pi]$ is $\sin(x) = \cos(x)$?
+
+**b)** For what values of $x$ in $[0, 2\pi]$ is $\sin(x) = -\frac{1}{2}$?
+
+**c)** For what values of $x$ in $[0, 2\pi]$ is $\cos(x) = \frac{\sqrt{3}}{2}$?
+
+**d)** What is the maximum value of $\sin(x) + \cos(x)$ for $x$ in $[0, 2\pi]$?
+
+## 4. Pythagorean identity practice
+
+{% answerChecker %}
+
+Use the Pythagorean identity $\sin^2(x) + \cos^2(x) = 1$ to find the missing value.
+
+(Round your answers to 2 decimal places.)
+
+**a)** If $\sin(x) = \frac{3}{5}$ and $x$ is in the first quadrant, what is $\cos(x)$?
+{% answerNumeric "pythag1" 0.8 "Enter your answer" %}
+
+**b)** If $\cos(x) = -\frac{4}{5}$ and $x$ is in the second quadrant, what is $\sin(x)$?
+{% answerNumeric "pythag2" 0.6 "Enter your answer" %}
+
+**c)** If $\sin(x) = -\frac{12}{13}$ and $x$ is in the third quadrant, what is $\cos(x)$?
+{% answerNumeric "pythag3" -0.38 "Enter your answer" %}
+
+{% endanswerChecker %}
+
+## 5. Periodicity and symmetry
+
+{% answerChecker %}
+Round your answers to 2 decimal places.
+
+**a)** What is $\sin(\frac{13\pi}{6})$? (Hint: use periodicity)
+{% answerNumeric "period1" 0.5 "Enter your answer" %}
+
+**b)** What is $\cos(-\frac{\pi}{3})$? (Hint: cosine is even)
+{% answerNumeric "period2" 0.5 "Enter your answer" %}
+
+**c)** What is $\sin(\frac{7\pi}{4})$? (Hint: use reference angle)
+{% answerNumeric "period3" -0.71 "Enter your answer" %}
+
+{% endanswerChecker %}
+
+
+## 6. Challenge exercises
+
+1. $$\lim_{x \to 0} \frac{\sin(x)}{x}$$
   - *Hint*: use the squeeze theorem.
+2. $$\lim_{x \to 0} x \sin(\frac{1}{x})$$
+3. $$\lim_{x \to 0} \frac{\tan(x)}{x}$$
+4. $$\lim_{x \to 0} \frac{\sin(5x)}{x}$$
