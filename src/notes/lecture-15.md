@@ -281,16 +281,16 @@ Compute the following limits algebraically.
 Each of the following limits can be evaluated as $e$ to the power of some expression.
 
 **a)** What is $x$: $\lim_{n \to \infty} (1+\frac{1}{2n})^n = e^x$?
-{% answerNumeric "complex1" 0.5 "Enter your answer" %}
+{% answerNumeric "euler1" 0.5 "Enter your answer" %}
 
 **b)** What is $x$: $\lim_{n \to 0^+} (1+n)^{\frac{3}{n}} = e^x$?
-{% answerNumeric "complex3" 3 "Enter your answer" %}
+{% answerNumeric "euler2" 3 "Enter your answer" %}
 
 **c)** What is $x$: $\lim_{n \to \infty} \sqrt{(1+\frac{4}{n})^{n}} = e^x$?
-{% answerNumeric "complex2" 2 "Enter your answer" %}
+{% answerNumeric "euler3" 2 "Enter your answer" %}
 
 **d)** What is $x$: $\lim_{n \to \infty} \sqrt[n]{(1+\frac{5}{n})^n} = e^x$?
-{% answerNumeric "complex4" 0 "Enter your answer" %}
+{% answerNumeric "euler4" 0 "Enter your answer" %}
 
 {% endanswerChecker %}
 
