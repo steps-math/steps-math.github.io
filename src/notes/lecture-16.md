@@ -571,7 +571,23 @@ Round your answers to 2 decimal places.
 ## 6. Challenge exercises
 
 1. $$\lim_{x \to 0} \frac{\sin(x)}{x}$$
-  - *Hint*: use the squeeze theorem.
+> **Solution using squeeze theorem:**
+> consider the unit circle, we have the following areas:
+> <div style="text-align: center; margin: 20px 0;">
+>     <img src="/images/16-sin.png" alt="sin(x)/x" style="max-width: 80%; height: auto; border: 1px solid gray;">
+> </div>
+> 
+> 1. Triangle area: $A_{triangle} = \frac{1}{2} \sin(x) \cos(x)$
+> 2. Sector area: $A_{sector} = \frac{x}{2}$, since the area of a sector is $\frac{x}{2\pi} \pi r^2 = \frac{x}{2}$ for $r=1$.
+> 3. Outer triangle area: $A_{outer} = \frac{1}{2} \tan(x) = \frac{1}{2} \frac{\sin(x)}{\cos(x)}$
+> 
+> We have $A_{triangle} \leq A_{sector} \leq A_{outer}$, therefore we have $\frac{\sin(x)\cos(x)}{2} \leq \frac{x}{2} \leq \frac{\sin(x)}{2\cos(x)}$.
+> Equivalently, we have $\cos(x) \leq \frac{x}{\sin(x)} \leq \frac{1}{\cos(x)}$.
+> Therefore, we have $\frac{1}{\cos(x)} \leq \frac{\sin(x)}{x} \leq \cos(x)$.
+> $$\lim_{x \to 0} \frac{1}{\cos(x)} = 1 = \lim_{x \to 0} \cos(x)$$
+> By squeeze theorem, we have $\lim_{x \to 0} \frac{\sin(x)}{x} = 1$.
+
+
 2. $$\lim_{x \to 0} x \sin(\frac{1}{x})$$
 3. $$\lim_{x \to 0} \frac{\tan(x)}{x}$$
 4. $$\lim_{x \to 0} \frac{\sin(5x)}{x}$$
