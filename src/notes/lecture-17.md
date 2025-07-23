@@ -106,7 +106,7 @@ x^2 & \text{if } x \geq 1
 <summary>Answer Key – 4) Piecewise / Multi-Definition Functions</summary>
 
 a) $-1$  
-b) 1 (both sides equal)  
+b) DNE  
 c) Does not exist (left limit is 1, right is 1) → But both are 1, so **limit exists and is 1**  
 
 </details>
