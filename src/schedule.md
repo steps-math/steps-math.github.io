@@ -110,7 +110,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | 32 | Monday, August 4 | **Lab 5**: Derivates Lab 2. Guided example of an elaborate optimization problem. |  |
 | 33 | Tuesday, August 5 | Derivatives and graphs of functions. Derivatives use to understand behavior of functions. First and second derivative tests. |  |
 | 34 | Wednesday, August 6 | Trigonometric functions derivatives. Geometrical proof of $\frac{d}{dx} \sin(x)$. problems and examples. |  |
-| 35 | Thursday, July 31 | **Quiz 3** (Derivatives) | -- |
+| 35 | Thursday, August 7 | **Quiz 3** (Derivatives) | -- |
 | - | Friday, August 8 | **No Class** |  |
 
 </div>
