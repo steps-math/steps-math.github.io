@@ -89,12 +89,12 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
-| 24 | Saturday, July 26 | Derivatives Introduction 1: Derivatives as rate of change, connections to real-life examples. |  |
-| 25 | Sunday, July 27 | Derivatives Introduction 2: Derivatives as slopes of functions, connections to real-life examples. |  |
-| 26 | Monday, July 28 | Derivatives Introduction 3: Formal algebraic definition of derivatives. Calculate derivatives of simple functions (linear/quadratic). |  |
-| 27 | Tuesday, July 29 | **Lab 4**: Derivatives Lab 1. Guided examples of various important derivatives (e.g. $x^n, \frac{1}{x^n},e^x,\ln(x)$). |  |
-| 28 | Wednesday, July 30 | Derivatives rules 1: addition, multiplication, constant multiple, power rule, and many examples. |  |
-| 29 | Thursday, July 31 | Derivatives rules 2: division, show it as another form of multiplication and many examples involving polynomials, rational, and root functions. |  |
+| 24 | Saturday, July 26 | Quiz 2 solutions. |  |
+| 25 | Sunday, July 27 | Derivatives Introduction 1: Derivatives as rate of change, connections to real-life examples. |  |
+| 26 | Monday, July 28 | Derivatives Introduction 2: Derivatives as slopes of functions, connections to real-life examples. |  |
+| 27 | Tuesday, July 29 | Derivatives Introduction 3: Formal algebraic definition of derivatives. Calculate derivatives of simple functions (linear/quadratic). |  |
+| 28 | Wednesday, July 30 | **Lab 4**: Derivatives Lab 1. Guided examples of various important derivatives (e.g. $x^n, \frac{1}{x^n},e^x,\ln(x)$). |  |
+| 29 | Thursday, July 31 | Derivatives rules 1: addition, multiplication, constant multiple, power rule, and many examples. |  |
 | - | Friday, August 1 | **No Class** |  |
 
 </div>
@@ -105,11 +105,11 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
-| 30 | Saturday, August 2 | Derivatives rules 3: chain rule, examples and problems. |  |
-| 31 | Sunday, August 3 | Derivatives in real life. Derivatives role in optimization problems. Fence perimeter/area and factory production problems. |  |
-| 32 | Monday, August 4 | **Lab 5**: Derivates Lab 2. Guided example of an elaborate optimization problem. |  |
-| 33 | Tuesday, August 5 | Derivatives and graphs of functions. Derivatives use to understand behavior of functions. First and second derivative tests. |  |
-| 34 | Wednesday, August 6 | Trigonometric functions derivatives. Geometrical proof of $\frac{d}{dx} \sin(x)$. problems and examples. |  |
+| 30 | Saturday, August 2 | Derivatives rules 2: division, show it as another form of multiplication and many examples involving polynomials, rational, and root functions. |  |
+| 31 | Sunday, August 3 | Derivatives rules 3: chain rule, examples and problems. |  |
+| 32 | Monday, August 4 | Derivatives in real life. Derivatives role in optimization problems. Fence perimeter/area and factory production problems. |  |
+| 33 | Tuesday, August 5 | **Lab 5**: Derivates Lab 2. Guided example of an elaborate optimization problem. |  |
+| 34 | Wednesday, August 6 | Derivatives and graphs of functions. Derivatives use to understand behavior of functions. First and second derivative tests. |  |
 | 35 | Thursday, August 7 | **Quiz 3** (Derivatives) | -- |
 | - | Friday, August 8 | **No Class** |  |
 
