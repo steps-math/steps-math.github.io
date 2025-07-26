@@ -431,3 +431,6 @@ $$
 
 
  In our next session, we’ll formally define the derivative using **limits**!
+
+> **Recommendation:**
+> Watch 3Blue1Brown's video on [introdcution to derivatives](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=2) and his series on calculus.

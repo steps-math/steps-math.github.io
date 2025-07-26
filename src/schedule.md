@@ -90,7 +90,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
 | 24 | Saturday, July 26 | Quiz 2 solutions. | [_problems and solutions_](/notes/quiz2-solutions/) |
-| 25 | Sunday, July 27 | Derivatives Introduction 1: Derivatives as rate of change, connections to real-life examples. |  |
+| 25 | Sunday, July 27 | Derivatives Introduction 1: Derivatives as rate of change, connections to real-life examples. | [_lecture 18_](/notes/lecture-18/) |
 | 26 | Monday, July 28 | Derivatives Introduction 2: Derivatives as slopes of functions, connections to real-life examples. |  |
 | 27 | Tuesday, July 29 | Derivatives Introduction 3: Formal algebraic definition of derivatives. Calculate derivatives of simple functions (linear/quadratic). |  |
 | 28 | Wednesday, July 30 | **Lab 4**: Derivatives Lab 1. Guided examples of various important derivatives (e.g. $x^n, \frac{1}{x^n},e^x,\ln(x)$). |  |
