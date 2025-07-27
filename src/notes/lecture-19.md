@@ -47,6 +47,52 @@ This limit represents the **slope of the tangent line** to the graph of $f$ at $
 
 ---
 
+## Notation
+
+There are several ways to denote the derivative of a function. All represent the same concept: the instantaneous rate of change or the slope of the tangent line.
+
+### 1. Leibniz Notation
+Emphasizes the variables involved:
+
+$$
+\frac{dy}{dx}, \quad \frac{df}{dx}, \quad \frac{d}{dx}[f(x)]
+$$
+
+This notation is especially useful in applied problems (e.g., physics) and when working with related rates or implicit differentiation.
+
+### 2. Lagrange Notation
+Commonly used in pure mathematics:
+
+$$
+f'(x), \quad y'
+$$
+ 
+This is compact and often used when the independent variable is clear from context.
+
+### 3. Newton Notation
+Used mainly in physics and engineering for derivatives with respect to time:
+
+$$
+\dot{y}, \quad \ddot{y}
+$$
+
+Where $\dot{y}$ represents the first derivative with respect to time (velocity, for example), and $\ddot{y}$ the second derivative (acceleration).
+
+### 4. Prime Notation for Higher Derivatives
+
+- First derivative: $f'(x)$
+- Second derivative: $f''(x)$
+- $n$-th derivative: $f^{(n)}(x)$
+
+For example:
+
+$$
+\frac{d^2y}{dx^2}, \frac{d^2f}{dx^2}, \frac{d^2}{dx^2}[f(x)]
+$$
+
+
+---
+
 ## Step-by-Step Example: $f(x) = x^2$
 
 Let us compute $f'(x)$ using the limit definition:
