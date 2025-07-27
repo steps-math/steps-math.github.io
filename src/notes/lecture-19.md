@@ -93,7 +93,7 @@ So, $f'(x) = -\frac{1}{x^2}$
 
 ## Additional Examples
 
- 1. $f(x) = \sqrt{x}$
+### 1. $f(x) = \sqrt{x}$
 
 $$
 f'(x) = \lim_{h \to 0} \frac{\sqrt{x + h} - \sqrt{x}}{h}
@@ -105,13 +105,29 @@ $$
 = \lim_{h \to 0} \frac{x + h - x}{h(\sqrt{x + h} + \sqrt{x})} = \lim_{h \to 0} \frac{1}{\sqrt{x + h} + \sqrt{x}} = \frac{1}{2\sqrt{x}}
 $$
 
- 2. $f(x) = |x|$
+### 2. $f(x) = |x|$
 
 $$
 f'(x) = \lim_{h \to 0} \frac{|x + h| - |x|}{h}
 $$
 
+at $x = 0$, we have:
+
+$$
+\lim_{h \to 0} \frac{|0 + h| - |0|}{h} = \lim_{h \to 0} \frac{|h|}{h}
+$$
+
+Looking at the left and right limits, we have:
+
+$$
+\lim_{h \to 0^-} \frac{|h|}{h} = -1 \quad \text{and} \quad \lim_{h \to 0^+} \frac{|h|}{h} = 1
+$$
+
+Since the left and right limits are not equal, the limit does not exist.
+
 This limit does **not exist** at $x = 0$. So $f(x) = |x|$ is **not differentiable** at $x = 0$.
+
+
 
 ---
 
@@ -129,48 +145,48 @@ This limit does **not exist** at $x = 0$. So $f(x) = |x|$ is **not differentiabl
 
 ## Exercises
 
-### Exercises
 
-1. Use the limit definition to find the derivative of:
-   - (a) $f(x) = x^3$
-   - (b) $f(x) = \sqrt{x}$
-   - (c) $f(x) = 2x + 5$
 
----
+### 1. Find derivatives
 
-2. Use derivative rules to evaluate:
-   - (a) $\frac{d}{dx}(3x^4)$
-   - (b) $\frac{d}{dx}(x^{-2})$
-   - (c) $\frac{d}{dx}(5)$
+Using the limit definition, find the derivative of the following functions:
 
----
+- (a) $f(x) = x^3$
+- (b) $f(x) = \sqrt{x}$
+- (c) $f(x) = 2x + 5$
+ 
 
-3. Prove from the limit definition:
+- (d) $f(x) = 3x^4$
+- (e) $f(x) = x^{-2}$
+- (f) $f(x) = 5$
+
+
+
+### 2. Prove from the limit definition:
    - (a) $f(x) = \frac{1}{x} \Rightarrow f'(x) = -\frac{1}{x^2}$
    - (b) $f(x) = x^2 + 3x \Rightarrow f'(x) = 2x + 3$
 
----
 
-4. Let $f(x) = \frac{1}{x^2 + 1}$. Find $f'(x)$ using the limit definition.
+### 3. Find $f'(x)$ using the limit definition.
 
----
+- (a) $f(x) = \frac{1}{x^2 + 1}$
+- (b) $f(x) = \frac{1}{\sqrt{x}}$
 
-5. Use the definition to find the derivative of $f(x) = \frac{1}{\sqrt{x}}$.
+### 4. logarithmic function
 
----
+Derive the formula for $f(x) = \ln(x)$ from the limit definition:
 
-6. Derive the formula for $f(x) = \ln(x)$ from the limit definition:
 $$
 f'(x) = \lim_{h \to 0} \frac{\ln(x + h) - \ln(x)}{h}
 $$
 
-> Use the identity: $\ln(x + h) - \ln(x) = \ln\left(1 + \frac{h}{x}\right)$
+> Use the identity: $\ln(x + h) - \ln(x) = \ln\left(1 + \frac{h}{x}\right)$, and the definition of $e$.
 
----
+### 5. absolute value function
 
-7. Let $f(x) = |x - 1|$. Determine where $f$ is not differentiable and explain why using the limit definition.
+Let $f(x) = |x - 1|$. Determine where $f$ is not differentiable and explain why using the limit definition.
 
-### Extra Advanced Exercises:
+## Extra Advanced Exercises:
 
 ### 1. **Piecewise Function Differentiability**
 
