@@ -92,9 +92,9 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | 24 | Saturday, July 26 | Quiz 2 solutions. | [_problems and solutions_](/notes/quiz2-solutions/) |
 | 25 | Sunday, July 27 | Derivatives Introduction 1: Derivatives as rate of change, connections to real-life examples. | [_lecture 18_](/notes/lecture-18/) |
 | 26 | Monday, July 28 | Derivatives Introduction 2: Formal algebraic definition of derivatives. Calculate derivatives of simple functions | [_lecture 19_](/notes/lecture-19/) |
-| 27 | Tuesday, July 29 | Derivatives rules 1: addition, constant multiple, power rule. | [_lecture 20_](/notes/lecture-20/) |
-| 28 | Wednesday, July 30 | **Lab 4**: Derivatives Lab 1. Guided examples of various important derivatives (e.g. $x^n, \frac{1}{x^n},e^x,\ln(x)$). |  |
-| 29 | Thursday, July 31 | Derivatives rules 2: multiplication, division. |  |
+| 27 | Tuesday, July 29 | Derivatives rules 1: power, exponential, log, addition, and subtraction rules. | [_lecture 20_](/notes/lecture-20/) |
+| 28 | Wednesday, July 30 | Derivatives rules 2: multiplication and division rules. |  |
+| 29 | Thursday, July 31 | **Lab 4**: Derivatives Lab 1. Guided examples of various important derivatives (e.g. $x^n, \frac{1}{x^n},e^x,\ln(x)$). |  |
 | - | Friday, August 1 | **No Class** |  |
 
 </div>
@@ -105,11 +105,11 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
-| 30 | Saturday, August 2 | Derivatives rules 3: functions derivatives: polynomials, rational, root, and exponential functions. |  |
-| 31 | Sunday, August 3 | Derivatives rules 4: chain rule. |  |
-| 32 | Monday, August 4 | Derivatives in real life. Derivatives role in optimization problems. Fence perimeter/area and factory production problems. |  |
+| 30 | Saturday, August 2 | Derivatives rules 3: chain rule. |  |
+| 31 | Sunday, August 3 | Derivatives in real life. Derivatives role in optimization problems. Fence perimeter/area and factory production problems. |  |
+| 32 | Monday, August 4 | Derivatives and graphs of functions. Derivatives use to understand behavior of functions. First and second derivative tests. |  |
 | 33 | Tuesday, August 5 | **Lab 5**: Derivates Lab 2. Guided example of an elaborate optimization problem. |  |
-| 34 | Wednesday, August 6 | Derivatives and graphs of functions. Derivatives use to understand behavior of functions. First and second derivative tests. |  |
+| 34 | Wednesday, August 6 | Derivatives problem solving session. |  |
 | 35 | Thursday, August 7 | **Quiz 3** (Derivatives) | -- |
 | - | Friday, August 8 | **No Class** |  |
 
