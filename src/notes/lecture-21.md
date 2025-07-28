@@ -8,6 +8,8 @@ description: Lecture 21
 
 # Lecture 21: Multiplication and Division Rules
 
+> Watch 3Blue1Brown videos on [Derivative formulas through geometry](https://www.youtube.com/watch?v=S0_qX4VJhMQ&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=3) and [visualizing the chain rule and product rule](https://www.youtube.com/watch?v=YG15m2VwSjA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=5) for a further conceptual understanding of the rules.
+
 ## Constant Multiple Rule
 
 If $f(x)$ is a differentiable function and $c$ is a constant, then:
