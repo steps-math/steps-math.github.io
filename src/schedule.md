@@ -93,7 +93,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 | 25 | Sunday, July 27 | Derivatives Introduction 1: Derivatives as rate of change, connections to real-life examples. | [_lecture 18_](/notes/lecture-18/) |
 | 26 | Monday, July 28 | Derivatives Introduction 2: Formal algebraic definition of derivatives. Calculate derivatives of simple functions | [_lecture 19_](/notes/lecture-19/) |
 | 27 | Tuesday, July 29 | Derivatives rules 1: power, exponential, log, addition, and subtraction rules. | [_lecture 20_](/notes/lecture-20/) |
-| 28 | Wednesday, July 30 | Derivatives rules 2: multiplication and division rules. |  |
+| 28 | Wednesday, July 30 | Derivatives rules 2: multiplication and division rules. | [_lecture 21_](/notes/lecture-21/) |
 | 29 | Thursday, July 31 | **Lab 4**: Derivatives Lab 1. Guided examples of various important derivatives (e.g. $x^n, \frac{1}{x^n},e^x,\ln(x)$). |  |
 | - | Friday, August 1 | **No Class** |  |
 
