@@ -127,4 +127,6 @@ Differentiate:
 Let $f(x) = \frac{g(x)}{h(x)}$. Suppose $g(2) = 5$, $g'(2) = 3$, $h(2) = 1$, and $h'(2) = -4$.  
    - **a)** Find $f'(2)$.
 
+### 6. Additional practice
 
+Follow and solve the exercises in [this link](https://tutorial.math.lamar.edu/Problems/CalcI/ProductQuotientRule.aspx).
