@@ -130,3 +130,55 @@ Let $f(x) = \frac{g(x)}{h(x)}$. Suppose $g(2) = 5$, $g'(2) = 3$, $h(2) = 1$, and
 ### 6. Additional practice
 
 Follow and solve the exercises in [this link](https://tutorial.math.lamar.edu/Problems/CalcI/ProductQuotientRule.aspx).
+
+# Extra Advanced Exercises
+
+### 1. Proof of Product and Quotient Rules
+Using the limit definition of derivatives, show that: 
+(a) $\frac{d}{dx}(f(x)g(x))=f'(x)g(x)+f(x)g'(x)$
+(b) $\frac{d}{dx}(\frac{f(x)}{g(x)})=\frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}$
+
+### 2. Water Flow in a Conical Container
+
+Water is being poured into a conical tank such that the volume added per second is related to the height of the water $x$ (in meters) and the radius of the water surface $r$ by:
+
+$$
+f(x) = \frac{x^2 \ln(x)}{x + 1}
+$$
+
+- Find how fast the volume is changing with respect to the height.
+
+### 3. Nested Quotient of Products
+
+Let  
+$$
+f(x) = \frac{(x^2 + 1)(x - 4)}{(x + 2)(x^2 - 1)}
+$$
+
+- (a) Differentiate $f(x)$
+- (b) Simplify and identify where $f'(x) = 0$
+
+### 4. Pressure–Volume Constraint in a Gas
+
+The gas pressure and volume are related by:
+
+$$
+\ln(xy) = \frac{x}{y}
+$$
+
+- Use implicit differentiation (and logarithmic identities) to find how volume $y$ changes as pressure $x$ increases.
+
+### 5. Two Interrelated Functions
+
+Let:
+$$
+f(x) = \frac{g(x)}{h(x)}, \quad \text{and } g(x)h(x) = x^2 + 1
+$$
+
+- Use **implicit differentiation** on the product identity to find $f'(x)$.
+
+
+
+
+
+
