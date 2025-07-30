@@ -91,3 +91,29 @@ where $t$ is time in minutes after exposure.
 
 ---
 
+## **5. Visibility from a Drone: Tangents to a Hill**
+
+A drone hovers at the point **(3, 20)**, observing a hill whose shape is modeled by the function:
+
+$$
+f(x) = -x^2 + 3x + 15
+$$
+
+The drone’s camera can just barely see the edges of the hill where its line of sight is **tangent** to the surface.
+
+---
+
+### Your Task:
+
+Find the equations of all lines that pass through the point **(3, 20)** and are tangent to the graph of 
+
+$$
+f(x) = -x^2 + 3x + 15.
+$$
+
+### Why It Matters:
+
+In terrain mapping and environmental science, this kind of problem helps determine the visible range of land from an elevated observation point, such as a drone or watchtower. The tangent lines define the outer boundary of what the observer can see.
+
+---
+
