@@ -45,6 +45,12 @@ where $t$ is time in seconds.
 
 ---
 
+## Your feedback!
+
+Please spend a couple of minutes filling the following feeback form: [form link](https://docs.google.com/forms/d/e/1FAIpQLSdhKe7ihSxG1jphQUG0pXJsipYnfvJtIL8Pj3H0FiR2X9htWQ/viewform?usp=header)
+
+---
+
 ## **3. Pollution Density in a River**
 
 The concentration of a pollutant at a certain downstream point is modeled by:
