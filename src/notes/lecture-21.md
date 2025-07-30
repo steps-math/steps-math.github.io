@@ -92,6 +92,13 @@ $$
 \frac{d}{dx}\left[\frac{x^2 + 1}{x^2 - 1}\right] = \frac{(2x)(x^2 - 1) - (x^2 + 1)(2x)}{(x^2 - 1)^2} = \frac{2x^3 - 2x - 2x^3 - 2x}{(x^2 - 1)^2} = \frac{-4x}{(x^2 - 1)^2}
 $$
 
+### Summary Schedule: Product & Quotient Rules
+
+| Rule             | Formula                                                                 | Use When...                                             | Example                                             |
+|------------------|--------------------------------------------------------------------------|----------------------------------------------------------|-----------------------------------------------------|
+| **Product Rule** | $\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$                    | Differentiating two functions **multiplied** together    | $\frac{d}{dx}[x^2 \cdot \ln(x)]$                |
+| **Quotient Rule**| $\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$ | Differentiating a **fraction** (division of functions)  | $\frac{d}{dx}\left[\frac{\ln(x)}{x^2}\right]$   |
+
 ---
 
 # Exercises
