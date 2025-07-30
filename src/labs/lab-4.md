@@ -107,7 +107,6 @@ $$
 
 The drone’s camera can just barely see the edges of the hill where its line of sight is **tangent** to the surface.
 
----
 
 ### Your Task:
 
@@ -121,5 +120,5 @@ $$
 
 In terrain mapping and environmental science, this kind of problem helps determine the visible range of land from an elevated observation point, such as a drone or watchtower. The tangent lines define the outer boundary of what the observer can see.
 
----
+
 
