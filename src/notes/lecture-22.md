@@ -55,6 +55,26 @@ $$
 > $f'(x) = \frac{1}{x}, g'(x) = 2x$
 > $\implies (\ln(x^2 + 1))' = (f(g(x)))' = f'(g(x)) \cdot g'(x) = \frac{1}{x^2 + 1} \cdot 2x = \frac{2x}{x^2 + 1}$
 
+> **Example 4:**
+>
+> Task: Let $f(x) = 3^x$. Find $f'(x)$.
+>
+> Solution:
+> $f(x) = 3^x = e^{\ln(3^x)} = e^{x\ln(3)}$. 
+> Let $u = x\ln(3) \implies f(x) = e^u$.
+> $\implies f'(x) = e^u \cdot u' = e^{x\ln(3)} \cdot \ln(3) = 3^x \cdot \ln(3)$
+
+> **Example 5:**
+>
+> Task: Let $f(x) = \log_3(x)$. Find $f'(x)$.
+>
+> Solution:
+> $f(x) = \log_3(x) = \frac{\ln(x)}{\ln(3)}$. 
+> Let $u = \ln(x) \implies f(x) = \frac{u}{\ln(3)}$.
+> $\implies f'(x) = \frac{1}{\ln(3)} \cdot u' = \frac{1}{\ln(3)} \cdot \frac{1}{x} = \frac{1}{x\ln(3)}$
+
+
+
 ## General Strategy
 
 1. Identify the inner and outer functions: What is $g(x)$ and what is $f(x)$?
@@ -73,6 +93,7 @@ Find the derivative using the chain rule:
 2. $f(x) = e^{x^2}$
 3. $f(x) = \ln(4x^2 + 4)$
 4. $f(x) = 2e^{3x+2}$
+5. $f(x) = 4^x$
 
 ## 2. More Chain Rule
 
@@ -84,6 +105,7 @@ Find the derivative of the following functions:
 4. $f(x) = \sqrt{\ln(x)}$
 5. $f(x) = \frac{1}{\sqrt{4x^3 + 2}}$
 6. $f(x) = (\ln(2x^2 + 1))^5$
+7. $f(x) = \log_3(2^x + 5)$
 
 ## 3. Even more Chain Rule
 
@@ -97,3 +119,12 @@ Find the derivative of the following functions:
    $$B(t) = \frac{1}{\sqrt{1+e^{-t}}}$$
    - Find the rate of change of brightness with respect to time.
 
+## 4. Proofs
+
+1. Assume that the chain rule and the product rule are true. Prove that the quotient rule is also true.
+
+(Given that $\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$ and $\frac{d}{dx}[f(g(x))] = f'(g(x))g'(x)$. Prove that $\frac{d}{dx}[\frac{f(x)}{g(x)}] = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$ for any differentiable functions $f(x)$ and $g(x)$ with $g(x) \neq 0$.)
+
+2. Using the chain rule, prove the power rule for any real number $n$.
+
+(Given that $\frac{d}{dx}[f(g(x))] = f'(g(x))g'(x)$. Prove that $\frac{d}{dx}[x^n] = nx^{n-1}$ for any real number $n$.)
