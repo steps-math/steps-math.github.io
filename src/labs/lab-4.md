@@ -30,6 +30,12 @@ $$f(x) = e^x + \frac{1}{e^x} + x^3$$
 
 ---
 
+## Your feedback!
+
+Please spend a couple of minutes filling the following feeback form: [form link](https://docs.google.com/forms/d/e/1FAIpQLSdhKe7ihSxG1jphQUG0pXJsipYnfvJtIL8Pj3H0FiR2X9htWQ/viewform?usp=header)
+
+---
+
 ## **2. Server Load Model**
 
 A server handles incoming data packets. The incoming data rate (in packets/sec) is modeled as:
@@ -46,11 +52,6 @@ where $t$ is time in seconds.
 #### 4. Mark local max/min and points where $f'(t) = 0$.
 #### 5. Relate these turning points to real-world server behavior (e.g. peak load time, diminishing usage).
 
----
-
-## Your feedback!
-
-Please spend a couple of minutes filling the following feeback form: [form link](https://docs.google.com/forms/d/e/1FAIpQLSdhKe7ihSxG1jphQUG0pXJsipYnfvJtIL8Pj3H0FiR2X9htWQ/viewform?usp=header)
 
 ---
 
