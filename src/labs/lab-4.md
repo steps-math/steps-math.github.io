@@ -18,12 +18,15 @@ $$f(x) = e^x + \frac{1}{e^x} + x^3$$
 
 #### 1. Find the derivative $f'(x)$.
 #### 2. Use *GeoGebra* to plot $f(x)$ and $f'(x)$.
-#### 3. Find the critical points of $f(x)$ by solving $f'(x) = 0$. (What are the x values for which $f'(x) = 0$?)
+#### 3. Find the critical points of $f(x)$ by solving $f'(x) = 0$ algebraically. 
+- (What are the x values for which $f'(x) = 0$?)
 #### 4. Determine the local maxima and minima of $f(x)$.
-#### 5. Determine the sign of $f'(x)$ in each interval divided by those points. (Whether $f'(x)$ is positive or negative in each interval decided by the critical points?)
-#### 6. Determine the intervals on which $f(x)$ is increasing or decreasing. (*Hint*: can you see the connection between the sign of $f'(x)$ and the increasing/decreasing intervals?)
+#### 5. Determine the sign of $f'(x)$ in each interval divided by those points. (
+- Whether $f'(x)$ is positive or negative in each interval decided by the critical points?)
+#### 6. Determine the intervals on which $f(x)$ is increasing or decreasing. 
+- (*Hint*: can you see the connection between the sign of $f'(x)$ and the increasing/decreasing intervals?)
 
-- Observe the graphs of $f(x)$ and $f'(x)$ to get answers and intuition for the questions above.
+> Observe the graphs of $f(x)$ and $f'(x)$ to get answers and intuition for the questions above.
 
 ---
 
