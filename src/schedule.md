@@ -105,7 +105,7 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
-| 30 | Saturday, August 2 | Derivatives rules 3: chain rule. |  |
+| 30 | Saturday, August 2 | Derivatives rules 3: chain rule. | [_lecture 22_](/notes/lecture-22/) |
 | 31 | Sunday, August 3 | Derivatives in real life. Derivatives role in optimization problems. Fence perimeter/area and factory production problems. |  |
 | 32 | Monday, August 4 | Derivatives and graphs of functions. Derivatives use to understand behavior of functions. First and second derivative tests. |  |
 | 33 | Tuesday, August 5 | **Lab 5**: Derivates Lab 2. Guided example of an elaborate optimization problem. |  |
