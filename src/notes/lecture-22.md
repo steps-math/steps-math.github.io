@@ -95,6 +95,17 @@ Find the derivative using the chain rule:
 4. $f(x) = 2e^{3x+2}$
 5. $f(x) = 4^x$
 
+<details>
+<summary>Answer Key</summary>
+
+1. $f'(x) = 4x^3 + 4x$
+2. $f'(x) = 2x e^{x^2}$
+3. $f'(x) = \frac{8x}{4x^2 + 4}$
+4. $f'(x) = 6e^{3x+2}$
+5. $f'(x) = 4^x \ln(4)$
+
+</details>
+
 ## 2. More Chain Rule
 
 Find the derivative of the following functions:
@@ -107,6 +118,19 @@ Find the derivative of the following functions:
 6. $f(x) = (\ln(2x^2 + 1))^5$
 7. $f(x) = \log_3(2^x + 5)$
 
+<details>
+<summary>Answer Key</summary>
+
+1. $f'(x) = \frac{3x}{\sqrt{3x^2+4}}$
+2. $f'(x) = \frac{x}{(x^2 + 1)\sqrt{x^2 + 1}}$
+3. $f'(x) = 4(e^{2x+1}+3)^3 \cdot 2e^{2x+1}$
+4. $f'(x) = \frac{1}{2x\sqrt{\ln(x)}}$
+5. $f'(x) = \frac{-6x^2}{(4x^3 + 2)\sqrt{4x^3 + 2}}$
+6. $f'(x) = 5(\ln(2x^2 + 1))^4 \cdot \frac{4x}{2x^2 + 1}$
+7. $f'(x) = \frac{2^x \ln(2)}{\ln(3)(2^x + 5)}$
+
+</details>
+
 ## 3. Even more Chain Rule
 
 1. The radius of a balloon is increasing over time as $r(t)=2t+1$. The volume of the balloon is $V(r) = \frac{4}{3}\pi r^3$.
@@ -118,6 +142,15 @@ Find the derivative of the following functions:
 3. The brightness $B$ of a light bulb over time is modeled by:
    $$B(t) = \frac{1}{\sqrt{1+e^{-t}}}$$
    - Find the rate of change of brightness with respect to time.
+
+<details>
+<summary>Answer Key</summary>
+
+1. $\frac{dV}{dt} = 8\pi (2t+1)^2$
+2. $\frac{dC}{dt} = -0.4t e^{-0.2t^2}$
+3. $\frac{dB}{dt} = \frac{e^{-t}}{2(1+e^{-t})^{3/2}}$
+
+</details>
 
 ## 4. Proofs
 
