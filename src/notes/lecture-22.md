@@ -88,8 +88,12 @@ Find the derivative of the following functions:
 ## 3. Even more Chain Rule
 
 1. The radius of a balloon is increasing over time as $r(t)=2t+1$. The volume of the balloon is $V(r) = \frac{4}{3}\pi r^3$.
-
    - Find $\frac{dV}{dt}$ in terms of $t$.
 
 2. A chemical's concentration is given by $C(t) = e^{-0.2t^2}$. 
    - Find the rate of change of concentration with respect to time.
+  
+3. The brightness $B$ of a light bulb over time is modeled by:
+   $$B(t) = \frac{1}{\sqrt{1+e^{-t}}}$$
+   - Find the rate of change of brightness with respect to time.
+
