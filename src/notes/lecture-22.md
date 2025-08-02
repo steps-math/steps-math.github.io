@@ -122,7 +122,7 @@ Find the derivative of the following functions:
 <summary>Answer Key</summary>
 
 1. $f'(x) = \frac{3x}{\sqrt{3x^2+4}}$
-2. $f'(x) = \frac{x}{(x^2 + 1)\sqrt{x^2 + 1}}$
+2. $f'(x) = \frac{x}{(x^2 + 1)}$
 3. $f'(x) = 4(e^{2x+1}+3)^3 \cdot 2e^{2x+1}$
 4. $f'(x) = \frac{1}{2x\sqrt{\ln(x)}}$
 5. $f'(x) = \frac{-6x^2}{(4x^3 + 2)\sqrt{4x^3 + 2}}$
