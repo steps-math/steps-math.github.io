@@ -127,7 +127,6 @@ $$
 
 ---
 
----
 
 ## Summary of the Rules
 
@@ -140,70 +139,93 @@ $$
 
 # Exercises: Implicit Differentiation
 
-### 1. Basics
+### Section 1: Problems without Natural Log or Exponential
 
-Find $\frac{dy}{dx}$ for each of the following equations:
-
-1. $x^2 + y^2 = 16$
-2. $x^2 - y^2 = 9$
-3. $xy = 1$
-4. $x^3 + y^3 = 6xy$
-5. $e^y + x^2 = y$
-
-<details>
-<summary>Answer Key</summary>
-
-1. $\frac{dy}{dx} = -\frac{x}{y}$
-
-2. $\frac{dy}{dx} = \frac{x}{y}$
-
-3. $\frac{dy}{dx} = -\frac{y}{x}$
-
-4. $\frac{dy}{dx} = \frac{3x^2 - 6y}{3y^2 - 6x}$
-
-5. $\frac{dy}{dx} = \frac{-2x}{e^y - 1}$
-
-</details>
-
-### 2. Medium
-1. $x^x=y$
-2. $\ln(xy) = x + y$
-3. $x = y^y$
-4. $\sqrt{x} + \sqrt{y} = 1$
+1. $x^2 + y^2 = 16$  
+2. $x^2 - y^2 = 9$  
+3. $xy = 1$  
+4. $x^3 + y^3 = 6xy$  
+5. $\sqrt{x} + \sqrt{y} = 1$  
+6. $\ln(x^2 + y^2) = 0$ 
 
 <details>
 <summary>Answer Key</summary>
 
-1. $\frac{dy}{dx} = x^x\left(\ln(x) + 1\right)$
+1. $\displaystyle \frac{dy}{dx} = -\frac{x}{y}$
 
-2. $\frac{dy}{dx} = \frac{1 - \frac{1}{x}}{\frac{1}{y} - 1}$
+2. $\displaystyle \frac{dy}{dx} = \frac{x}{y}$
 
-3. $\frac{dy}{dx} = \frac{1}{y^y\left(\ln(y) + 1\right)}$
+3. $\displaystyle \frac{dy}{dx} = -\frac{y}{x}$
 
-4. $\frac{dy}{dx} = -\frac{\sqrt{y}}{\sqrt{x}}$
+4. $\displaystyle \frac{dy}{dx} = \frac{3x^2 - 6y}{3y^2 - 6x}$
+
+5. $\displaystyle \frac{dy}{dx} = -\frac{\sqrt{y}}{\sqrt{x}}$
+
+6. $\displaystyle \frac{dy}{dx} = -\frac{x}{y}$
 
 </details>
 
-### 3. Hard
+### Section 2: Problems Involving Exponentials
 
-1. $x^2 y + y^2 = e^y$
-2. $e^{x^2}y = x^2 y$
-3. $\ln(x^2 + y^2) = 0$
-4. $x^2 + y^2 + \ln(xy) = 0$
-5. $y = x^{y}$
+1. $e^y + x^2 = y$  
+2. $x^x = y$  
+3. $x = y^y$  
+4. $e^{x^2} y = x^2 y$  
+5. $y = x^y$
 
 <details>
 <summary>Answer Key</summary>
 
-1. $\frac{dy}{dx} = \frac{-2xy}{x^2 + 2y - e^y}$
+1. $\displaystyle \frac{dy}{dx} = \frac{-2x}{e^y - 1}$
 
-2. $\frac{dy}{dx} = \frac{2xy(e^{x^2} - 1)}{e^{x^2} - 1}$
+2. $\displaystyle \frac{dy}{dx} = x^x \left(\ln x + 1\right)$
 
-3. $\frac{dy}{dx} = -\frac{x}{y}$
+3. $\displaystyle \frac{dy}{dx} = \frac{1}{y^y \left(\ln y + 1\right)}$
 
-4. $\frac{dy}{dx} = \frac{-2x - \frac{y}{x}}{2y + \frac{x}{y}}$
+4. $\displaystyle \frac{dy}{dx} = 2x y$  
 
-5. $\frac{dy}{dx} = \frac{y^2 \ln(x) + xy}{x(x \ln(x) - y)}$
+5. $\displaystyle \frac{dy}{dx} = \frac{y^2 \ln x + x y}{x \left(x \ln x - y\right)}$
 
 </details>
+
+### Section 3: Problems Involving Natural Logarithms
+
+1. $\ln(xy) = x + y$  
+2. $x^2 + y^2 + \ln(xy) = 0$  
+3. $\ln(x) + \ln(y) = 1$  
+4. $\ln(x^2 y) = y$  
+5. $\ln(x + y) = xy$  
+6. $\ln(xy) + x = y$
+
+
+<details>
+<summary>Answer Key</summary>
+
+1. $\displaystyle \frac{dy}{dx} = \frac{1 - \frac{1}{x}}{\frac{1}{y} - 1}$
+
+2. $\displaystyle \frac{dy}{dx} = \frac{-2x - \frac{y}{x}}{2y + \frac{x}{y}}$
+
+3. $\displaystyle \frac{dy}{dx} = -\frac{y}{x}$
+
+4. $\displaystyle \frac{dy}{dx} = \frac{\frac{2}{x} + \frac{1}{y} \frac{dy}{dx}}{\frac{dy}{dx}} = \frac{2/x}{1 - \frac{1}{y}}$ (Simplify accordingly)
+
+5. $\displaystyle \frac{dy}{dx} = \frac{\frac{1}{x + y} (1 + \frac{dy}{dx}) - y}{x}$ (Implicitly solve for $\frac{dy}{dx}$)
+
+6. $\displaystyle \frac{dy}{dx} = \frac{\frac{1}{x} + 1}{\frac{1}{y} - 1}$
+
+</details>
+
+### Extra Advanced Problems
+
+1. $x^{y} + y^{x} = xy$  
+
+2. $\ln\big(x^2 + y^2\big) = xy + e^{xy}$  
+
+3. $e^{xy} + \ln(y) = x^2 y^3$  
+
+4. $x^{x^y} = y^{y^x}$  
+
+5. $\ln(y) = \frac{x + y}{x - y}$  
+
+6. $e^{x + y} = x^2 - y^2 + \ln(xy)$  
 
