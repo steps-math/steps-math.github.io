@@ -1,134 +1,108 @@
 ---
 layout: base.njk
-title: Derivatives and Graphs of Functions
+title: Derivatives in Real Life and Optimization Problems
 category: differentiation
 description: Lecture 24
 date: 2025-08-04
 ---
 
-# lecture 24: Derivatives and Graphs of Functions
+# lecture 24: Derivatives in Real Life and Optimization Problems
 
-## How Derivatives Shape Graphs
+## Real-Life Interpretations of Derivatives
 
-- **First Derivative** $f'(x)$: Tells us **where a function is increasing or decreasing**.
-- **Second Derivative** $f''(x)$: Tells us about **concavity** and **inflection points**.
+### 1. Derivatives as Rate of Change
 
-> Knowing $f'(x)$ and $f''(x)$ helps us understand the shape and features of a graph.
+- The derivative of a function tells us **how fast** something is changing.
+- Examples:
+  - **Velocity** is the derivative of position.
+  - **Growth rate** is the derivative of population.
+  - **Marginal cost/revenue** is the derivative of cost/revenue.
 
-
-## First Derivative Test
-
-### 1. Critical Points
-- Points where $f'(x) = 0$ or $f'(x)$ is undefined.
-
-### 2. Increasing / Decreasing Behavior
-- If $f'(x) > 0$ on an interval $\Rightarrow$ function is **increasing** there.
-- If $f'(x) < 0$ on an interval $\Rightarrow$ function is **decreasing** there.
-
-### 3. Local Max/Min
-- If $f'(x)$ changes from **positive to negative** $\Rightarrow$ **local max**
-- If $f'(x)$ changes from **negative to positive** $\Rightarrow$ **local min**
-
-> **Example:**
-> $f(x) = x^3 - 3x^2 + 2$
-> $f'(x) = 3x^2 - 6x$
-> Critical points at $x = 0$, $x = 2$
-> Use sign chart to determine max/min
-
-
-## Second Derivative Test
-
-### 1. Concavity
-- If $f''(x) > 0$ $\Rightarrow$ graph is **concave up** ($\cup$-shape)
-- If $f''(x) < 0$ $\Rightarrow$ graph is **concave down** ($\cap$-shape)
-
-### 2. Inflection Points
-- Points where $f''(x) = 0$ and concavity changes
-
-### 3. Alternative Max/Min Test
-- At a critical point $x = c$:
-  - If $f''(c) > 0$ $\Rightarrow$ local **min**
-  - If $f''(c) < 0$ $\Rightarrow$ local **max**
-  - If $f''(c) = 0$ $\Rightarrow$ test is **inconclusive**
-
-> **Example:**
-> $f(x) = x^4 - 4x^2$
-> $f'(x) = 4x^3 - 8x$
-> $f''(x) = 12x^2 - 8$
-> Critical points at $x = 0$, $x = \pm 2$
-> Inflection points at $x = \pm \sqrt{\frac{2}{3}}$
-> At $x = 0$, $f''(x) = -8 < 0 \Rightarrow$ local max
-> At $x = \pm 2$, $f''(x) = 40 > 0 \Rightarrow$ local min
-
-
-
-## Graph Sketching Strategy
-
-1. **Find domain**
-2. **Find intercepts** (of x-axis and y-axis)
-3. **Find critical points** from $f'(x)$
-4. **Use $f''(x)$** to determine concavity
-5. **Find asymptotes** (if any)
-6. Combine all info for a full sketch
-
-> Helpful tip: Create a sign chart for $f'$ and $f''$.
+> Example: If $C(x)$ is the cost to produce $x$ units, then $C'(x)$ is the cost of producing **one more unit** (marginal cost).
 
 ---
 
-## Example Problem
+## Optimization with Derivatives
 
-**Given:** $f(x) = x^3 - 6x^2 + 9x + 1$
+Optimization means finding:
+- **Maximum** or **minimum** values
+- Of a function that represents **cost, area, revenue, volume, etc.**
 
-1. $f'(x) = 3x^2 - 12x + 9$
-2. Critical points: $x = 1$, $x = 3$
-3. $f''(x) = 6x - 12$
-4. Inflection point: $x = 2$
+### 1. General Strategy
 
-| Interval        | $f'(x)$ | Behavior     | $f''(x)$ | Concavity    |
-|-----------------|--------|--------------|---------|--------------|
-| $(-\infty, 1)$  | +      | Increasing   | -       | Concave Down |
-| $(1, 2)$        | -      | Decreasing   | -       | Concave Down |
-| $(2, 3)$        | -      | Decreasing   | +       | Concave Up   |
-| $(3, \infty)$   | +      | Increasing   | +       | Concave Up   |
+1. Identify the quantity to **maximize** or **minimize**.
+2. Write it as a function of one variable.
+3. Find the **domain** (possible values).
+4. Compute the **derivative** and find **critical points**:
+   - Where $f'(x) = 0$ or $f'(x)$ is undefined.
+5. Determine if the point is a **maximum** or **minimum** using close values.
+6. Interpret the result in the **real-world context**.
 
-<div style="text-align: center; margin: 20px 0;">
-    <img src="/images/24-behavior-table.png" alt="Behavior table" style="max-width: 70%; height: auto; border: 1px solid gray;">
-    <img src="/images/24-detailed-analysis.png" alt="Detailed analysis" style="max-width: 80%; height: auto; border: 1px solid gray;">
-</div>
 
----
 
-## Summary
+## Application 1: Fence Optimization
 
-- **First derivative**: increasing/decreasing, local max/min
-- **Second derivative**: concavity, inflection points
-- Combine both to **sketch better graphs**
+### Problem:
+A farmer has 100 meters of fencing and wants to enclose a rectangular area. What is the largest area they can enclose?
+
+### Step-by-step:
+- Let width = $x$, then length = $(50 - x)$ (since the perimeter is $2x + 2(50 - x) = 100$)
+- Area: $A(x) = x(50 - x) = 50x - x^2$
+- Derivative: $A'(x) = 50 - 2x$
+- Set $A'(x) = 0 \implies x = 25$
+- Compute close values: $A(24) = 480$, $A(25) = 625$, $A(26) = 552 \implies$ max at $x = 25$
+    ($A(25) > A(24)$ and $A(25) > A(26)$, so it's a local maximum)
+
+> **Max Area** = $25 \times 25 = 625$ m$^2$
+
+
+## Application 2: Factory Production
+
+### Problem:
+Suppose profit is modeled by: 
+$$P(x) = -2x^2 + 40x - 100$$
+where $x$ is the number of items produced.
+
+What is the optimal number of items to produce to maximize profit?
+
+### Steps:
+- Find $P'(x) = \frac{d}{dx}[-2x^2 + 40x - 100] = -4x + 40$
+- Set $P'(x) = 0 \implies x = 10$
+- Compute close values: $P(9) = 98$, $P(10) = 100$, $P(11) = 98 \implies$ max at $x = 10$
+    ($P(10) > P(9)$ and $P(10) > P(11)$, so it's a local maximum)
+
+> **Optimal production**: 10 units
+> **Max profit**: $P(10) = -2(10)^2 + 40(10) - 100 = 100$
 
 ---
 
 # Exercises
 
-## 1. First and Second Derivative Analysis
-Given $f(x) = x^3 - 9x^2 + 24x$:
-- a) Find $f'(x)$ and $f''(x)$
-- b) Identify intervals of increase/decrease
-- c) Find local extrema
-- d) Identify concavity and inflection points
+### 1. Fence Problem
+A rectangular garden is to be enclosed on **three sides** with fencing (no fence along one side). You have 80 meters of fencing. What dimensions give the maximum area?
 
-## 2. Graph Sketching
-Sketch a complete graph of:
-- a) $f(x) = \frac{x^2}{x^2 + 1}$
-- b) $f(x) = x^4 - 4x^2$
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/images/23-garden.png" alt="Fence problem" style="max-width: 40%; height: auto; border: 1px solid gray;">
+</div>
 
-## 3. Real-Life Interpretation
-Suppose $P(t)$ models population over time:
-- a) What does it mean if $P'(t) > 0$ but $P''(t) < 0$?
-- b) What does an inflection point mean in this context?
+### 2. Profit Optimization
+The cost of producing $x$ items is $C(x) = 5x + 200$ and revenue is $R(x) = 20x - x^2$. Find the number of items that maximizes profit.
 
-## 4. Build a Function
-Create a polynomial function with:
-- A local max at $x = -1$
-- A local min at $x = 2$
-- An inflection point at $x = 0$
+### 3. Box Volume Problem
+A square sheet of metal with side length $s$ is folded into an open-top box by cutting equal squares from each corner. Write a function for the volume and find the optimal cut that maximizes the volume.
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/images/23-box.png" alt="Box problem" style="max-width: 40%; height: auto; border: 1px solid gray;">
+</div>
+
+### 4. Cost Minimization
+You want to design a can that holds 355 mL of soda. What radius and height minimize the surface area (cost of material)?
+
+### 5. Time of Travel
+You are trying to cross a river and walk to a point downstream. You can swim at 2 m/s and walk at 5 m/s. If the horizontal distance between the start and end points is 40 m, what path gets you there fastest?
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/images/23-river.png" alt="River problem" style="max-width: 50%; height: auto; border: 1px solid gray;">
+</div>
 
 ---
