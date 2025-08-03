@@ -159,7 +159,7 @@ Find $\frac{dy}{dx}$ for the following equations:
 
 3. $\displaystyle \frac{dy}{dx} = -\frac{y}{x}$
 
-4. $\displaystyle \frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x}$
+4. $\displaystyle \frac{dy}{dx} = \frac{2y - x^2}{y^2 - 2x}$
 
 5. $\displaystyle \frac{dy}{dx} = -\frac{\sqrt{y}}{\sqrt{x}}$
 
