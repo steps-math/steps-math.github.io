@@ -141,6 +141,8 @@ $$
 
 ### Section 1: Problems without Natural Log or Exponential
 
+Find $\frac{dy}{dx}$ for the following equations:
+
 1. $x^2 + y^2 = 16$  
 2. $x^2 - y^2 = 9$  
 3. $xy = 1$  
@@ -157,7 +159,7 @@ $$
 
 3. $\displaystyle \frac{dy}{dx} = -\frac{y}{x}$
 
-4. $\displaystyle \frac{dy}{dx} = \frac{3x^2 - 6y}{3y^2 - 6x}$
+4. $\displaystyle \frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x}$
 
 5. $\displaystyle \frac{dy}{dx} = -\frac{\sqrt{y}}{\sqrt{x}}$
 
@@ -166,6 +168,8 @@ $$
 </details>
 
 ### Section 2: Problems Involving Exponentials
+
+Find $\frac{dy}{dx}$ for the following equations:
 
 1. $e^y + x^2 = y$  
 2. $x^x = y$  
@@ -189,6 +193,8 @@ $$
 </details>
 
 ### Section 3: Problems Involving Natural Logarithms
+
+Find $\frac{dy}{dx}$ for the following equations:
 
 1. $\ln(xy) = x + y$  
 2. $x^2 + y^2 + \ln(xy) = 0$  
@@ -216,6 +222,8 @@ $$
 </details>
 
 ### Extra Advanced Problems
+
+Find $\frac{dy}{dx}$ for the following equations:
 
 1. $x^{y} + y^{x} = xy$  
 
