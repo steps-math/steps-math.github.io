@@ -28,6 +28,9 @@ $$
 
 > **Example 1:**
 >
+> Task: Find $\frac{d}{dx}[(x+1)^2]$
+>
+> Solution:
 > $f(x) = x^2$, $g(x) = x+1 \implies f(g(x)) = (x+1)^2$  
 > $f'(x) = 2x$, $g'(x) = 1$  
 > $\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x) = 2(x+1) \cdot 1 = 2x + 2$
@@ -38,7 +41,7 @@ $$
 > **Example 2:**
 >
 > Find $\frac{d}{dx}[e^{-x}]$:
-> Let $u = -x \implies \frac{d}{dx}[e^{-x}] = \frac{d}{dx}[e^u] \cdot \frac{du}{dx} = e^u \cdot (-1) = -e^{-x}$
+> Let $u = -x \implies \frac{d}{dx}[e^{-x}] = \frac{d}{du}[e^u] \cdot \frac{du}{dx} = e^u \cdot (-1) = -e^{-x}$
 >
 > In Lagrange notation:
 > $f(x) = e^x, g(x) = -x \implies f(g(x)) = e^{-x}$
@@ -48,7 +51,7 @@ $$
 > **Example 3:**
 >
 > Find $\frac{d}{dx}[\ln(x^2 + 1)]$:
-> Let $u = x^2 + 1 \implies \frac{d}{dx}[\ln(x^2 + 1)] = \frac{d}{dx}[\ln(u)] \cdot \frac{du}{dx} = \frac{1}{u} \cdot 2x = \frac{2x}{x^2 + 1}$
+> Let $u = x^2 + 1 \implies \frac{d}{dx}[\ln(x^2 + 1)] = \frac{d}{dx}[\ln(u)] = \frac{d}{du}[\ln(u)] \cdot \frac{du}{dx} = \frac{1}{u} \cdot 2x = \frac{2x}{x^2 + 1}$
 >
 > In Lagrange notation:
 > $f(x) = \ln(x), g(x) = x^2 + 1 \implies f(g(x)) = \ln(x^2 + 1)$
@@ -60,7 +63,7 @@ $$
 > Task: Let $f(x) = 3^x$. Find $f'(x)$.
 >
 > Solution:
-> $f(x) = 3^x = e^{\ln(3^x)} = e^{x\ln(3)}$. 
+> $f(x) = 3^x = e^{\ln(3^x)} = e^{x\ln(3)}$. (we do this step to make it easier to differentiate by having the base as $e$ and knowing the derivative of $e^x$ is $e^x$)
 > Let $u = x\ln(3) \implies f(x) = e^u$.
 > $\implies f'(x) = e^u \cdot u' = e^{x\ln(3)} \cdot \ln(3) = 3^x \cdot \ln(3)$
 
@@ -69,7 +72,7 @@ $$
 > Task: Let $f(x) = \log_3(x)$. Find $f'(x)$.
 >
 > Solution:
-> $f(x) = \log_3(x) = \frac{\ln(x)}{\ln(3)}$. 
+> $f(x) = \log_3(x) = \frac{\ln(x)}{\ln(3)}$. (using the change of base log rule)
 > Let $u = \ln(x) \implies f(x) = \frac{u}{\ln(3)}$.
 > $\implies f'(x) = \frac{1}{\ln(3)} \cdot u' = \frac{1}{\ln(3)} \cdot \frac{1}{x} = \frac{1}{x\ln(3)}$
 
