@@ -186,7 +186,7 @@ Find $\frac{dy}{dx}$ for the following equations:
 
 3. $\displaystyle \frac{dy}{dx} = \frac{1}{y^y \left(\ln y + 1\right)}$
 
-4. $\displaystyle \frac{dy}{dx} = 2x y$  
+4. $\displaystyle \frac{dy}{dx} = \frac{2y-2x^2y^2}{yx^3-x}$  
 
 5. $\displaystyle \frac{dy}{dx} = \frac{y^2}{x \left(1- y\ln x\right)}$
 
