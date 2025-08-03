@@ -28,7 +28,7 @@ Optimization means finding:
 - **Maximum** or **minimum** values
 - Of a function that represents **cost, area, revenue, volume, etc.**
 
-### 1. General Strategy
+### General Strategy
 
 1. Identify the quantity to **maximize** or **minimize**.
 2. Write it as a function of one variable.
@@ -37,6 +37,22 @@ Optimization means finding:
    - Where $f'(x) = 0$ or $f'(x)$ is undefined.
 5. Determine if the point is a **maximum** or **minimum** using close values.
 6. Interpret the result in the **real-world context**.
+
+### What does it mean to have the derivative be 0?
+
+- If $f'(x) = 0$, then $f(x)$ is **not changing** at $x$, basically it's a turning point.
+- This means $f(x)$ is **at a local maximum or minimum**.
+
+In general, when $f'(x) > 0$, it means that the rate of change is **positive**, so the function is **increasing**.
+
+When $f'(x) < 0$, it means that the rate of change is **negative**, so the function is **decreasing**.
+
+Therefore, if $f'(x)$ switches from positive to negative, then $f(x)$ has a **local maximum** (was increasing, now decreasing). If $f'(x)$ switches from negative to positive, then $f(x)$ has a **local minimum** (was decreasing, now increasing).
+
+> Example: If $f(x) = x^2$, then $f'(x) = 2x$.
+> When $x > 0$, $f'(x) > 0$, so $f(x)$ is increasing.
+> When $x < 0$, $f'(x) < 0$, so $f(x)$ is decreasing.
+> Therefore, $f(x)$ has a local maximum at $x = 0$ since $f'(0) = 0$.
 
 
 
