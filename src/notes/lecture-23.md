@@ -174,7 +174,7 @@ Find $\frac{dy}{dx}$ for the following equations:
 1. $e^y + x^2 = y$  
 2. $x^x = y$  
 3. $x = y^y$  
-4. $e^{x^2} y = x^2 y$  
+4. $e^{x^2y}  = x^2 y$  
 5. $y = x^y$
 
 <details>
@@ -188,7 +188,7 @@ Find $\frac{dy}{dx}$ for the following equations:
 
 4. $\displaystyle \frac{dy}{dx} = 2x y$  
 
-5. $\displaystyle \frac{dy}{dx} = \frac{y^2 \ln x + x y}{x \left(x \ln x - y\right)}$
+5. $\displaystyle \frac{dy}{dx} = \frac{y^2}{x \left(1- y\ln x\right)}$
 
 </details>
 
