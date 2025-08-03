@@ -121,13 +121,12 @@ Below is the complete schedule for our 7-week summer course (June 29 - August 14
 
 | Day | Date | Topic | Notes link |
 |-----|------|-------------|-----------|
-| 36 | Saturday, August 9 | L'hopital's rule, Mean Value Theorem, and applications. |  |
-| 37 | Sunday, August 10 | Implicit differentiation, differentiability vs. continuity. |  |
-| 38 | Monday, August 11 | **Lab 6**: Derivates Lab 3. Related-rates problem. |  |
-| 39 | Tuesday, August 12 | Inverse of derivatives. Brief introduction to integrals. |  |
-| 40 | Wednesday, August 13 | Review of graph sketching. |  |
-| 41 | Thursday, August 14 | Review of calculus concepts. |  |
-| - | Friday, August 15 | **No Class** |  |
+| 36 | Saturday, August 9 | Quiz 3 solutions. Wrap up. | [_problems and solutions_](/notes/quiz3-solutions/) |
+| 37 | Sunday, August 10 | **No Math Class** | -- |
+| 38 | Monday, August 11 | **No Math Class** | -- |
+| 39 | Tuesday, August 12 | **No Math Class** | -- |
+| 40 | Wednesday, August 13 | **No Math Class** | -- |
+| 41 | Thursday, August 14 | Departure day. | -- |
 
 </div>
 
