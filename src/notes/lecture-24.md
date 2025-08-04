@@ -52,7 +52,7 @@ Therefore, if $f'(x)$ switches from positive to negative, then $f(x)$ has a **lo
 > Example: If $f(x) = x^2$, then $f'(x) = 2x$.
 > When $x > 0$, $f'(x) > 0$, so $f(x)$ is increasing.
 > When $x < 0$, $f'(x) < 0$, so $f(x)$ is decreasing.
-> Therefore, $f(x)$ has a local maximum at $x = 0$ since $f'(0) = 0$.
+> Therefore, $f(x)$ has a local minimum at $x = 0$ since $f'(0) = 0$.
 
 
 
