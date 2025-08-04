@@ -100,11 +100,12 @@ $$\frac{dy}{dt} = -\frac{3}{2} = -1.5 \text{ ft/s}$$
 ### 1. Rectangle Problem
 A rectangle has a fixed perimeter of 100 cm. What dimensions maximize the area?
 
-### 2. Cone Volume
-A conical water tank is being filled at 3 m$^3$/min. The tank’s radius is always half its height. How fast is the water level rising when the tank is 4 m deep?
+### 2. Draining Tank
+Water drains from a cylindrical tank at 5 L/min. What’s the rate of change of the water depth when the radius is 1 m and depth is 2 m? (Volume of a cylinder is $\pi r^2 h$)
 
-### 3. Draining Tank
-Water drains from a cylindrical tank at 5 L/min. What’s the rate of change of the water depth when the radius is 1 m and depth is 2 m?
-
-### 4. Expanding Circle
+### 3. Expanding Circle
 A circle’s area increases at 10 cm$^2$/s. How fast is the radius changing when the area is $100\pi$ cm$^2$?
+
+### 4. Cone Volume
+A conical water tank is being filled at 3 m$^3$/min. The tank’s radius is always half its height. How fast is the water level rising when the tank is 4 m deep? (Volume of a cone is $\frac{1}{3}\pi r^2 h$)
+
