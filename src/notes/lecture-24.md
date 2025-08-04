@@ -102,7 +102,7 @@ A rectangular garden is to be enclosed on **three sides** with fencing (no fence
 </div>
 
 ### 2. Profit Optimization
-The cost of producing $x$ items is $C(x) = 5x + 200$ and revenue is $R(x) = 20x - x^2$. Find the number of items that maximizes profit.
+The cost of producing $x$ items is $C(x) = 5x + 16$ and revenue is $R(x) = 20x - x^2$. Find the number of items that maximizes profit.
 
 ### 3. Box Volume Problem
 A square sheet of metal with side length $s$ is folded into an open-top box by cutting equal squares from each corner. Write a function for the volume and find the optimal cut that maximizes the volume.
