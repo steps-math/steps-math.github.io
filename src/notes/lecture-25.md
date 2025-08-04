@@ -106,5 +106,13 @@ Water drains from a cylindrical tank at 5 L/min. What’s the rate of change of 
 ### 3. Cone Volume
 A conical water tank is being filled at 3 m$^3$/min. The tank’s radius is always half its height. How fast is the water level rising when the tank is 4 m deep? (Volume of a cone is $\frac{1}{3}\pi r^2 h$)
 
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/images/25-cone.png" alt="Cone problem" style="max-width: 40%; height: auto; border: 1px solid gray;">
+</div>
+
 ### 4. Sliding Ladder
 A 13-foot ladder is leaning against a vertical wall. The top of the ladder is sliding down the wall at a rate of 1.5 ft/s. How fast is the bottom of the ladder sliding away from the wall when the top is 5 feet above the ground?
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/images/25-ladder.png" alt="Ladder problem" style="max-width: 40%; height: auto; border: 1px solid gray;">
+</div>
