@@ -13,10 +13,9 @@ date: 2025-08-05
 Recall the strategy:
 1. Identify the function to optimize.
 2. Write it in terms of one variable.
-3. Determine the domain.
-4. Find the derivative, solve for critical points.
-5. Test points to find max/min.
-6. Interpret in context.
+3. Find the derivative, solve for critical points.
+4. Test points to find max/min.
+5. Interpret in context.
 
 
 ## Application: Minimizing Cost
@@ -97,15 +96,15 @@ $$\frac{dy}{dt} = -\frac{3}{2} = -1.5 \text{ ft/s}$$
 
 ## Exercises
 
-### 1. Rectangle Problem
-A rectangle has a fixed perimeter of 100 cm. What dimensions maximize the area?
+
+### 1. Expanding Circle
+A circle’s area increases at 10 cm$^2$/s. How fast is the radius changing when the area is $100\pi$ cm$^2$?
 
 ### 2. Draining Tank
 Water drains from a cylindrical tank at 5 L/min. What’s the rate of change of the water depth when the radius is 1 m and depth is 2 m? (Volume of a cylinder is $\pi r^2 h$)
 
-### 3. Expanding Circle
-A circle’s area increases at 10 cm$^2$/s. How fast is the radius changing when the area is $100\pi$ cm$^2$?
-
-### 4. Cone Volume
+### 3. Cone Volume
 A conical water tank is being filled at 3 m$^3$/min. The tank’s radius is always half its height. How fast is the water level rising when the tank is 4 m deep? (Volume of a cone is $\frac{1}{3}\pi r^2 h$)
 
+### 4. Sliding Ladder
+A 13-foot ladder is leaning against a vertical wall. The top of the ladder is sliding down the wall at a rate of 1.5 ft/s. How fast is the bottom of the ladder sliding away from the wall when the top is 5 feet above the ground?
