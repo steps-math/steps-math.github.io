@@ -121,4 +121,12 @@ You are trying to cross a river and walk to a point downstream. You can swim at 
     <img src="/images/23-river.png" alt="River problem" style="max-width: 50%; height: auto; border: 1px solid gray;">
 </div>
 
----
+<details>
+<summary>Answer Key</summary>
+
+1. $A(x) = x(80 - 2x) = 80x - 2x^2 \Rightarrow x = 20$ and $A(20) = 800$
+2. $P(x) = R(x) - C(x) = (20x - x^2) - (5x + 16) = -x^2 + 15x - 16 \Rightarrow x = 7.5$ and $P(7.5) = 51.25$. The optimal number of items to produce is 7 or 8 units.
+3. $V(x) = x(30 - 2x)^2 \Rightarrow V'(x) = 12x^2 - 240x + 900 \Rightarrow x = 5$ and $V(5) = 2000$. The optimal cut is 5 cm.
+4. $V = \pi r^2 h = 355 \Rightarrow h = \frac{355}{\pi r^2} \Rightarrow A = 2\pi r^2 + 2\pi r h = 2\pi r^2 + 2\pi r \frac{355}{\pi r^2} = 2\pi r^2 + \frac{710}{r} \Rightarrow A'(r) = 4\pi r - \frac{710}{r^2} \Rightarrow r = \sqrt[3]{\frac{710}{4\pi}} \approx 5.46$ and $h = \frac{355}{\pi (5.46)^2} \approx 10.92$
+
+</details>
