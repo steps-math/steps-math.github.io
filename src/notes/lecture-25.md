@@ -116,3 +116,12 @@ A 13-foot ladder is leaning against a vertical wall. The top of the ladder is sl
 <div style="text-align: center; margin: 20px 0;">
     <img src="/images/25-ladder.png" alt="Ladder problem" style="max-width: 40%; height: auto; border: 1px solid gray;">
 </div>
+
+<details>
+<summary>Answer key</summary>
+
+1. $\frac{dA}{dt} = 10$ cm$^2$/s, $A=\pi r^2 \implies \frac{dA}{dt} = 2\pi r \frac{dr}{dt} \implies \frac{dr}{dt} = \frac{10}{2\pi \cdot 10} = \frac{1}{2\pi}$ when $A=100\pi$ cm$^2$ or $r=10$ cm.
+2. $\frac{dV}{dt} = \pi r^2 \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{t^2}{\pi} = \frac{9}{\pi}$ when $t=3$ and $r=1$ m.
+3. $V = \frac{\pi}{3} \cdot 5^2 \cdot 10 - \frac{\pi}{3} r^2 (10 - h) = \frac{\pi}{3} \cdot 250 - \frac{\pi}{3} (\frac{10-h}{2})^2 (10 - h)$ and given $\frac{dV}{dt} = 3$ m$^3$/min $\implies \frac{dV}{dt} = 3 = - \frac{\pi}{3} \frac{d}{dt} [\frac{(10-h)^3}{4}] \implies -\frac{9 \times 4}{\pi} = \frac{d}{dt} [(10-h)^3] = 3(10-h)^2 \times (-1) \times \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{12}{\pi (10-h)^2} = \frac{12}{\pi \times 36} = \frac{1}{3\pi}$ when $h=4$ m.
+4. $x^2 + y^2 = 169 \implies 2x \frac{dx}{dt} + 2y \frac{dy}{dt} = 0 \implies \frac{dx}{dt} = - \frac{y}{x} \frac{dy}{dt} = - \frac{\sqrt{169-25}}{5} \times (-1.5) = \frac{12}{5} \times \frac{3}{2} = \frac{18}{5} = 3.6$ ft/s when $y=12$ ft.
+</details>
