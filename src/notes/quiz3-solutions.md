@@ -6,19 +6,60 @@ description: Quiz 3 Solutions
 date: 2025-08-09
 ---
 
-# Quiz 3 Solutions 
+# Quiz 3 Problems
 
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem 0; border-radius: 8px; box-shadow: 0 4px 24px rgba(52, 152, 219, 0.10), 0 1.5px 6px rgba(44, 62, 80, 0.06);">
-    <iframe 
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" 
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;"
-        title="Quiz 3 Solutions Video"
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+<div class="pdf-container">
+    <div class="pdf-viewer">
+        <iframe 
+            src="/notes/math-quiz3-all.pdf" 
+            width="100%" 
+            height="800px" 
+            frameborder="0"
+            title="Quiz 3 Problems PDF">
+            <p>Your browser does not support PDF viewing. 
+            <a href="/notes/math-quiz3-all.pdf" download>Download the quiz problems PDF</a> to view it.</p>
+        </iframe>
+    </div>
+    
+    <div class="pdf-actions">
+        <a href="/notes/math-quiz3-all.pdf" download class="download-btn">
+            <i class="fas fa-file-pdf"></i>
+            <span>Download Quiz Problems PDF</span>
+        </a>
+        <a href="/notes/math-quiz3-all.pdf" target="_blank" class="open-btn">
+            <i class="fas fa-external-link"></i>
+            <span>Open in New Tab</span>
+        </a>
+    </div>
 </div>
+
+# Quiz 3 Solutions
+
+<div class="pdf-container">
+    <div class="pdf-viewer">
+        <iframe 
+            src="/notes/quiz3-solutions.pdf" 
+            width="100%" 
+            height="800px" 
+            frameborder="0"
+            title="Quiz 3 Solutions PDF">
+            <p>Your browser does not support PDF viewing. 
+            <a href="/notes/quiz3-solutions.pdf" download>Download the quiz solutions PDF</a> to view it.</p>
+        </iframe>
+    </div>
+    
+    <div class="pdf-actions">
+        <a href="/notes/quiz3-solutions.pdf" download class="download-btn">
+            <i class="fas fa-file-pdf"></i>
+            <span>Download Quiz Solutions PDF</span>
+        </a>
+        <a href="/notes/quiz3-solutions.pdf" target="_blank" class="open-btn">
+            <i class="fas fa-external-link"></i>
+            <span>Open in New Tab</span>
+        </a>
+    </div>
+</div>
+
 
 <style>
 .pdf-container {
