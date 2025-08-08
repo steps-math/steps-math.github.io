@@ -6,6 +6,10 @@ description: Quiz 3 Solutions
 date: 2025-08-09
 ---
 
+## Feedback Form
+
+Please fill this final feedback form on our class: [Feedback form link](https://docs.google.com/forms/d/e/1FAIpQLSflbOdlS59N46VsGgda8VyfoQ8zZ5f9xTEp4Nv5QzuZdDI4yg/viewform?usp=dialog)
+
 # Quiz 3 Problems
 
 <div class="pdf-container">
