@@ -1,6 +1,9 @@
 ---
 layout: base.njk
 title: Quiz 2 Solutions
+category: limits
+description: Quiz 2 Solutions
+date: 2025-07-26
 ---
 
 # Quiz 2 Problems

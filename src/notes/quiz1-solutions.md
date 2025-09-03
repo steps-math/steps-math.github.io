@@ -1,6 +1,9 @@
 ---
 layout: base.njk
 title: Quiz 1 Solutions
+category: functions
+description: Quiz 1 Solutions
+date: 2025-07-15
 ---
 
 # Quiz 1 Problems
